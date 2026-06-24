@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  padding-top: var(--nav-height);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --nav-height: min(70px, 10dvh);
+}
