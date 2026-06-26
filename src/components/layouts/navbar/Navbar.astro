@@ -1,0 +1,177 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+import { t } from "@/i18n";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+
+const currentLocale = Astro.currentLocale ?? "fi";
+const dict = t(currentLocale);
+
+const navLinks = [
+  {
+    key: "",
+    label: dict.nav.home,
+  },
+  {
+    key: "tuotteet",
+    label: dict.nav.tuotteet,
+  },
+  {
+    key: "huolto",
+    label: dict.nav.huolto,
+  },
+  {
+    key: "meista",
+    label: dict.nav.meistä,
+  },
+  {
+    key: "yhteystiedot",
+    label: dict.nav.yhteystiedot,
+  },
+];
+
+function localizedHref(locale: string, key?: string) {
+  return key ? getRelativeLocaleUrl(locale, key) : getRelativeLocaleUrl(locale);
+}
+---
+
+<nav class="site-nav">
+  <div class="wrapper nav-content">
+    <a href={localizedHref(currentLocale)} class="nav-logo">Logo/firmannimi</a>
+
+    <div class="nav-actions">
+      <ul class="nav-links-list">
+        {
+          navLinks.map((link) => (
+            <li class="nav-link">
+              <a
+                href={localizedHref(currentLocale, link.key)}
+                data-href={localizedHref(currentLocale, link.key)}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <LanguageSwitcher />
+    </div>
+  </div>
+</nav>
+
+<script>
+  function normalizePath(path: string) {
+    if (path === "/") return "/";
+    return path.replace(/\/$/, "");
+  }
+
+  function updateActiveNavLink() {
+    const currentPath = normalizePath(window.location.pathname);
+
+    document.querySelectorAll(".nav-link a").forEach((link) => {
+      const href = link.getAttribute("data-href");
+      if (!href) return;
+
+      link.classList.toggle("active", normalizePath(href) === currentPath);
+    });
+  }
+
+  updateActiveNavLink();
+
+  const win = window as Window & { __navActiveListenerBound?: boolean };
+
+  if (!win.__navActiveListenerBound) {
+    document.addEventListener("astro:page-load", updateActiveNavLink);
+    win.__navActiveListenerBound = true;
+  }
+</script>
+
+<style>
+  nav {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 20;
+    min-height: var(--nav-height);
+    border-bottom: 1px solid rgba(50, 50, 50, 0.12);
+  }
+
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: var(--nav-height);
+    width: 100%;
+    margin: 0 auto;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+  }
+
+  .nav-logo {
+    flex: none;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
+  }
+
+  .nav-links-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.7rem, 1.5vw, 1.5rem);
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .nav-link a {
+    &:hover {
+      color: red;
+    }
+    transition:
+      color 160ms ease,
+      opacity 160ms ease;
+  }
+
+  .nav-link a.active {
+    opacity: 1;
+    font-weight: 600;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .nav-content {
+      gap: 0.75rem;
+    }
+
+    .nav-actions {
+      gap: 0.5rem;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .nav-content {
+      flex-wrap: wrap;
+      padding-block: 0.5rem;
+    }
+
+    .nav-actions {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .nav-links-list {
+      justify-content: flex-start;
+      gap: 0.75rem;
+    }
+  }
+</style>

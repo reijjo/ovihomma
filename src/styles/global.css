@@ -10,12 +10,14 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
+  font-family: var(--font-body);
 }
 
 main {
   display: flex;
   flex-grow: 1;
   padding-top: var(--nav-height);
+  width: 100%;
 }
 
 a {
@@ -23,6 +25,22 @@ a {
   color: inherit;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
 :root {
+  /* Heights */
   --nav-height: min(70px, 10dvh);
+
+  /* Fonts */
+  --font-heading: "Oswald", sans-serif;
+  --font-body: "Source Sans 3", sans-serif;
+
+  /*--font-heading: 'Barlow', 'Arial Narrow', Arial, sans-serif;
+  --font-body: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;*/
 }

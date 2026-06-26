@@ -1,5 +1,5 @@
 ---
-import Navbar from "./Navbar.astro";
+import Navbar from "./navbar/Navbar.astro";
 import Footer from "./Footer.astro";
 import Head from "./Head.astro";
 import "../../styles/global.css";
@@ -8,7 +8,7 @@ import "../../styles/layout.css";
 const { title, description, ...rest } = Astro.props;
 ---
 
-<html lang="en">
+<html lang={Astro.currentLocale ?? "fi"}>
   <head>
     <meta charset="UTF-8" />
     <Head title={title} description={description} {...rest} />
