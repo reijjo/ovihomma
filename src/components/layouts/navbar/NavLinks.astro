@@ -1,0 +1,64 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+import { t } from "@/i18n";
+
+interface Props {
+  currentLocale: string;
+  mobile?: boolean;
+}
+
+const { currentLocale, mobile = false } = Astro.props as Props;
+const dict = t(currentLocale);
+
+const navLinks = [
+  {
+    key: "",
+    label: dict.nav.home,
+  },
+  {
+    key: "tuotteet",
+    label: dict.nav.tuotteet,
+  },
+  {
+    key: "huolto",
+    label: dict.nav.huolto,
+  },
+  {
+    key: "meista",
+    label: dict.nav.meistä,
+  },
+  {
+    key: "yhteystiedot",
+    label: dict.nav.yhteystiedot,
+  },
+];
+
+function localizedHref(locale: string, key?: string) {
+  return key ? getRelativeLocaleUrl(locale, key) : getRelativeLocaleUrl(locale);
+}
+
+function normalizePath(path: string) {
+  if (path === "/") return "/";
+  return path.replace(/\/$/, "");
+}
+
+const currentPath = normalizePath(Astro.url.pathname);
+---
+
+<ul class={`nav-links-list${mobile ? " nav-links-list--mobile" : ""}`}>
+  {
+    navLinks.map((link) => {
+      const href = localizedHref(currentLocale, link.key);
+      const isActive = normalizePath(href) === currentPath;
+
+      return (
+        <li class="nav-link">
+          <a href={href} data-href={href} class={`nav-link-anchor${isActive ? " active" : ""}`}>
+            {link.label}
+          </a>
+        </li>
+      );
+    })
+  }
+</ul>

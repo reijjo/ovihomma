@@ -1,9 +1,14 @@
 ---
+import Layout from "@/components/layouts/Layout.astro";
 import { t } from "@/i18n";
 
 const i18n = t(Astro.currentLocale);
 ---
 
-<main>
-    <h1>{i18n.huolto.title}</h1>
-</main>
+<Layout title={i18n.huolto.title} description="Ovihomma huolto">
+  <main>
+    <div class="wrapper">
+      <h1>{i18n.huolto.title}</h1>
+    </div>
+  </main>
+</Layout>
