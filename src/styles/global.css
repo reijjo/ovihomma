@@ -7,12 +7,14 @@
 body {
   width: 100%;
   min-height: 100dvh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   font-size: 1rem;
   font-family: var(--font-body);
   background-color: var(--white-light);
   position: relative;
+  flex-grow: 1;
 }
 
 main {

@@ -1,17 +1,17 @@
 ---
 import Layout from "@/components/layouts/Layout.astro";
+import Hero from "@/components/pages/etusivu/Hero.astro";
 ---
 
 <Layout title="Etusivu" description="Ovihomma etusivu">
-  <main>
-    <div class="wrapper">
-      <h1>ETUSIVU</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-        suscipit non deserunt qui quo reprehenderit deleniti voluptate veniam
-        dolores commodi dolorem, eius explicabo excepturi, adipisci vero!
-        Eligendi voluptate ut corporis.
-      </p>
-    </div>
+  <main class="homepage">
+    <Hero />
   </main>
 </Layout>
+
+<style>
+  .homepage {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
