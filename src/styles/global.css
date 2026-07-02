@@ -11,6 +11,8 @@ body {
   flex-direction: column;
   font-size: 1rem;
   font-family: var(--font-body);
+  background-color: var(--white-light);
+  position: relative;
 }
 
 main {
@@ -33,6 +35,10 @@ h4 {
   font-weight: 600;
 }
 
+button {
+  cursor: pointer;
+}
+
 :root {
   /* Heights */
   --nav-height: min(70px, 10dvh);
@@ -43,4 +49,62 @@ h4 {
 
   /*--font-heading: 'Barlow', 'Arial Narrow', Arial, sans-serif;
   --font-body: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;*/
+
+  /* Border Colors */
+  --border-xxlight: rgba(20, 20, 20, 0.12);
+  --border-xlight: rgba(20, 20, 20, 0.22);
+
+  /* Box Shadow */
+  --shadow-xs: 0 6px 20px rgba(20, 20, 20, 0.06);
+
+  /* Colors */
+  /* Neutral */
+  --neutral: #f6f6f6;
+  --neutral-50: #fafafa;
+  --neutral-100: #f6f6f6;
+  --neutral-200: #e6e6e6;
+  --neutral-300: #d3d3d3;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #727272;
+  --neutral-600: #535353;
+  --neutral-700: #404040;
+  --neutral-800: #272727;
+  --neutral-900: #1a1a1a;
+  --neutral-950: #0b0b0b;
+
+  --white-xlight: #fafafa;
+  --white-light: #f6f6f6;
+  --white-base: #e6e6e6;
+  --white-dark: #d3d3d3;
+
+  --gray-light: #a3a3a3;
+  --gray-base: #727272;
+  --gray-dark: #535353;
+  --gray-xdark: #404040;
+
+  --black-light: #272727;
+  --black-base: #1a1a1a;
+  --black-dark: #0b0b0b;
+
+  /* Accent */
+  --accent: #d7202d;
+  --accent-50: #fef2f3;
+  --accent-100: #fee2e4;
+  --accent-200: #ffc9cd;
+  --accent-300: #fda4aa;
+  --accent-400: #fa6f79;
+  --accent-500: #f1424e;
+  --accent-600: #d7202d;
+  --accent-700: #bb1a25;
+  --accent-800: #9b1922;
+  --accent-900: #801c23;
+  --accent-950: #46090d;
+
+  --accent-xxlight: #fee2e4;
+  --accent-xlight: #ffc9cd;
+  --accent-light: #ffd4aa;
+  --accent-base: #f1424e;
+  --accent-dark: #bb1a25;
+  --accent-xdark: #801c23;
+  --accent-xxdark: #46090d;
 }

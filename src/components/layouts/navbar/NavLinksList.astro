@@ -1,0 +1,85 @@
+---
+import { t } from "@/i18n";
+
+type Props = {
+  localizedHref: (locale: string, key?: string) => string;
+};
+
+const { localizedHref } = Astro.props;
+
+const currentLocale = Astro.currentLocale ?? "fi";
+const dict = t(currentLocale);
+
+const navLinks = [
+  {
+    key: "",
+    label: dict.nav.home,
+  },
+  {
+    key: "tuotteet",
+    label: dict.nav.tuotteet,
+  },
+  {
+    key: "huolto",
+    label: dict.nav.huolto,
+  },
+  {
+    key: "meista",
+    label: dict.nav.meistä,
+  },
+  {
+    key: "yhteystiedot",
+    label: dict.nav.yhteystiedot,
+  },
+];
+---
+
+<ul class="nav-links-list">
+  {
+    navLinks.map((link) => (
+      <li class="nav-link">
+        <a
+          href={localizedHref(currentLocale, link.key)}
+          data-href={localizedHref(currentLocale, link.key)}
+        >
+          {link.label}
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .nav-links-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.7rem, 1.5vw, 1.5rem);
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+
+    @media (width <= 800px) {
+      flex-direction: column;
+    }
+  }
+
+  .nav-link a {
+    &:hover {
+      color: var(--accent-base);
+    }
+    transition:
+      color 160ms ease,
+      opacity 160ms ease;
+  }
+
+  .nav-link a.active {
+    opacity: 1;
+    font-weight: 600;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+</style>

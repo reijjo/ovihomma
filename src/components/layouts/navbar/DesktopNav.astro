@@ -1,0 +1,30 @@
+---
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+import NavLinksList from "./NavLinksList.astro";
+
+type Props = {
+  localizedHref: (locale: string, key?: string) => string;
+  currentLocale: string;
+};
+
+const { localizedHref, currentLocale } = Astro.props;
+---
+
+<div class="desktop-nav">
+  <a href={localizedHref(currentLocale)} class="nav-logo">Logo/firmannimi</a>
+  <NavLinksList localizedHref={localizedHref} />
+  <LanguageSwitcher />
+</div>
+
+<style>
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+</style>

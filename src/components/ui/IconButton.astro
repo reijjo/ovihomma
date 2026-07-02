@@ -1,0 +1,32 @@
+---
+import { type Icon as IconType } from "@lucide/astro";
+import type { HTMLAttributes } from "astro/types";
+
+type Props = HTMLAttributes<"button"> & {
+  icon: typeof IconType;
+};
+
+const { icon: Icon, class: className, ...rest } = Astro.props;
+---
+
+<button class:list={["icon-button", className]} {...rest}>
+  <Icon size={24} />
+</button>
+
+<!-- Style -->
+<style>
+  .icon-button {
+    padding: 0.25rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: all 0.25s ease;
+
+    &:hover {
+      border-color: var(--border-xlight);
+      box-shadow: var(--shadow-xs);
+    }
+  }
+</style>

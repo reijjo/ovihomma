@@ -1,34 +1,10 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
 
-import { t } from "@/i18n";
-import LanguageSwitcher from "./LanguageSwitcher.astro";
+import DesktopNav from "./DesktopNav.astro";
+import MobileNav from "./MobileNav.astro";
 
 const currentLocale = Astro.currentLocale ?? "fi";
-const dict = t(currentLocale);
-
-const navLinks = [
-  {
-    key: "",
-    label: dict.nav.home,
-  },
-  {
-    key: "tuotteet",
-    label: dict.nav.tuotteet,
-  },
-  {
-    key: "huolto",
-    label: dict.nav.huolto,
-  },
-  {
-    key: "meista",
-    label: dict.nav.meistä,
-  },
-  {
-    key: "yhteystiedot",
-    label: dict.nav.yhteystiedot,
-  },
-];
 
 function localizedHref(locale: string, key?: string) {
   return key ? getRelativeLocaleUrl(locale, key) : getRelativeLocaleUrl(locale);
@@ -37,28 +13,12 @@ function localizedHref(locale: string, key?: string) {
 
 <nav class="site-nav">
   <div class="wrapper nav-content">
-    <a href={localizedHref(currentLocale)} class="nav-logo">Logo/firmannimi</a>
-
-    <div class="nav-actions">
-      <ul class="nav-links-list">
-        {
-          navLinks.map((link) => (
-            <li class="nav-link">
-              <a
-                href={localizedHref(currentLocale, link.key)}
-                data-href={localizedHref(currentLocale, link.key)}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-    <LanguageSwitcher />
+    <DesktopNav localizedHref={localizedHref} currentLocale={currentLocale} />
+    <MobileNav localizedHref={localizedHref} currentLocale={currentLocale} />
   </div>
 </nav>
 
+<!-- Script  -->
 <script>
   function normalizePath(path: string) {
     if (path === "/") return "/";
@@ -86,6 +46,7 @@ function localizedHref(locale: string, key?: string) {
   }
 </script>
 
+<!-- Styles -->
 <style>
   nav {
     position: fixed;
@@ -93,6 +54,7 @@ function localizedHref(locale: string, key?: string) {
     z-index: 20;
     min-height: var(--nav-height);
     border-bottom: 1px solid rgba(50, 50, 50, 0.12);
+    background-color: var(--white-xlight);
   }
 
   .nav-content {
@@ -116,35 +78,6 @@ function localizedHref(locale: string, key?: string) {
     align-items: center;
     gap: 0.75rem;
     min-width: 0;
-  }
-
-  .nav-links-list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: clamp(0.7rem, 1.5vw, 1.5rem);
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap;
-  }
-
-  .nav-link a {
-    &:hover {
-      color: red;
-    }
-    transition:
-      color 160ms ease,
-      opacity 160ms ease;
-  }
-
-  .nav-link a.active {
-    opacity: 1;
-    font-weight: 600;
-
-    &:hover {
-      color: inherit;
-    }
   }
 
   @media (max-width: 900px) {

@@ -5,6 +5,8 @@ export const en = {
     huolto: "Maintenance",
     meistä: "About us",
     yhteystiedot: "Contact",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
   },
   huolto: { title: "Maintenance" },
 };

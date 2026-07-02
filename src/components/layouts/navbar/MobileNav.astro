@@ -1,0 +1,116 @@
+---
+import IconButton from "@/components/ui/IconButton.astro";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+import NavLinksList from "./NavLinksList.astro";
+import { Menu, X } from "@lucide/astro";
+import { t } from "@/i18n";
+
+type Props = {
+  localizedHref: (locale: string, key?: string) => string;
+  currentLocale: string;
+};
+
+const { localizedHref, currentLocale } = Astro.props;
+const dict = t(currentLocale);
+---
+
+<div class="mobile-nav">
+  <IconButton id="mobile-nav-open" type="button" icon={Menu} aria-label={dict.nav.openMenu} aria-expanded="false" />
+  <a href={localizedHref(currentLocale)} class="nav-logo">Logo/firmannimi</a>
+  <LanguageSwitcher />
+
+  <div class="mobile-nav-links" id="mobile-nav-links" data-open="false" aria-hidden="true" inert>
+    <div class="mobile-nav-links-content">
+      <IconButton id="mobile-nav-close" type="button" icon={X} aria-label={dict.nav.closeMenu} class="closeMenu" />
+      <NavLinksList localizedHref={localizedHref} />
+    </div>
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+  function getMobileNavElements() {
+    const openButton = document.getElementById("mobile-nav-open") as HTMLButtonElement | null;
+    const closeButton = document.getElementById("mobile-nav-close") as HTMLButtonElement | null;
+    const menu = document.getElementById("mobile-nav-links") as HTMLDivElement | null;
+
+    return { openButton, closeButton, menu };
+  }
+
+  function setMenuOpen(isOpen: boolean) {
+    const { openButton, menu } = getMobileNavElements();
+    if (!openButton || !menu) return;
+
+    menu.dataset.open = String(isOpen);
+    menu.setAttribute("aria-hidden", String(!isOpen));
+    menu.toggleAttribute("inert", !isOpen);
+    openButton.setAttribute("aria-expanded", String(isOpen));
+  }
+
+  document.addEventListener("click", (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+
+    const { openButton, closeButton, menu } = getMobileNavElements();
+    if (!openButton || !closeButton || !menu) return;
+
+    if (target.closest("#mobile-nav-open")) {
+      setMenuOpen(true);
+      return;
+    }
+
+    if (target.closest("#mobile-nav-close")) {
+      setMenuOpen(false);
+      return;
+    }
+
+    if (!menu.hidden && target.closest(".mobile-nav-links .nav-link a")) {
+      setMenuOpen(false);
+    }
+  });
+</script>
+
+<!-- Style -->
+<style>
+  .mobile-nav {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media (width <= 800px) {
+      display: flex;
+    }
+  }
+
+  .mobile-nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    z-index: 15;
+    display: grid;
+    place-items: center;
+    background-color: var(--white-xlight);
+    opacity: 0;
+    transform: translateY(-0.35rem);
+    pointer-events: none;
+    transition:
+      opacity 180ms ease,
+      transform 180ms ease;
+    will-change: opacity, transform;
+  }
+
+  .mobile-nav-links[data-open="true"] {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .closeMenu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+</style>
