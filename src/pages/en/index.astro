@@ -1,17 +1,27 @@
 ---
 import Layout from "@/components/layouts/Layout.astro";
+import Hero from "@/components/pages/etusivu/Hero.astro";
+import Lyhyesti from "@/components/pages/etusivu/Lyhyesti.astro";
+import Trust from "@/components/pages/etusivu/Trust.astro";
+import CtaComponent from "@/components/pages/etusivu/CtaComponent.astro";
+
+import { t } from "@/i18n";
+
+const i18n = t(Astro.currentLocale);
 ---
 
-<Layout title="Home page" description="Ovihomma homepage">
-  <main>
-    <div class="wrapper">
-      <h1>HOMEPAGE</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-        suscipit non deserunt qui quo reprehenderit deleniti voluptate veniam
-        dolores commodi dolorem, eius explicabo excepturi, adipisci vero!
-        Eligendi voluptate ut corporis.
-      </p>
-    </div>
+<Layout title={i18n.nav.home} description={i18n.homepage.hero.header}>
+  <main class="homepage">
+    <Hero />
+    <Lyhyesti />
+    <Trust />
+    <CtaComponent />
   </main>
 </Layout>
+
+<style>
+  .homepage {
+    display: flex;
+    flex-direction: column;
+  }
+</style>

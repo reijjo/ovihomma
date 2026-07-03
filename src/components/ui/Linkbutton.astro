@@ -1,20 +1,38 @@
 ---
+import { getRelativeLocaleUrl } from "astro:i18n";
 import type { HTMLAttributes } from "astro/types";
 import "./Button.css";
 
-type Props = HTMLAttributes<"button"> & {
+type Props = HTMLAttributes<"a"> & {
   variant?: "cta" | "outline";
+  href: string;
 };
 
 const {
   class: className,
   variant = "cta",
-  type = "button",
+  href,
   ...rest
 } = Astro.props;
+
+const currentLocale = Astro.currentLocale ?? "fi";
+
+function localizedHref(inputHref: string) {
+  if (/^(https?:|mailto:|tel:|#|\/\/)/.test(inputHref)) return inputHref;
+
+  if (inputHref.startsWith("/")) {
+    const route = inputHref.replace(/^\/+/, "").replace(/\/$/, "");
+    return route
+      ? getRelativeLocaleUrl(currentLocale, route)
+      : getRelativeLocaleUrl(currentLocale);
+  }
+
+  return inputHref;
+}
 ---
 
-<button
+<a
+  href={localizedHref(href)}
   class:list={[
     "btn",
     { "btn-cta": variant === "cta", "btn-outline": variant === "outline" },
@@ -23,7 +41,7 @@ const {
   {...rest}
 >
   <slot />
-</button>
+</a>
 
 <style>
   .btn {
