@@ -1,0 +1,52 @@
+---
+import { t } from "@/i18n";
+
+const i18n = t(Astro.currentLocale);
+---
+
+<section class="etusivu-trust">
+  <div class="etusivu-trust-wrapper wrapper">
+    <div class="etusivu-trust-content">
+      <h3>{i18n.homepage.trust.laatu.header}</h3>
+      <p>{i18n.homepage.trust.laatu.text}</p>
+    </div>
+    <div class="etusivu-trust-content">
+      <h3>{i18n.homepage.trust.ammattitaito.header}</h3>
+      <p>{i18n.homepage.trust.ammattitaito.text}</p>
+    </div>
+    <div class="etusivu-trust-content">
+      <h3>{i18n.homepage.trust.luotettavuus.header}</h3>
+      <p>{i18n.homepage.trust.luotettavuus.text}</p>
+    </div>
+  </div>
+  <p style="text-align: center;">Nää tekstit kopioin vaan jostain</p>
+</section>
+
+<style>
+  .etusivu-trust {
+    padding-block: 3rem;
+    background-color: var(--accent-xxlight);
+  }
+
+  .etusivu-trust-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+  }
+
+  .etusivu-trust-content {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    text-wrap: balance;
+
+    & h3 {
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+
+    & p {
+      font-size: 1.25rem;
+    }
+  }
+</style>

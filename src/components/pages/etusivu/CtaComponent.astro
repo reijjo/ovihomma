@@ -1,0 +1,36 @@
+---
+import { t } from "@/i18n";
+import Linkbutton from "@/components/ui/Linkbutton.astro";
+
+const i18n = t(Astro.currentLocale);
+---
+
+<section class="cta-component-section">
+  <h4>{i18n.homepage.ctaComp.text}</h4>
+  <Linkbutton href="/yhteystiedot"
+    >{i18n.homepage.ctaComp.buttonText}</Linkbutton
+  >
+</section>
+
+<style>
+  .cta-component-section {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-wrap: balance;
+    background-color: var(--black-base);
+
+    & h4 {
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    & button {
+      height: 3rem;
+    }
+  }
+</style>

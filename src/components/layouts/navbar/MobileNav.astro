@@ -15,13 +15,31 @@ const dict = t(currentLocale);
 ---
 
 <div class="mobile-nav">
-  <IconButton id="mobile-nav-open" type="button" icon={Menu} aria-label={dict.nav.openMenu} aria-expanded="false" />
+  <IconButton
+    id="mobile-nav-open"
+    type="button"
+    icon={Menu}
+    aria-label={dict.nav.openMenu}
+    aria-expanded="false"
+  />
   <a href={localizedHref(currentLocale)} class="nav-logo">Logo/firmannimi</a>
   <LanguageSwitcher />
 
-  <div class="mobile-nav-links" id="mobile-nav-links" data-open="false" aria-hidden="true" inert>
+  <div
+    class="mobile-nav-links"
+    id="mobile-nav-links"
+    data-open="false"
+    aria-hidden="true"
+    inert
+  >
     <div class="mobile-nav-links-content">
-      <IconButton id="mobile-nav-close" type="button" icon={X} aria-label={dict.nav.closeMenu} class="closeMenu" />
+      <IconButton
+        id="mobile-nav-close"
+        type="button"
+        icon={X}
+        aria-label={dict.nav.closeMenu}
+        class="closeMenu"
+      />
       <NavLinksList localizedHref={localizedHref} />
     </div>
   </div>
@@ -30,9 +48,15 @@ const dict = t(currentLocale);
 <!-- Script -->
 <script>
   function getMobileNavElements() {
-    const openButton = document.getElementById("mobile-nav-open") as HTMLButtonElement | null;
-    const closeButton = document.getElementById("mobile-nav-close") as HTMLButtonElement | null;
-    const menu = document.getElementById("mobile-nav-links") as HTMLDivElement | null;
+    const openButton = document.getElementById(
+      "mobile-nav-open",
+    ) as HTMLButtonElement | null;
+    const closeButton = document.getElementById(
+      "mobile-nav-close",
+    ) as HTMLButtonElement | null;
+    const menu = document.getElementById(
+      "mobile-nav-links",
+    ) as HTMLDivElement | null;
 
     return { openButton, closeButton, menu };
   }
@@ -111,6 +135,6 @@ const dict = t(currentLocale);
   .closeMenu {
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    left: 1rem;
   }
 </style>

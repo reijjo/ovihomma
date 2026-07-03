@@ -1,0 +1,59 @@
+---
+type Props = {
+  href?: string;
+  src: string;
+  alt: string;
+  header: string;
+  subheader: string;
+};
+const { href = "#", src, alt, header, subheader } = Astro.props;
+---
+
+<a href={href} class="lyhyesti-kuva-link">
+  <img src={src} alt={alt} class="lyhyesti-kuva-image" />
+  <h3 class="lyhyesti-kuva-header">{header}</h3>
+  <p class="lyhyesti-kuva-subheader">{subheader}</p>
+</a>
+
+<style>
+  .lyhyesti-kuva-link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    text-wrap: balance;
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    min-width: 300px;
+
+    &:hover {
+      border-color: var(--border-xxlight);
+      box-shadow:
+        0 4px 8px rgb(0 0 0 / 10%),
+        0 8px 16px rgb(0 0 0 / 5%);
+    }
+  }
+
+  .lyhyesti-kuva-image {
+    width: 100%;
+    height: auto;
+    height: 150px;
+    display: block;
+    border-radius: 4px;
+  }
+
+  .lyhyesti-kuva-header {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .lyhyesti-kuva-subheader {
+    font-size: 1rem;
+    margin: 0;
+  }
+</style>

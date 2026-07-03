@@ -1,11 +1,21 @@
 ---
 import Layout from "@/components/layouts/Layout.astro";
 import Hero from "@/components/pages/etusivu/Hero.astro";
+import Lyhyesti from "@/components/pages/etusivu/Lyhyesti.astro";
+import Trust from "@/components/pages/etusivu/Trust.astro";
+import CtaComponent from "@/components/pages/etusivu/CtaComponent.astro";
+
+import { t } from "@/i18n";
+
+const i18n = t(Astro.currentLocale);
 ---
 
-<Layout title="Etusivu" description="Ovihomma etusivu">
+<Layout title={i18n.nav.home} description={i18n.homepage.hero.header}>
   <main class="homepage">
     <Hero />
+    <Lyhyesti />
+    <Trust />
+    <CtaComponent />
   </main>
 </Layout>
 
