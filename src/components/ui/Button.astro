@@ -1,7 +1,51 @@
 ---
+import type { HTMLAttributes } from "astro/types";
 import "./Button.css";
 
-const { children } = Astro.props;
+type Props = HTMLAttributes<"button"> & {
+  variant?: "cta" | "outline";
+};
+
+const { class: className, variant = "cta", ...rest } = Astro.props;
 ---
 
-<button>{children}</button>
+<button
+  class:list={[
+    "btn",
+    { "btn-cta": variant === "cta", "btn-outline": variant === "outline" },
+    className,
+  ]}
+  {...rest}
+>
+  <slot />
+</button>
+
+<style>
+  .btn {
+    border: 1px solid transparent;
+    border-radius: 100px;
+    padding: 0.75rem 1.5rem;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    width: max-content;
+  }
+
+  .btn-cta {
+    border-color: var(--accent-base);
+    background-color: var(--accent-base);
+    color: white;
+    transition: all 0.25s ease;
+
+    &:hover {
+      border-color: var(--accent-dark);
+      /*background-color: var(--accent-dark);*/
+      box-shadow:
+        0 4px 16px rgb(0 0 0 / 15%),
+        0 8px 32px rgb(0 0 0 / 10%);
+    }
+  }
+</style>
