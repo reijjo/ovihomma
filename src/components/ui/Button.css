@@ -1,0 +1,41 @@
+.btn {
+  border: 1px solid transparent;
+  border-radius: 100px;
+  padding: 1rem 2rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  font: inherit;
+  line-height: 1;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  width: max-content;
+}
+
+.btn-cta {
+  border-color: transparent;
+  background-color: var(--accent-base);
+  color: white;
+  transition: all 0.25s ease;
+  box-shadow:
+    inset 1px 1px 4px var(--accent-light),
+    inset -1px -1px 4px var(--accent-dark);
+}
+
+.btn-cta:hover {
+  background-color: var(--accent-dark);
+  box-shadow:
+    inset 1px 1px 4px var(--accent-base),
+    inset -1px -1px 4px var(--accent-xdark),
+    0 4px 16px rgb(0 0 0 / 15%),
+    0 8px 32px rgb(0 0 0 / 10%);
+}
+
+.btn-cta:active {
+  background-color: var(--accent-dark);
+  box-shadow:
+    inset 1px 1px 4px var(--accent-xdark),
+    inset -1px -1px 4px var(--accent-xdark);
+}
