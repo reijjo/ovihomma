@@ -1,5 +1,5 @@
 ---
-import Button from "@/components/ui/Button.astro";
+import Linkbutton from "@/components/ui/Linkbutton.astro";
 import { t } from "@/i18n";
 
 const i18n = t(Astro.currentLocale);
@@ -8,7 +8,7 @@ const i18n = t(Astro.currentLocale);
 <section class="hero-section">
   <div class="hero-content wrapper">
     <h1 class="hero-header">{i18n.homepage.hero.header}</h1>
-    <Button class="hero-button">{i18n.homepage.hero.heroCta}</Button>
+    <Linkbutton href="/yhteystiedot" class="hero-button">{i18n.homepage.hero.heroCta}</Linkbutton>
     <div class="hero-overlay"></div>
   </div>
 </section>

@@ -7,20 +7,37 @@
  On the sidebar open *compute* -dropdown menu
  - Choose *Workers & Pages*
  - Then *Create application* button on the top of the page
- - Click _Looking to deploy Pages? Get started_ button under the clickable options
 
 ### From GitHub
-*Import an existing Git repository* -> Choose the repository you want to deploy
+*Continue with GitHub* -> Choose the repository you want to deploy -> Next
 
 <details>
 <summary>Astro</summary>
 
-Be sure that you have the `@astrojs/check` and `typescript` packages installed
+**Prerequirements**
 
-- Framework preset: **Astro**
-- Build command: **bun run build**
-- Build output directory: **dist**
-- Click **Save and Deploy** button 
+<https://docs.astro.build/en/guides/deploy/cloudflare/>
+
+1. Install Wrangler CLI -> `bun add -d wrangler@latest`
+2. Install Cloudflare adapter -> `bunx astro add cloudflare`
+3. Preview your project locally with Wrangler -> `bunx astro build && bunx wrangler dev`
+4. For custom not-found pages (*src/pages/404.html*) update the `wrangler.jsonc` file:
+```jsonc
+{
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
+```
+
+**Deploy settings**
+
+- Build command: `bun run build`
+- Deploy command: `bunx wrangler deploy`
+- Click `Deploy` button
+
+
 
 </details>
 
