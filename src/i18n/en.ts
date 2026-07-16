@@ -9,17 +9,17 @@ export const en = {
     closeMenu: "Close menu",
   },
   yleiset: {
-    hintatarjous: "Pyydä tarjous",
-    otayhteys: "Ota yhteyttä"
+    hintatarjous: "Request a quote",
+    otayhteys: "Contact us",
   },
   homepage: {
     hero: {
-      header: "Gates and more, crafted with Finnish expertise",
-      heroCta: "Request a quote",
+      header: "Gates and more, made with Finnish expertise",
+      heroCta: "Request a quote or something?",
     },
     lyhyesti: {
       aboutUs:
-        "We service and install a wide range of doors, barriers, and shelving systems with many years of experience.",
+        "Our company services and installs all kinds of doors, barriers, and shelving systems with many years of experience.",
       kuvat: {
         nostoOvet: {
           header: "Sectional doors",
@@ -58,38 +58,42 @@ export const en = {
       },
     },
     ctaComp: {
-      text: "Interested? Ask for a quote!",
+      text: "Interested? Request a quote!",
       buttonText: "Contact us",
     },
   },
   aboutUs: {
-    title: "Meistä",
+    title: "About us",
     yrityksesta: {
-      esittely: " on tarjonnut Viron markkinoilla laadukkaita sisäovia, autotallin ovia ja teollisuusovia jo 12 vuoden ajan.M.K.International OÜ on toiminut vuodesta 2014 lähtien aktiivisesti myös Suomen markkinoilla. Pitkäaikaiset kokemukset, joustavuus ja erityisratkaisujen tarjoaminen ovat paras asiakastyytyväisyyden tae kautta vuosien.",
+      esittely:
+        " has offered high-quality interior doors, garage doors, and industrial doors on the Estonian market for 12 years. M.K. International OÜ has also been active in the Finnish market since 2014. Long experience, flexibility, and the ability to provide custom solutions are the best guarantee of customer satisfaction over the years.",
       tuotevalikoima: {
-        otsikko: "Tuotevalikoimaamme kuuluvat",
-        nostettavat: "Nostettavat autotallinovet",
-        teollosuus: "Teollisuusovet",
-        turva: "Turvakalterit ja -rullakaihtimet",
-        paloOvet: "Palo-ovet",
-        kokoPuuOvet: "Kokopuuovet",
-        aidat: "Aidat ja portit",
-        lataus: "Latauslaitteet",
-        aurinko: "Auringonsuojajärjestelmät",
-        kulku: "Kulkujärjestelmät",
-        teollisuuspakkaus: "Teollisuuspakkaukset",
-        hyonteis: "Hyönteisverkot",
-        automatiikka: "Porttien sekä autotallin- ja teollisuusovien automatiikka"
+        otsikko: "Our product range includes",
+        nostettavat: "Sectional garage doors",
+        teollosuus: "Industrial doors",
+        turva: "Security grilles and roller shutters",
+        paloOvet: "Fire doors",
+        kokoPuuOvet: "Solid wood doors",
+        aidat: "Fences and gates",
+        lataus: "Charging devices",
+        aurinko: "Sun protection systems",
+        kulku: "Access control systems",
+        teollisuuspakkaus: "Industrial packaging",
+        hyonteis: "Insect screens",
+        automatiikka: "Automation for gates, garage doors, and industrial doors",
       },
-      kumppanit: "Yhteistyökumppanit",
-      laatuTitle: "Laatutakuu",
-      laatu1: "Tiimimme on läpäissyt valmistajien järjestämän kolutuksen, joten pystymme tajoamaan asiakkaillemme parhaat ratkasut ja laadukkaan lopputuloksen. Toimintaamme kuvaavat parhaiten ",
-      span1: "laatu ",
-      ja: "ja ",
-      span2: "joustavuus",
-      laatu2: "- kaikki ovet valmistetaan tilaajan antamien tietojen pohjalta ja pystymme tarjoamaan ratkaisun myös hyvin haasteellisiin käyttötilanteisiin.",
-      laatutakuu: "tuotteet edustavat suomalaista huippulaatua. Ota yhteyttä jo tänään ja me tarjoamme sinulle parhaan ratkaisun!"
-    }
+      kumppanit: "Partners",
+      laatuTitle: "Quality guarantee",
+      laatu1:
+        "Our team has completed manufacturer training, so we can offer our customers the best solutions and a high-quality result. The words that best describe our work are ",
+      span1: "quality ",
+      ja: "and ",
+      span2: "flexibility",
+      laatu2:
+        " - all doors are made based on the customer's specifications, and we can also provide solutions for very challenging use cases.",
+      laatutakuu:
+        "Our products represent top Finnish quality. Contact us today and we will offer you the best solution!",
+    },
   },
   huolto: { title: "Maintenance" },
 };

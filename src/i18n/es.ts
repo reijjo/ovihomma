@@ -9,18 +9,17 @@ export const es = {
     closeMenu: "Cerrar menú",
   },
   yleiset: {
-    hintatarjous: "Pyydä tarjous",
-    otayhteys: "Ota yhteyttä"
-
+    hintatarjous: "Solicitar presupuesto",
+    otayhteys: "Contáctanos",
   },
   homepage: {
     hero: {
-      header: "Puertas y más, fabricadas con experiencia finlandesa",
-      heroCta: "Pedir presupuesto",
+      header: "Puertas y mucho más, fabricadas con experiencia finlandesa",
+      heroCta: "¿Solicitar presupuesto o algo?",
     },
     lyhyesti: {
       aboutUs:
-        "Mantenemos e instalamos una amplia gama de puertas, barreras y sistemas de estanterías con muchos años de experiencia.",
+        "Nuestra empresa mantiene e instala todo tipo de puertas, barreras y sistemas de estanterías con muchos años de experiencia.",
       kuvat: {
         nostoOvet: {
           header: "Puertas seccionales",
@@ -59,38 +58,42 @@ export const es = {
       },
     },
     ctaComp: {
-      text: "¿Te interesa? ¡Pide un presupuesto!",
+      text: "¿Te interesa? ¡Solicita un presupuesto!",
       buttonText: "Contáctanos",
     },
   },
   aboutUs: {
-    title: "Meistä",
+    title: "Sobre nosotros",
     yrityksesta: {
-      esittely: " on tarjonnut Viron markkinoilla laadukkaita sisäovia, autotallin ovia ja teollisuusovia jo 12 vuoden ajan.M.K.International OÜ on toiminut vuodesta 2014 lähtien aktiivisesti myös Suomen markkinoilla. Pitkäaikaiset kokemukset, joustavuus ja erityisratkaisujen tarjoaminen ovat paras asiakastyytyväisyyden tae kautta vuosien.",
+      esittely:
+        " ha ofrecido puertas interiores, puertas de garaje y puertas industriales de alta calidad en el mercado estonio durante 12 años. M.K. International OÜ también ha estado activa en el mercado finlandés desde 2014. La larga experiencia, la flexibilidad y la capacidad de ofrecer soluciones a medida son la mejor garantía de satisfacción del cliente a lo largo de los años.",
       tuotevalikoima: {
-        otsikko: "Tuotevalikoimaamme kuuluvat",
-        nostettavat: "Nostettavat autotallinovet",
-        teollosuus: "Teollisuusovet",
-        turva: "Turvakalterit ja -rullakaihtimet",
-        paloOvet: "Palo-ovet",
-        kokoPuuOvet: "Kokopuuovet",
-        aidat: "Aidat ja portit",
-        lataus: "Latauslaitteet",
-        aurinko: "Auringonsuojajärjestelmät",
-        kulku: "Kulkujärjestelmät",
-        teollisuuspakkaus: "Teollisuuspakkaukset",
-        hyonteis: "Hyönteisverkot",
-        automatiikka: "Porttien sekä autotallin- ja teollisuusovien automatiikka"
+        otsikko: "Nuestra gama de productos incluye",
+        nostettavat: "Puertas de garaje seccionales",
+        teollosuus: "Puertas industriales",
+        turva: "Rejas de seguridad y persianas enrollables",
+        paloOvet: "Puertas cortafuego",
+        kokoPuuOvet: "Puertas de madera maciza",
+        aidat: "Vallas y portones",
+        lataus: "Dispositivos de carga",
+        aurinko: "Sistemas de protección solar",
+        kulku: "Sistemas de control de acceso",
+        teollisuuspakkaus: "Embalaje industrial",
+        hyonteis: "Mosquiteras",
+        automatiikka: "Automatización para portones, puertas de garaje y puertas industriales",
       },
-      kumppanit: "Yhteistyökumppanit",
-      laatuTitle: "Laatutakuu",
-      laatu1: "Tiimimme on läpäissyt valmistajien järjestämän kolutuksen, joten pystymme tajoamaan asiakkaillemme parhaat ratkasut ja laadukkaan lopputuloksen. Toimintaamme kuvaavat parhaiten ",
-      span1: "laatu ",
-      ja: "ja ",
-      span2: "joustavuus",
-      laatu2: "- kaikki ovet valmistetaan tilaajan antamien tietojen pohjalta ja pystymme tarjoamaan ratkaisun myös hyvin haasteellisiin käyttötilanteisiin.",
-      laatutakuu: "tuotteet edustavat suomalaista huippulaatua. Ota yhteyttä jo tänään ja me tarjoamme sinulle parhaan ratkaisun!"
-    }
+      kumppanit: "Socios",
+      laatuTitle: "Garantía de calidad",
+      laatu1:
+        "Nuestro equipo ha completado la formación impartida por los fabricantes, por lo que podemos ofrecer a nuestros clientes las mejores soluciones y un resultado de alta calidad. Las palabras que mejor describen nuestro trabajo son ",
+      span1: "calidad ",
+      ja: "y ",
+      span2: "flexibilidad",
+      laatu2:
+        " - todas las puertas se fabrican según las especificaciones del cliente, y también podemos ofrecer soluciones para situaciones de uso muy exigentes.",
+      laatutakuu:
+        "Nuestros productos representan la máxima calidad finlandesa. ¡Contáctanos hoy mismo y te ofreceremos la mejor solución!",
+    },
   },
   huolto: { title: "Mantenimiento" },
 };
