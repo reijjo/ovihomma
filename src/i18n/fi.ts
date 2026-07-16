@@ -83,7 +83,7 @@ export const fi = {
       },
       kumppanit: "Yhteistyökumppanit",
       laatuTitle: "Laatutakuu",
-      laatu1: "Tiimimme on läpäissyt valmistajien järjestämän kolutuksen, joten pystymme tajoamaan asiakkaillemme parhaat ratkaisut ja laadukkaan lopputuloksen. Toimintaamme kuvaavat parhaiten ",
+      laatu1: "Tiimimme on läpäissyt valmistajien järjestämän koulutuksen, joten pystymme tajoamaan asiakkaillemme parhaat ratkaisut ja laadukkaan lopputuloksen. Toimintaamme kuvaavat parhaiten ",
       span1: "laatu ",
       ja: "ja ",
       span2: "joustavuus",

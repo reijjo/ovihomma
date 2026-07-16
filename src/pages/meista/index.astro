@@ -8,7 +8,7 @@ import { t } from "@/i18n"
 const i18n = t(Astro.currentLocale);
 ---
 
-<Layout title="Meistä" description="Ovihomma meistä">
+<Layout title={i18n.aboutUs.title} description="Ovihomma meistä">
   <main class="aboutUs-page">
     <h1>{i18n.aboutUs.title}</h1>
     <AboutUs />
