@@ -1,0 +1,29 @@
+---
+import { t } from "@/i18n"
+import Linkbutton from "@/components/ui/Linkbutton.astro"
+
+const i18n = t(Astro.currentLocale)
+---
+
+<section class="kysy-laatua wrapper max-800">
+  <p>FIRMANNIMI {i18n.aboutUs.yrityksesta.laatutakuu}</p>
+  <Linkbutton href='/yhteystiedot'>{i18n.yleiset.otayhteys}</Linkbutton>
+</section>
+
+<style>
+  .kysy-laatua {
+    padding: 1rem 0 2rem 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    & p {
+      text-wrap: balance;
+      text-align: center;
+    }
+  }
+</style>

@@ -1,17 +1,26 @@
 ---
 import Layout from "@/components/layouts/Layout.astro";
+import AboutUs from "@/components/pages/about/AboutUs.astro";
+import Laatu from "@/components/pages/about/Laatu.astro"
+import LaatuKysy from "@/components/pages/about/LaatuKysy.astro"
+import { t } from "@/i18n"
+
+const i18n = t(Astro.currentLocale);
 ---
 
 <Layout title="Meistä" description="Ovihomma meistä">
-  <main>
-    <div class="wrapper">
-      <h1>Meistä</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-        suscipit non deserunt qui quo reprehenderit deleniti voluptate veniam
-        dolores commodi dolorem, eius explicabo excepturi, adipisci vero!
-        Eligendi voluptate ut corporis.
-      </p>
-    </div>
+  <main class="aboutUs-page">
+    <h1>{i18n.aboutUs.title}</h1>
+    <AboutUs />
+    <Laatu />
+    <LaatuKysy />
   </main>
 </Layout>
+
+<style>
+  .aboutUs-page {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+</style>

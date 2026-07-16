@@ -8,6 +8,10 @@ export const en = {
     openMenu: "Open menu",
     closeMenu: "Close menu",
   },
+  yleiset: {
+    hintatarjous: "Pyydä tarjous",
+    otayhteys: "Ota yhteyttä"
+  },
   homepage: {
     hero: {
       header: "Gates and more, crafted with Finnish expertise",
@@ -57,6 +61,35 @@ export const en = {
       text: "Interested? Ask for a quote!",
       buttonText: "Contact us",
     },
+  },
+  aboutUs: {
+    title: "Meistä",
+    yrityksesta: {
+      esittely: " on tarjonnut Viron markkinoilla laadukkaita sisäovia, autotallin ovia ja teollisuusovia jo 12 vuoden ajan.M.K.International OÜ on toiminut vuodesta 2014 lähtien aktiivisesti myös Suomen markkinoilla. Pitkäaikaiset kokemukset, joustavuus ja erityisratkaisujen tarjoaminen ovat paras asiakastyytyväisyyden tae kautta vuosien.",
+      tuotevalikoima: {
+        otsikko: "Tuotevalikoimaamme kuuluvat",
+        nostettavat: "Nostettavat autotallinovet",
+        teollosuus: "Teollisuusovet",
+        turva: "Turvakalterit ja -rullakaihtimet",
+        paloOvet: "Palo-ovet",
+        kokoPuuOvet: "Kokopuuovet",
+        aidat: "Aidat ja portit",
+        lataus: "Latauslaitteet",
+        aurinko: "Auringonsuojajärjestelmät",
+        kulku: "Kulkujärjestelmät",
+        teollisuuspakkaus: "Teollisuuspakkaukset",
+        hyonteis: "Hyönteisverkot",
+        automatiikka: "Porttien sekä autotallin- ja teollisuusovien automatiikka"
+      },
+      kumppanit: "Yhteistyökumppanit",
+      laatuTitle: "Laatutakuu",
+      laatu1: "Tiimimme on läpäissyt valmistajien järjestämän kolutuksen, joten pystymme tajoamaan asiakkaillemme parhaat ratkasut ja laadukkaan lopputuloksen. Toimintaamme kuvaavat parhaiten ",
+      span1: "laatu ",
+      ja: "ja ",
+      span2: "joustavuus",
+      laatu2: "- kaikki ovet valmistetaan tilaajan antamien tietojen pohjalta ja pystymme tarjoamaan ratkaisun myös hyvin haasteellisiin käyttötilanteisiin.",
+      laatutakuu: "tuotteet edustavat suomalaista huippulaatua. Ota yhteyttä jo tänään ja me tarjoamme sinulle parhaan ratkaisun!"
+    }
   },
   huolto: { title: "Maintenance" },
 };

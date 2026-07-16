@@ -1,0 +1,29 @@
+---
+import { fi } from "@/i18n/fi";
+
+const tuotteet = [
+  fi.aboutUs.yrityksesta.tuotevalikoima.nostettavat,
+  fi.aboutUs.yrityksesta.tuotevalikoima.teollosuus,
+  fi.aboutUs.yrityksesta.tuotevalikoima.turva,
+  fi.aboutUs.yrityksesta.tuotevalikoima.paloOvet,
+  fi.aboutUs.yrityksesta.tuotevalikoima.kokoPuuOvet,
+  fi.aboutUs.yrityksesta.tuotevalikoima.aidat,
+  fi.aboutUs.yrityksesta.tuotevalikoima.lataus,
+  fi.aboutUs.yrityksesta.tuotevalikoima.aurinko,
+  fi.aboutUs.yrityksesta.tuotevalikoima.kulku,
+  fi.aboutUs.yrityksesta.tuotevalikoima.teollisuuspakkaus,
+  fi.aboutUs.yrityksesta.tuotevalikoima.hyonteis,
+  fi.aboutUs.yrityksesta.tuotevalikoima.automatiikka,
+];
+---
+
+<ul class="tuotteet-lista">
+  {tuotteet.map((tuote) => <li>{tuote}</li>)}
+</ul>
+
+<style>
+  .tuotteet-lista {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+</style>
