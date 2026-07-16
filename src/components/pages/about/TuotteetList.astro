@@ -1,0 +1,30 @@
+---
+import { t } from "@/i18n";
+const i18n = t(Astro.currentLocale);
+
+const tuotteet = [
+  i18n.aboutUs.yrityksesta.tuotevalikoima.nostettavat,
+  i18n.aboutUs.yrityksesta.tuotevalikoima.teollosuus,
+  i18n.aboutUs.yrityksesta.tuotevalikoima.turva,
+  i18n.aboutUs.yrityksesta.tuotevalikoima.paloOvet,
+  i18n.aboutUs.yrityksesta.tuotevalikoima.kokoPuuOvet,
+  i18n.aboutUs.yrityksesta.tuotevalikoima.aidat,
+  i18n.aboutUs.yrityksesta.tuotevalikoima.lataus,
+  i18n.aboutUs.yrityksesta.tuotevalikoima.aurinko,
+  i18n.aboutUs.yrityksesta.tuotevalikoima.kulku,
+  i18n.aboutUs.yrityksesta.tuotevalikoima.teollisuuspakkaus,
+  i18n.aboutUs.yrityksesta.tuotevalikoima.hyonteis,
+  i18n.aboutUs.yrityksesta.tuotevalikoima.automatiikka,
+];
+---
+
+<ul class="tuotteet-lista">
+  {tuotteet.map((tuote) => <li>{tuote}</li>)}
+</ul>
+
+<style>
+  .tuotteet-lista {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+</style>

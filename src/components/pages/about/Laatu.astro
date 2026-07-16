@@ -1,0 +1,37 @@
+---
+import { t } from "@/i18n"
+
+const i18n = t(Astro.currentLocale);
+---
+
+<section class="about-laatu">
+  <div class="about-laatu-content wrapper max-800">
+  <h2 class="smaller-h2">{i18n.aboutUs.yrityksesta.laatuTitle}</h2>
+  <p>{i18n.aboutUs.yrityksesta.laatu1} <span class="laatu-span">{i18n.aboutUs.yrityksesta.span1}</span> {i18n.aboutUs.yrityksesta.ja} <span class="laatu-span">{i18n.aboutUs.yrityksesta.span2}</span> {i18n.aboutUs.yrityksesta.laatu2}</p>
+  </div>
+</section>
+
+<style>
+  .about-laatu {
+    background-color: var(--accent-xxlight);
+    margin-block: 2rem;
+  }
+  .about-laatu-content {
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.125rem;
+    text-wrap: pretty;
+
+
+    & h2 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .laatu-span {
+    font-weight: 600;
+  }
+</style>
