@@ -1,17 +1,41 @@
 ---
 import Layout from "@/components/layouts/Layout.astro";
+import { t } from "@/i18n"
+import Linkbutton from "@/components/ui/Linkbutton.astro";
+
+const i18n = t(Astro.currentLocale)
 ---
 
-<Layout title="Huolto" description="Ovihomma huolto">
+<Layout title={i18n.huolto.title} description="Ovihomma huolto">
   <main>
     <div class="wrapper">
-      <h1>Huolto</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-        suscipit non deserunt qui quo reprehenderit deleniti voluptate veniam
-        dolores commodi dolorem, eius explicabo excepturi, adipisci vero!
-        Eligendi voluptate ut corporis.
-      </p>
+      <h1>{i18n.huolto.title}</h1>
+      <div class="huolto-wrapper">
+        <p set:html={i18n.huolto.eka} />
+        <p set:html={i18n.huolto.toka} />
+        <p set:html={i18n.huolto.kolmas} />
+        <p class="bigger-bolder" set:html={i18n.huolto.vika} />
+        <Linkbutton href="/yhteystiedot">{i18n.yleiset.hintatarjous}!</Linkbutton>
+      </div>
     </div>
   </main>
 </Layout>
+
+<style>
+  .huolto-wrapper {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-wrap: balance;
+    text-wrap: pretty;
+    max-width: 640px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .bigger-bolder {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+</style>

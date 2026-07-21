@@ -95,5 +95,11 @@ export const en = {
         "Our products represent top Finnish quality. Contact us today and we will offer you the best solution!",
     },
   },
-  huolto: { title: "Maintenance" },
+  huolto: {
+    title: "Maintenance",
+    eka: "Ovissa on suuri käyttörasitus, joten ovien mekaaniset osat kuluvat. Ovien käyttöikää auttaa pidentämään <b>säännöllinen huolto</b>. Huoltoa tehdään ovien käyttötiheyden mukaan 1-4 kertaa vuodessa. Ovien huolto on <b>takuuehtojen voimassaolon</b> edellytyksenä.",
+    toka: "Tarjoamme huoltopalvelua kaikkiin oviin. Huoltoa suorittavat <b>kokeneet asiantuntijat</b>, jotka neuvovat asiakkaita myös puhelimitse. Tarvittaessa tulemme kohteeseen arvioimaan tilanteen ja ratkaisemme ongelmat paikan päällä.",
+    kolmas: "Tarjoamme ovien huoltoa <b>huoltosopimuksella tai ilman</b>.",
+    vika: "You can get more information about maintenance services by calling ."
+  },
 };

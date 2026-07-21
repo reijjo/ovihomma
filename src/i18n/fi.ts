@@ -91,5 +91,10 @@ export const fi = {
       laatutakuu: "tuotteet edustavat suomalaista huippulaatua. Ota yhteyttä jo tänään ja me tarjoamme sinulle parhaan ratkaisun!"
     }
   },
-  huolto: { title: "Huolto" },
+  huolto: {
+  title: "Huolto",
+  eka: "Ovissa on suuri käyttörasitus, joten ovien mekaaniset osat kuluvat. Ovien käyttöikää auttaa pidentämään <b>säännöllinen huolto</b>. Huoltoa tehdään ovien käyttötiheyden mukaan 1-4 kertaa vuodessa. Ovien huolto on <b>takuuehtojen voimassaolon</b> edellytyksenä.",
+  toka: "Tarjoamme huoltopalvelua kaikkiin oviin. Huoltoa suorittavat <b>kokeneet asiantuntijat</b>, jotka neuvovat asiakkaita myös puhelimitse. Tarvittaessa tulemme kohteeseen arvioimaan tilanteen ja ratkaisemme ongelmat paikan päällä.",
+  kolmas: "Tarjoamme ovien huoltoa <b>huoltosopimuksella tai ilman</b>.",
+  vika: "Huoltopalveluista saa lisätietoja numerosta ." },
 };
