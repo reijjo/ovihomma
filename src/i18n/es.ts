@@ -97,17 +97,9 @@ export const es = {
   },
   huolto: {
     title: "Mantenimiento",
-    eka1: "Las puertas están sometidas a un uso intenso, por lo que sus piezas mecánicas se desgastan. La vida útil de las puertas se prolonga con",
-    ekaBold1: "un mantenimiento regular",
-    eka2: ". El mantenimiento se realiza de 1 a 4 veces al año, según la frecuencia de uso de las puertas. El mantenimiento de las puertas es un ",
-    ekaBold2: "requisito para la validez de la garantía",
-    eka3: ".",
-    toka1: "Ofrecemos servicios de mantenimiento para todo tipo de puertas. El mantenimiento lo realizan ",
-    tokaBold1: "expertos con experiencia",
-    toka2: ", que también asesoran a los clientes por teléfono. Si es necesario, acudimos al lugar para evaluar la situación y resolver los problemas in situ.",
-    kolmas1: "Ofrecemos mantenimiento de puertas ",
-    kolmasBold1: "con o sin contrato de mantenimiento",
-    kolmas2: ".",
+    eka: "Ovissa on suuri käyttörasitus, joten ovien mekaaniset osat kuluvat. Ovien käyttöikää auttaa pidentämään <b>säännöllinen huolto</b>. Huoltoa tehdään ovien käyttötiheyden mukaan 1-4 kertaa vuodessa. Ovien huolto on <b>takuuehtojen voimassaolon</b> edellytyksenä.",
+    toka: "Tarjoamme huoltopalvelua kaikkiin oviin. Huoltoa suorittavat <b>kokeneet asiantuntijat</b>, jotka neuvovat asiakkaita myös puhelimitse. Tarvittaessa tulemme kohteeseen arvioimaan tilanteen ja ratkaisemme ongelmat paikan päällä.",
+    kolmas: "Tarjoamme ovien huoltoa <b>huoltosopimuksella tai ilman</b>.",
     vika: "Puede obtener más información sobre los servicios de mantenimiento llamando al ."
   },
 };

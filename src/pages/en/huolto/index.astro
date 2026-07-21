@@ -6,15 +6,15 @@ import Linkbutton from "@/components/ui/Linkbutton.astro";
 const i18n = t(Astro.currentLocale)
 ---
 
-<Layout title="Huolto" description="Ovihomma huolto">
+<Layout title={i18n.huolto.title} description="Ovihomma huolto">
   <main>
     <div class="wrapper">
       <h1>{i18n.huolto.title}</h1>
       <div class="huolto-wrapper">
-        <p>{i18n.huolto.eka1} <b>{i18n.huolto.ekaBold1}</b>{i18n.huolto.eka2} <b>{i18n.huolto.ekaBold2}</b>{i18n.huolto.eka3} </p>
-        <p>{i18n.huolto.toka1} <b>{i18n.huolto.tokaBold1}</b>{i18n.huolto.toka2}</p>
-        <p>{i18n.huolto.kolmas1} <b>{i18n.huolto.kolmasBold1}</b>{i18n.huolto.kolmas2}</p>
-        <p class="bigger-bolder"><b>{i18n.huolto.vika}</b></p>
+        <p set:html={i18n.huolto.eka} />
+        <p set:html={i18n.huolto.toka} />
+        <p set:html={i18n.huolto.kolmas} />
+        <p class="bigger-bolder" set:html={i18n.huolto.vika} />
         <Linkbutton href="/yhteystiedot">{i18n.yleiset.hintatarjous}!</Linkbutton>
       </div>
     </div>
@@ -36,5 +36,6 @@ const i18n = t(Astro.currentLocale)
 
   .bigger-bolder {
     font-size: 1.125rem;
+    font-weight: 600;
   }
 </style>
