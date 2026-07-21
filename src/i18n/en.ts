@@ -95,5 +95,19 @@ export const en = {
         "Our products represent top Finnish quality. Contact us today and we will offer you the best solution!",
     },
   },
-  huolto: { title: "Maintenance" },
+  huolto: {
+    title: "Maintenance",
+    eka1: "Doors are subject to heavy use, so their mechanical parts wear over time. The service life of doors is extended by",
+    ekaBold1: "regular maintenance",
+    eka2: ". Maintenance is carried out 1-4 times a year depending on how often the doors are used. Door maintenance is a ",
+    ekaBold2: "condition for warranty validity",
+    eka3: ".",
+    toka1: "We offer maintenance services for all doors. Maintenance is carried out by ",
+    tokaBold1: "experienced experts",
+    toka2: ", who also advise customers by phone. If needed, we will come to the site to assess the situation and solve the problems on site.",
+    kolmas1: "We offer door maintenance ",
+    kolmasBold1: "with or without a maintenance contract",
+    kolmas2: ".",
+    vika: "You can get more information about maintenance services by calling ."
+  },
 };
