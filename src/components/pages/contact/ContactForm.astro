@@ -1,0 +1,103 @@
+---
+import { t } from "@/i18n";
+import Button from "@/components/ui/Button.astro";
+
+const i18n = t(Astro.currentLocale);
+const contact = i18n.contact;
+---
+
+<form id="contact-form" class="contact-form">
+  <label>
+    {contact.name}
+    <input type="text" name="nimi" autocomplete="name" required />
+  </label>
+
+  <label>
+    {contact.email}
+    <input type="email" name="sähköposti" autocomplete="email" required />
+  </label>
+
+  <label>
+    {contact.phone}
+    <input type="tel" name="puhelin" autocomplete="tel" required />
+  </label>
+
+  <label>
+    {contact.requestDetails}
+    <textarea name="tarjouspyyntö" rows="7" required></textarea>
+  </label>
+
+  <Button type="submit">{contact.submit}</Button>
+</form>
+
+<address class="company-details">
+  <strong>{contact.companyName}</strong>
+  <span>{contact.address}</span>
+  <span>{contact.companyPhone}</span>
+  <span>{contact.companyEmail}</span>
+</address>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>("#contact-form");
+
+  form?.addEventListener("submit", (event) => {
+    event.preventDefault();
+  });
+</script>
+
+<style>
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: min(100%, 480px);
+    margin: 0 auto;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    font-weight: 600;
+  }
+
+  input,
+  textarea {
+    border: 1px solid var(--border-xlight);
+    border-radius: 8px;
+    padding: 0.7rem 0.75rem;
+    width: 100%;
+    color: var(--black-base);
+    background-color: var(--white-xlight);
+    font: inherit;
+  }
+
+  textarea {
+    min-height: 9rem;
+    resize: vertical;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: 2px solid var(--accent-base);
+    outline-offset: 1px;
+  }
+
+  .contact-form :global(.btn) {
+    align-self: flex-start;
+    margin-top: 0.25rem;
+  }
+
+  .company-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: min(100%, 480px);
+    margin: 1rem auto 0;
+    font-style: normal;
+  }
+
+  .company-details strong {
+    margin-bottom: 0.25rem;
+  }
+</style>

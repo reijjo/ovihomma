@@ -12,6 +12,19 @@ export const es = {
     hintatarjous: "Solicitar presupuesto",
     otayhteys: "Contáctanos",
   },
+  contact: {
+    title: "Contacto",
+    description: "Ovihomma Contacto",
+    name: "Nombre",
+    email: "Correo electrónico",
+    phone: "Teléfono",
+    requestDetails: "Información sobre el objeto de la solicitud de presupuesto",
+    submit: "Enviar",
+    companyName: "FIRMANNIMI",
+    address: "Dirección",
+    companyPhone: "Teléfono",
+    companyEmail: "Correo electrónico",
+  },
   homepage: {
     hero: {
       header: "Puertas y mucho más, fabricadas con experiencia finlandesa",

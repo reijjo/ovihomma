@@ -12,6 +12,19 @@ export const en = {
     hintatarjous: "Request a quote",
     otayhteys: "Contact us",
   },
+  contact: {
+    title: "Contact",
+    description: "Ovihomma Contact",
+    name: "Name",
+    email: "Email",
+    phone: "Phone",
+    requestDetails: "Details about the subject of the quote request",
+    submit: "Submit",
+    companyName: "FIRMANNIMI",
+    address: "Address",
+    companyPhone: "Phone",
+    companyEmail: "Email",
+  },
   homepage: {
     hero: {
       header: "Gates and more, made with Finnish expertise",
