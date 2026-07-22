@@ -12,6 +12,19 @@ export const fi = {
     hintatarjous: "Pyydä tarjous",
     otayhteys: "Ota yhteyttä"
   },
+  contact: {
+    title: "Yhteystiedot",
+    description: "Ovihomma Yhteystiedot",
+    name: "Nimi",
+    email: "Sähköposti",
+    phone: "Puhelin",
+    requestDetails: "Tiedot tarjouspyynnön kohteesta",
+    submit: "lähetä",
+    companyName: "FIRMANNIMI",
+    address: "osoite",
+    companyPhone: "puhelin",
+    companyEmail: "sähköposti",
+  },
   homepage: {
     hero: {
       header: "Suomalaisella ammattitaidolla porttia ja muuta",
