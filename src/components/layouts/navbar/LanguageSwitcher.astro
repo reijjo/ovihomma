@@ -14,12 +14,9 @@ function localizedHref(locale: string, key?: string) {
 }
 
 const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
-const navKeys = ["", "tuotteet", "huolto", "meista", "yhteystiedot"] as const;
-const routeKey =
-  navKeys.find((key) => {
-    const href = localizedHref(currentLocale, key).replace(/\/$/, "") || "/";
-    return href === currentPath;
-  }) ?? "";
+const routeKey = currentPath
+  .replace(new RegExp(`^/${currentLocale}(?=/|$)`), "")
+  .replace(/^\/+|\/+$/g, "");
 
 const currentLocaleOption =
   localeOptions.find((option) => option.code === currentLocale) ??

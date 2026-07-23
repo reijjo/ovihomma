@@ -58,8 +58,8 @@ export const fi = {
           subHeader: "Puomi sitä puomi tätä",
         },
         hyllykot: {
-          header: "Hyllyköt",
-          subHeader: "Hyllyt kuntoon",
+          header: "Hyllyt",
+          subHeader: "Tavarat järjestykseen",
         },
       },
     },
@@ -112,9 +112,56 @@ export const fi = {
     }
   },
   huolto: {
-  title: "Huolto",
-  eka: "Ovissa on suuri käyttörasitus, joten ovien mekaaniset osat kuluvat. Ovien käyttöikää auttaa pidentämään <b>säännöllinen huolto</b>. Huoltoa tehdään ovien käyttötiheyden mukaan 1-4 kertaa vuodessa. Ovien huolto on <b>takuuehtojen voimassaolon</b> edellytyksenä.",
-  toka: "Tarjoamme huoltopalvelua kaikkiin oviin. Huoltoa suorittavat <b>kokeneet asiantuntijat</b>, jotka neuvovat asiakkaita myös puhelimitse. Tarvittaessa tulemme kohteeseen arvioimaan tilanteen ja ratkaisemme ongelmat paikan päällä.",
-  kolmas: "Tarjoamme ovien huoltoa <b>huoltosopimuksella tai ilman</b>.",
-  vika: "Huoltopalveluista saa lisätietoja numerosta ." },
+    title: "Huolto",
+    eka: "Ovissa on suuri käyttörasitus, joten ovien mekaaniset osat kuluvat. Ovien käyttöikää auttaa pidentämään <b>säännöllinen huolto</b>. Huoltoa tehdään ovien käyttötiheyden mukaan 1-4 kertaa vuodessa. Ovien huolto on <b>takuuehtojen voimassaolon</b> edellytyksenä.",
+    toka: "Tarjoamme huoltopalvelua kaikkiin oviin. Huoltoa suorittavat <b>kokeneet asiantuntijat</b>, jotka neuvovat asiakkaita myös puhelimitse. Tarvittaessa tulemme kohteeseen arvioimaan tilanteen ja ratkaisemme ongelmat paikan päällä.",
+    kolmas: "Tarjoamme ovien huoltoa <b>huoltosopimuksella tai ilman</b>.",
+    vika: "Huoltopalveluista saa lisätietoja numerosta ."
+  },
+  tuotteet: {
+    title: "Tuotteet",
+    esimerkkeja: "Töitämme:",
+    nostoOvet: {
+      title: "Nosto-ovet",
+      description: "",
+    },
+    rullaOvet: {
+      title: "Rullaovet & turvakaihtimet",
+      description: "",
+    },
+    paloOvet: {
+      title: "Palo-ovet",
+      description: "",
+      info: {
+        intro: "Palo-ovia käytetään rakennuksen turvallisuuden lisäämiseen palon sattuessa. Palo-ovia käytetään erilaisissa käyttökohteissa, mm. kerrostaloissa, varastorakennuksissa, lämpökeskuksissa, kellarikerroksissa, kauppakeskuksissa yms., joissa tulee luoda palomuuri palon leviämisen estämiseen.",
+        valikoima: "Meidän tuotevalikoimaan kuuluu neljä erilaista palo-ovea:",
+        valikoimaItems: {
+          metalli: "Metalliovet",
+          rulla: "Rullaovet",
+          liukuovet: "Liukuovet",
+          kaihtimet: "Kaihtimet"
+        },
+        moreInfo: "Palo-ovet on testattu ja niille on myönnetty asianmukaiset sertifikaatit. Ovien valmistuksessa on käytetty <b>lujaa terästä</b> ja kaihtimissa erikoisvalmisteista lasikuitu- ja teräslankakangasta. Ovien lamellit ovat sinkittyä terästä.",
+        moreInfo2: "Palo-ovien rakenne on kehitetty varmistamaan mahdollisimman <b>nopean poistumisen</b> paloalueelta, joten ovien avaamisen ja sulkeutumisen nopeuteen on panostettu erityisesti. Ovissa on paloilmaisimet ja –hälyttimet. Huippulaadukkaat käyttölaitteet ja valvontajärjestelmät varmistavat yksinkertaisen ja turvallisen ovien käytön myös palon tai sähkönkatkoksen sattuessa."
+      },
+      sertifikaatit: {
+        title: "paloturvallisuussertifikaatit",
+        items: {
+          metalli: "Metallioville on myönnetty EI 15, EI 30, EI 45, EI 60, EI 90 EI 120 sertifikaatti",
+          rulla: "Rullaovet täyttävät paloturvallisuusluokan EI 60 ja EI 120 vaatimukset.",
+          liukuovet: "Liukuoville on myönnetty EI 30, EI 60 ja EI 120 sertifikaatti.",
+          kaihtimet: "Paloturvallisuuskaihtimille on annettu E 120 sertifikaatti."
+        },
+        info: "<b>EI-merkintä</b> sertifikaatissa viittaa ovien <b>palonkestoon</b> minuuteissa eli EI 120 tarkoittaa, että oven palonkesto on varmistettu 120 minuutin ajaksi."
+      }
+    },
+    puomit: {
+      title: "Puomit",
+      description: "",
+    },
+    hyllyt: {
+      title: "Hyllyt",
+      description: "",
+    },
+  }
 };

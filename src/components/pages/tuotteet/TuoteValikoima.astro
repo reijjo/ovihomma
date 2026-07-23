@@ -1,0 +1,65 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+type Item = {
+  label: string;
+  href: string;
+};
+
+type Props = {
+  title: string;
+  items: Item[];
+};
+
+const { title, items } = Astro.props;
+const currentLocale = Astro.currentLocale ?? "fi";
+
+function localizedHref(href: string) {
+  if (/^(https?:|mailto:|tel:|#|\/\/)/.test(href)) return href;
+
+  const route = href.replace(/^\/+/, "").replace(/\/$/, "");
+  return route
+    ? getRelativeLocaleUrl(currentLocale, route)
+    : getRelativeLocaleUrl(currentLocale);
+}
+---
+
+<div class="wrapper tuote-valikoima">
+  <p><b>{title}</b></p>
+  <ul class="tuote-list">
+    {items.map((item) => (
+      <li>
+        <a href={localizedHref(item.href)}>{item.label}</a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<style>
+.tuote-valikoima {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 800px);
+  text-wrap: pretty;
+  gap: 1rem;
+}
+
+.tuote-list {
+  list-style-position: inside;
+
+  & li {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 1rem;
+
+    & a {
+      color: var(--accent-dark);
+
+      &:hover {
+        color: var(--accent-xdark);
+      }
+    }
+  }
+}
+</style>

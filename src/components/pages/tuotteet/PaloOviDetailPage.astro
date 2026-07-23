@@ -1,0 +1,16 @@
+---
+import Layout from "@/components/layouts/Layout.astro";
+
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<Layout title={title}>
+  <div class="wrapper">
+    <h1>{title}</h1>
+    <p>{title}</p>
+  </div>
+</Layout>

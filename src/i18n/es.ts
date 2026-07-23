@@ -122,4 +122,50 @@ export const es = {
     kolmas: "Tarjoamme ovien huoltoa <b>huoltosopimuksella tai ilman</b>.",
     vika: "Puede obtener más información sobre los servicios de mantenimiento llamando al ."
   },
+  tuotteet: {
+    title: "Productos",
+    esimerkkeja: "Nuestro trabajo",
+    nostoOvet: {
+      title: "Puertas seccionales",
+      description: "",
+    },
+    rullaOvet: {
+      title: "Puertas enrollables y persianas de seguridad",
+      description: "",
+    },
+    paloOvet: {
+      title: "Puertas cortafuego",
+      description: "",
+      info: {
+        intro: "Las puertas cortafuego mejoran la seguridad de los edificios en caso de incendio. Se utilizan en distintos lugares, como edificios de viviendas, almacenes, centrales térmicas, sótanos y centros comerciales, donde es necesario crear una barrera contra incendios para evitar su propagación.",
+        valikoima: "Nuestra gama incluye cuatro tipos diferentes de puertas cortafuego:",
+        valikoimaItems: {
+          metalli: "Puertas metálicas",
+          rulla: "Puertas enrollables",
+          liukuovet: "Puertas correderas",
+          kaihtimet: "Persianas"
+        },
+        moreInfo: "Las puertas cortafuego han sido probadas y cuentan con las certificaciones correspondientes. Las puertas están fabricadas con <b>acero resistente</b>, mientras que las persianas utilizan un tejido especial de fibra de vidrio y alambre de acero. Las lamas son de acero galvanizado.",
+        moreInfo2: "La estructura de las puertas cortafuego está diseñada para garantizar la <b>evacuación más rápida posible</b> de la zona afectada. Por ello, se ha prestado especial atención a la velocidad de apertura y cierre. Las puertas incluyen detectores y alarmas contra incendios. Los operadores y sistemas de control de alta calidad garantizan un uso sencillo y seguro incluso en caso de incendio o corte de electricidad."
+      },
+      sertifikaatit: {
+        title: "Certificados de seguridad contra incendios",
+        items: {
+          metalli: "Las puertas metálicas cuentan con certificados EI 15, EI 30, EI 45, EI 60, EI 90 y EI 120.",
+          rulla: "Las puertas enrollables cumplen los requisitos de seguridad contra incendios EI 60 y EI 120.",
+          liukuovet: "Las puertas correderas cuentan con certificados EI 30, EI 60 y EI 120.",
+          kaihtimet: "Las persianas cortafuego cuentan con un certificado E 120."
+        },
+        info: "La <b>marca EI</b> del certificado indica la <b>resistencia al fuego</b> de las puertas en minutos. EI 120 significa que la resistencia al fuego de la puerta se ha verificado durante 120 minutos."
+      }
+    },
+    puomit: {
+      title: "Barreras",
+      description: "",
+    },
+    hyllyt: {
+      title: "Estanterías",
+      description: "",
+    },
+  }
 };
