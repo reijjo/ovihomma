@@ -1,0 +1,28 @@
+---
+import Linkbutton from "@/components/ui/Linkbutton.astro";
+
+type Props = {
+  heading: string;
+  buttonText: string;
+};
+
+const { heading, buttonText } = Astro.props;
+---
+
+<section class="sell-section">
+  <h3>{heading}</h3>
+  <Linkbutton href="/yhteystiedot">{buttonText}</Linkbutton>
+</section>
+
+<style>
+.sell-section {
+  padding-bottom: 2rem;
+  width: min(100%, 800px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+</style>

@@ -117,9 +117,9 @@ export const es = {
   },
   huolto: {
     title: "Mantenimiento",
-    eka: "Ovissa on suuri käyttörasitus, joten ovien mekaaniset osat kuluvat. Ovien käyttöikää auttaa pidentämään <b>säännöllinen huolto</b>. Huoltoa tehdään ovien käyttötiheyden mukaan 1-4 kertaa vuodessa. Ovien huolto on <b>takuuehtojen voimassaolon</b> edellytyksenä.",
-    toka: "Tarjoamme huoltopalvelua kaikkiin oviin. Huoltoa suorittavat <b>kokeneet asiantuntijat</b>, jotka neuvovat asiakkaita myös puhelimitse. Tarvittaessa tulemme kohteeseen arvioimaan tilanteen ja ratkaisemme ongelmat paikan päällä.",
-    kolmas: "Tarjoamme ovien huoltoa <b>huoltosopimuksella tai ilman</b>.",
+    eka: "Las puertas están sometidas a un uso intenso, por lo que sus componentes mecánicos se desgastan. El <b>mantenimiento periódico</b> ayuda a prolongar su vida útil. El mantenimiento se realiza entre 1 y 4 veces al año, según la frecuencia de uso de las puertas. El mantenimiento es un requisito para mantener vigentes las <b>condiciones de garantía</b>.",
+    toka: "Ofrecemos servicios de mantenimiento para todo tipo de puertas. El mantenimiento lo realizan <b>especialistas con experiencia</b>, que también asesoran a los clientes por teléfono. Si es necesario, visitaremos el lugar para evaluar la situación y resolver los problemas allí mismo.",
+    kolmas: "Ofrecemos mantenimiento de puertas <b>con o sin contrato de mantenimiento</b>.",
     vika: "Puede obtener más información sobre los servicios de mantenimiento llamando al ."
   },
   tuotteet: {
@@ -128,6 +128,52 @@ export const es = {
     nostoOvet: {
       title: "Puertas seccionales",
       description: "",
+      info: {
+        intro: "En toda vivienda unifamiliar, las puertas seccionales son un detalle importante por su aspecto.",
+        valikoima: "Nuestra gama de productos incluye <b>cuatro tipos diferentes de puertas (en cuanto al diseño de la superficie exterior):</b>",
+        valikoimaItems: {
+          item1: "Estrecha (paneles horizontales)",
+          item2: "Ancha (paneles horizontales)",
+          item3: "Lisa",
+          item4: "Cassette",
+        },
+        moreInfo: "Los colores estándar son blanco (RAL 9016), gris antracita (RAL 7016), plateado (RAL 9006), marrón (RAL 8014) y azul (RAL 5010), con el interior en blanco (RAL 9016). Si es necesario, la puerta seccional puede pintarse en cualquier color RAL. Para las puertas seccionales revestidas con paneles anchos ofrecemos un acabado Renolit especialmente resistente y atractivo, disponible en <b>tres acabados diferentes: ROBLE DORADO, ROBLE OSCURO y CAOBA</b>.",
+      },
+      kaytto: {
+        title: "Comodidad de uso",
+        info: "Además de un sistema de apertura fácil de usar, las puertas de garaje ofrecen otras muchas ventajas:",
+        items: {
+          item1: "El coche puede aparcarse justo delante de la puerta del garaje sin impedir que se abra o se cierre",
+          item2: "En invierno, la nieve no impide abrir o cerrar la puerta",
+          item3: "Uso óptimo del espacio",
+          item4: "La instalación de un accionamiento eléctrico permite abrir la puerta sin salir del coche",
+          item5: "Se pueden instalar ventanas y una puerta peatonal en la puerta",
+          item6: "Las puertas se fabrican según las medidas y necesidades del cliente",
+        },
+      },
+      turvallisuus: {
+        title: "Seguridad",
+        info: "La seguridad de las puertas de garaje está garantizada por:",
+        items: {
+          item1: "<b>Pestillo</b> – La puerta puede cerrarse con un pestillo.",
+          item2: "<b>Cerradura</b> – La puerta puede abrirse desde dentro o desde fuera. Se recomienda cuando la puerta no tiene un acceso adicional.",
+          item3: "<b>Protección antirrobo</b> – Si la puerta tiene un accionamiento eléctrico, no puede abrirse manualmente desde el exterior.",
+          item4: "<b>Protección contra obstáculos</b> – Si hay un obstáculo (una persona, un animal o un coche) debajo de la puerta al cerrarse, el movimiento se detiene y la puerta vuelve a subir.",
+          item5: "<b>Fotocélulas</b> – La puerta se abre automáticamente cuando un obstáculo entra en el área de detección de las fotocélulas.",
+          item6: "<b>Protección para los dedos</b> – La estructura de los paneles evita que los dedos queden atrapados entre ellos.",
+        },
+      },
+      laatu: {
+        title: "Calidad y durabilidad",
+        info1: "Los muelles de torsión garantizan un movimiento suave de la puerta al compensar su peso. Los muelles tienen una vida útil de 25.000 ciclos completos, es decir, aproximadamente <b>10 años de uso continuo.</b>",
+        info2: "Los componentes de la puerta están fabricados con <b>chapa de acero</b> de 0,5 mm de espesor, galvanizada en caliente y recubierta con pintura de poliéster. Los componentes están rellenos de <b>espuma de poliuretano sin CFC</b> de 40 mm de espesor. Las puertas se fabrican conforme a las normas de seguridad de la UE y la calidad de los productos está garantizada por:",
+        info2Items: {
+          item1: "Certificados técnicos",
+          item2: "Certificado ISO 9001:2000",
+        },
+        info3: "Los paneles de las puertas y sus accesorios tienen una <b>garantía de dos años.</b>",
+        sell: "¿Quieres más información sobre puertas de garaje para viviendas unifamiliares?",
+      },
     },
     rullaOvet: {
       title: "Puertas enrollables y persianas de seguridad",
@@ -136,6 +182,7 @@ export const es = {
     paloOvet: {
       title: "Puertas cortafuego",
       description: "",
+      sell: "Descubre más sobre las puertas cortafuego. ¡Solicita un presupuesto ahora!",
       info: {
         intro: "Las puertas cortafuego mejoran la seguridad de los edificios en caso de incendio. Se utilizan en distintos lugares, como edificios de viviendas, almacenes, centrales térmicas, sótanos y centros comerciales, donde es necesario crear una barrera contra incendios para evitar su propagación.",
         valikoima: "Nuestra gama incluye cuatro tipos diferentes de puertas cortafuego:",
@@ -156,7 +203,7 @@ export const es = {
           liukuovet: "Las puertas correderas cuentan con certificados EI 30, EI 60 y EI 120.",
           kaihtimet: "Las persianas cortafuego cuentan con un certificado E 120."
         },
-        info: "La <b>marca EI</b> del certificado indica la <b>resistencia al fuego</b> de las puertas en minutos. EI 120 significa que la resistencia al fuego de la puerta se ha verificado durante 120 minutos."
+        info: "La <b>marca EI</b> del certificado indica la <b>resistencia al fuego</b> de las puertas en minutos. EI 120 significa que la resistencia al fuego de la puerta se ha verificado durante 120 minutos.",
       }
     },
     puomit: {

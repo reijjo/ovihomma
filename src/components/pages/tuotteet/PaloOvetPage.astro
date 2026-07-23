@@ -1,6 +1,7 @@
 ---
 import Tuotekuvia from "@/components/pages/tuotteet/TuoteKuvat.astro";
 import TuoteValikoima from "@/components/pages/tuotteet/TuoteValikoima.astro";
+import Sell from "@/components/pages/tuotteet/Sell.astro";
 import { t } from "@/i18n";
 
 const i18n = t(Astro.currentLocale);
@@ -38,6 +39,8 @@ const paloOvet = i18n.tuotteet.paloOvet;
       <p set:html={paloOvet.sertifikaatit.info} />
     </div>
   </div>
+  <Sell heading={paloOvet.sell} buttonText={i18n.yleiset.otayhteys} />
+
   <Tuotekuvia images={[
     { src: "/images/ovet/palo-ovet/paloliuku1.webp", alt: "fire sliding door 1" },
     { src: "/images/ovet/palo-ovet/paloliuku2.webp", alt: "fire sliding door 2" },
