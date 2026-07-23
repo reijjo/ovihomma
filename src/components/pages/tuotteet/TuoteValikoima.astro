@@ -4,6 +4,7 @@ import { getRelativeLocaleUrl } from "astro:i18n";
 type Item = {
   label: string;
   href: string;
+  img: string;
 };
 
 type Props = {
@@ -25,14 +26,15 @@ function localizedHref(href: string) {
 ---
 
 <div class="wrapper tuote-valikoima">
-  <p><b>{title}</b></p>
-  <ul class="tuote-list">
+  <p class="text-center"><b>{title}</b></p>
+  <div class="tuote-list">
     {items.map((item) => (
-      <li>
-        <a href={localizedHref(item.href)}>{item.label}</a>
-      </li>
+      <a class="tuote-list-link" href={localizedHref(item.href)}>
+        <img class="tuote-list-img" src={item.img} alt={item.label} />
+        <p class="tuote-list-label">{item.label}</p>
+      </a>
     ))}
-  </ul>
+  </div>
 </div>
 
 <style>
@@ -45,21 +47,41 @@ function localizedHref(href: string) {
 }
 
 .tuote-list {
-  list-style-position: inside;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  place-items: center;
+}
 
-  & li {
-    text-decoration: underline;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding-left: 1rem;
+.tuote-list-link {
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid transparent;
 
-    & a {
-      color: var(--accent-dark);
+  &:hover {
+    border: 1px solid var(--border-xxlight);
+    box-shadow: var(--shadow-xs);
 
-      &:hover {
-        color: var(--accent-xdark);
-      }
+    & .tuote-list-label {
+      color: var(--accent-xdark);
     }
   }
+}
+
+.tuote-list-img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+  justify-self: center;
+}
+
+.tuote-list-label {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding-block: 0.5rem;
 }
 </style>
