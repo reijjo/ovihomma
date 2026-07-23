@@ -12,7 +12,7 @@ const { localizedHref, currentLocale } = Astro.props;
 
 <div class="desktop-nav">
   <a href={localizedHref(currentLocale)} class="nav-logo">Logo/firmannimi</a>
-  <NavLinksList localizedHref={localizedHref} />
+  <NavLinksList localizedHref={localizedHref} currentLocale={currentLocale} />
   <LanguageSwitcher />
 </div>
 

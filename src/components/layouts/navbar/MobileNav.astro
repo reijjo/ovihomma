@@ -40,7 +40,7 @@ const dict = t(currentLocale);
         aria-label={dict.nav.closeMenu}
         class="closeMenu"
       />
-      <NavLinksList localizedHref={localizedHref} />
+      <NavLinksList localizedHref={localizedHref} currentLocale={currentLocale} />
     </div>
   </div>
 </div>
@@ -88,7 +88,7 @@ const dict = t(currentLocale);
       return;
     }
 
-    if (!menu.hidden && target.closest(".mobile-nav-links .nav-link a")) {
+    if (menu.dataset.open === "true" && target.closest(".mobile-nav-links .nav-link a")) {
       setMenuOpen(false);
     }
   });

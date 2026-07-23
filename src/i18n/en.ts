@@ -2,6 +2,13 @@ export const en = {
   nav: {
     home: "Home",
     tuotteet: "Products",
+    products: {
+      nostoOvet: "Sectional doors",
+      rullaovetTurvakaihtimet: "Roller doors & security shutters",
+      paloOvet: "Fire doors",
+      puomit: "Barriers",
+      hyllyt: "Shelving",
+    },
     huolto: "Maintenance",
     meistä: "About us",
     yhteystiedot: "Contact",
