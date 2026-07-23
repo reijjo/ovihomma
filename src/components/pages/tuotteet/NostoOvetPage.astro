@@ -1,0 +1,15 @@
+---
+import Tuotekuvia from "@/components/pages/tuotteet/TuoteKuvat.astro";
+import TuoteValikoima from "@/components/pages/tuotteet/TuoteValikoima.astro";
+import { t } from "@/i18n";
+
+const i18n = t(Astro.currentLocale);
+const nostoOvet = i18n.tuotteet.nostoOvet
+---
+
+<main class="tuote-page">
+  <div class="wrapper tuote-intro">
+    <h1>{nostoOvet.title}</h1>
+    <p>{nostoOvet.description}</p>
+  </div>
+</main>

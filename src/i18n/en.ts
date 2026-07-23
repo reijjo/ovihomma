@@ -117,9 +117,9 @@ export const en = {
   },
   huolto: {
     title: "Maintenance",
-    eka: "Ovissa on suuri käyttörasitus, joten ovien mekaaniset osat kuluvat. Ovien käyttöikää auttaa pidentämään <b>säännöllinen huolto</b>. Huoltoa tehdään ovien käyttötiheyden mukaan 1-4 kertaa vuodessa. Ovien huolto on <b>takuuehtojen voimassaolon</b> edellytyksenä.",
-    toka: "Tarjoamme huoltopalvelua kaikkiin oviin. Huoltoa suorittavat <b>kokeneet asiantuntijat</b>, jotka neuvovat asiakkaita myös puhelimitse. Tarvittaessa tulemme kohteeseen arvioimaan tilanteen ja ratkaisemme ongelmat paikan päällä.",
-    kolmas: "Tarjoamme ovien huoltoa <b>huoltosopimuksella tai ilman</b>.",
+    eka: "Doors are subject to heavy use, which causes their mechanical parts to wear. <b>Regular maintenance</b> helps extend the service life of the doors. Maintenance is carried out 1–4 times a year depending on how often the doors are used. Door maintenance is a requirement for keeping the <b>warranty terms</b> valid.",
+    toka: "We provide maintenance services for all types of doors. Maintenance is carried out by <b>experienced specialists</b>, who also advise customers by phone. If necessary, we will visit the site to assess the situation and solve the problems on location.",
+    kolmas: "We provide door maintenance <b>with or without a maintenance contract</b>.",
     vika: "You can get more information about maintenance services by calling ."
   },
   tuotteet: {
@@ -128,6 +128,52 @@ export const en = {
     nostoOvet: {
       title: "Sectional doors",
       description: "",
+      info: {
+        intro: "For every detached house, sectional doors are an important detail in terms of appearance.",
+        valikoima: "Our product range includes <b>four different door types (in terms of the exterior surface design):</b>",
+        valikoimaItems: {
+          item1: "Narrow (horizontal panels)",
+          item2: "Wide (horizontal panels)",
+          item3: "Smooth",
+          item4: "Cassette",
+        },
+        moreInfo: "The standard colours are white (RAL 9016), anthracite grey (RAL 7016), silver (RAL 9006), brown (RAL 8014), and blue (RAL 5010), with white (RAL 9016) on the inside. If necessary, a sectional door can be painted in any RAL colour. For sectional doors covered with wide panels, we offer a particularly durable and attractive Renolit finish, available in <b>three different finishes: GOLDEN OAK, DARK OAK, and MAHOGANY</b>.",
+      },
+      kaytto: {
+        title: "Convenience",
+        info: "In addition to an easy-to-use sectional-door opening system, garage doors offer several other benefits:",
+        items: {
+          item1: "The car can be parked right in front of the garage door without preventing the door from opening or closing",
+          item2: "In winter, snow does not prevent the door from opening or closing",
+          item3: "Optimal use of space",
+          item4: "An electric operator allows the door to be opened without leaving the car",
+          item5: "Windows and a wicket door can be installed in the door",
+          item6: "The doors are manufactured according to the customer's dimensions and needs",
+        },
+      },
+      turvallisuus: {
+        title: "Safety",
+        info: "The safety and security of garage doors are ensured by:",
+        items: {
+          item1: "<b>Latch</b> – The door can be secured with a latch.",
+          item2: "<b>Lock</b> – The door can be opened from inside or outside. Recommended if the door has no additional access point.",
+          item3: "<b>Burglary protection</b> – If the door has an electric operator, it cannot be opened manually from outside.",
+          item4: "<b>Obstacle protection</b> – If an obstacle (person, animal, or car) is under the door as it closes, the door stops and moves back up.",
+          item5: "<b>Photocells</b> – The door opens automatically when an obstacle enters the photocells' detection area.",
+          item6: "<b>Finger protection</b> – The door-panel structure prevents fingers from becoming trapped between the panels.",
+        },
+      },
+      laatu: {
+        title: "Quality and durability",
+        info1: "The torsion springs ensure smooth door movement by compensating for the weight of the door. The springs have a service life of 25,000 complete cycles, or approximately <b>10 years of continuous use.</b>",
+        info2: "The door components are made of 0.5 mm thick <b>steel sheet</b>, which is hot-dip galvanised and coated with polyester paint. The components are filled with <b>CFC-free polyurethane foam</b> that is 40 mm thick. The doors are manufactured according to EU safety standards, and product quality is ensured by:",
+        info2Items: {
+          item1: "Technical certificates",
+          item2: "ISO 9001:2000 certificate",
+        },
+        info3: "The door panels and accessories come with a <b>two-year warranty!</b>",
+        sell: "Would you like more information about garage doors for detached houses?",
+      },
     },
     rullaOvet: {
       title: "Roller doors & security shutters",
@@ -136,6 +182,7 @@ export const en = {
     paloOvet: {
       title: "Fire doors",
       description: "",
+      sell: "Find out more about fire doors. Request a quote now!",
       info: {
         intro: "Fire doors improve building safety in the event of a fire. They are used in a variety of locations, including apartment buildings, warehouses, heating plants, basements, and shopping centres, where a fire barrier is needed to prevent the spread of fire.",
         valikoima: "Our product range includes four different types of fire doors:",
@@ -156,8 +203,9 @@ export const en = {
           liukuovet: "Sliding doors have EI 30, EI 60 and EI 120 certificates.",
           kaihtimet: "Fire safety shutters have an E 120 certificate."
         },
-        info: "The <b>EI marking</b> on a certificate refers to the doors' <b>fire resistance</b> in minutes. EI 120 means that the door's fire resistance has been verified for 120 minutes."
-      }
+        info: "The <b>EI marking</b> on a certificate refers to the doors' <b>fire resistance</b> in minutes. EI 120 means that the door's fire resistance has been verified for 120 minutes.",
+      },
+
     },
     puomit: {
       title: "Barriers",
