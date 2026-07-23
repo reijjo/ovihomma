@@ -2,6 +2,13 @@ export const fi = {
   nav: {
     home: "Etusivu",
     tuotteet: "Tuotteet",
+    products: {
+      nostoOvet: "Nosto-ovet",
+      rullaovetTurvakaihtimet: "Rullaovet & turvakaihtimet",
+      paloOvet: "Palo-ovet",
+      puomit: "Puomit",
+      hyllyt: "Hyllyt",
+    },
     huolto: "Huolto",
     meistä: "Meistä",
     yhteystiedot: "Yhteystiedot",

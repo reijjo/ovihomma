@@ -32,7 +32,13 @@ function localizedHref(locale: string, key?: string) {
       const href = link.getAttribute("data-href");
       if (!href) return;
 
-      link.classList.toggle("active", normalizePath(href) === currentPath);
+      const normalizedHref = normalizePath(href);
+      const isProductsRoute = normalizedHref.endsWith("/tuotteet");
+      link.classList.toggle(
+        "active",
+        normalizedHref === currentPath ||
+          (isProductsRoute && currentPath.startsWith(`${normalizedHref}/`)),
+      );
     });
   }
 

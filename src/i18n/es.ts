@@ -2,6 +2,13 @@ export const es = {
   nav: {
     home: "Inicio",
     tuotteet: "Productos",
+    products: {
+      nostoOvet: "Puertas seccionales",
+      rullaovetTurvakaihtimet: "Puertas enrollables y persianas de seguridad",
+      paloOvet: "Puertas cortafuego",
+      puomit: "Barreras",
+      hyllyt: "Estanterías",
+    },
     huolto: "Mantenimiento",
     meistä: "Sobre nosotros",
     yhteystiedot: "Contacto",
