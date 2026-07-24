@@ -1,15 +1,113 @@
 ---
 import Tuotekuvia from "@/components/pages/tuotteet/TuoteKuvat.astro";
 import TuoteValikoima from "@/components/pages/tuotteet/TuoteValikoima.astro";
+import Sell from "@/components/pages/tuotteet/Sell.astro"
 import { t } from "@/i18n";
+import TuoteIntro from "./TuoteIntro.astro";
 
 const i18n = t(Astro.currentLocale);
 const nostoOvet = i18n.tuotteet.nostoOvet
 ---
 
 <main class="tuote-page">
-  <div class="wrapper tuote-intro">
-    <h1>{nostoOvet.title}</h1>
-    <p>{nostoOvet.description}</p>
+  <TuoteIntro title={nostoOvet.title} intro={nostoOvet.info.intro} extraClass="text-center" />
+
+  <TuoteValikoima extraClass="not-a-link" title={nostoOvet.info.valikoima} items={[
+    { label: nostoOvet.info.valikoimaItems.item1, href: "/tuotteet/nosto-ovet/kapea", img: "/images/ovet/nosto-ovet/kapea2.webp" },
+    { label: nostoOvet.info.valikoimaItems.item2, href: "/tuotteet/nosto-ovet/levea", img: "/images/ovet/nosto-ovet/levea1.webp" },
+    { label: nostoOvet.info.valikoimaItems.item3, href: "/tuotteet/nosto-ovet/silea", img: "/images/ovet/nosto-ovet/silea2.webp" },
+  { label: nostoOvet.info.valikoimaItems.item4, href: "/tuotteet/nosto-ovet/cassette", img: "/images/ovet/nosto-ovet/silea1.webp" },
+  ]} />
+
+  <div class="wrapper tuote-moreInfo">
+    <p set:html={nostoOvet.info.moreInfo} />
   </div>
+
+  <div class="tuote-highlight">
+    <div class="wrapper tuote-sertifikaatit">
+      <h2>{nostoOvet.kaytto.title}</h2>
+      <p>{nostoOvet.kaytto.info}</p>
+      <ul class="tuote-lista">
+        <li set:html={nostoOvet.kaytto.items.item1} />
+        <li set:html={nostoOvet.kaytto.items.item2} />
+        <li set:html={nostoOvet.kaytto.items.item3} />
+        <li set:html={nostoOvet.kaytto.items.item4} />
+        <li set:html={nostoOvet.kaytto.items.item5} />
+        <li set:html={nostoOvet.kaytto.items.item6} />
+      </ul>
+    </div>
+
+    <div class="wrapper tuote-sertifikaatit">
+      <h2>{nostoOvet.turvallisuus.title}</h2>
+      <p>{nostoOvet.turvallisuus.info}</p>
+      <ul class="tuote-lista">
+        <li set:html={nostoOvet.turvallisuus.items.item1} />
+        <li set:html={nostoOvet.turvallisuus.items.item2} />
+        <li set:html={nostoOvet.turvallisuus.items.item3} />
+        <li set:html={nostoOvet.turvallisuus.items.item4} />
+        <li set:html={nostoOvet.turvallisuus.items.item5} />
+        <li set:html={nostoOvet.turvallisuus.items.item6} />
+      </ul>
+    </div>
+
+    <div class="wrapper tuote-sertifikaatit">
+      <h2>{nostoOvet.laatu.title}</h2>
+      <p set:html={nostoOvet.laatu.info1}/>
+      <p set:html={nostoOvet.laatu.info2}/>
+      <ul class="tuote-lista">
+        <li set:html={nostoOvet.laatu.info2Items.item1} />
+        <li set:html={nostoOvet.laatu.info2Items.item2} />
+      </ul>
+    </div>
+  </div>
+
+  <Sell heading={nostoOvet.sell} buttonText={i18n.yleiset.otayhteys} />
+
+  <Tuotekuvia images={[
+    { src: "/images/ovet/nosto-ovet/kapea1.webp", alt: "kapea 1"},
+    { src: "/images/ovet/nosto-ovet/kapea2.webp", alt: "kapea 2"},
+    { src: "/images/ovet/nosto-ovet/kapea3.jpg", alt: "kapea 3"},
+    { src: "/images/ovet/nosto-ovet/levea1.webp", alt: "levea 1"},
+    { src: "/images/ovet/nosto-ovet/levea2.webp", alt: "kapea 2"},
+    { src: "/images/ovet/nosto-ovet/ovella.jpg", alt: "ovella"},
+    { src: "/images/ovet/nosto-ovet/silea1.webp", alt: "silea 1"},
+    { src: "/images/ovet/nosto-ovet/silea3.webp", alt: "silea 3"},
+    { src: "/images/ovet/nosto-ovet/silea2.webp", alt: "silea 2"},
+  ]} />
 </main>
+
+<style>
+.tuote-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tuote-moreInfo, .tuote-sertifikaatit {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 800px);
+  text-wrap: pretty;
+}
+
+.tuote-sertifikaatit h2 {
+  text-transform: uppercase;
+}
+
+.tuote-lista {
+  list-style-position: inside;
+
+  & li {
+    padding-left: 1rem;
+  }
+}
+
+.tuote-highlight {
+  background-color: var(--accent-xxlight);
+  padding-block: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+</style>

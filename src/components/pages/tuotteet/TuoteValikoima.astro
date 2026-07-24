@@ -10,9 +10,10 @@ type Item = {
 type Props = {
   title: string;
   items: Item[];
+  extraClass?: string;
 };
 
-const { title, items } = Astro.props;
+const { title, items, extraClass } = Astro.props;
 const currentLocale = Astro.currentLocale ?? "fi";
 
 function localizedHref(href: string) {
@@ -29,7 +30,7 @@ function localizedHref(href: string) {
   <p class="text-center"><b>{title}</b></p>
   <div class="tuote-list">
     {items.map((item) => (
-      <a class="tuote-list-link" href={localizedHref(item.href)}>
+      <a class={`tuote-list-link ${extraClass}`} href={localizedHref(item.href)}>
         <img class="tuote-list-img" src={item.img} alt={item.label} />
         <p class="tuote-list-label">{item.label}</p>
       </a>

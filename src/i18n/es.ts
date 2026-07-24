@@ -128,6 +128,7 @@ export const es = {
     nostoOvet: {
       title: "Puertas seccionales",
       description: "",
+      sell: "¿Quieres más información sobre puertas de garaje para viviendas unifamiliares?",
       info: {
         intro: "En toda vivienda unifamiliar, las puertas seccionales son un detalle importante por su aspecto.",
         valikoima: "Nuestra gama de productos incluye <b>cuatro tipos diferentes de puertas (en cuanto al diseño de la superficie exterior):</b>",
@@ -172,7 +173,6 @@ export const es = {
           item2: "Certificado ISO 9001:2000",
         },
         info3: "Los paneles de las puertas y sus accesorios tienen una <b>garantía de dos años.</b>",
-        sell: "¿Quieres más información sobre puertas de garaje para viviendas unifamiliares?",
       },
     },
     rullaOvet: {

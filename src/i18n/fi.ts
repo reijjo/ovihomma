@@ -124,9 +124,10 @@ export const fi = {
     nostoOvet: {
       title: "Nosto-ovet",
       description: "",
+      sell: "Haluatko lisätietoja omakotitalon autotallinovista?",
       info: {
         intro: "Nosto-ovet ovat jokaisen omakotitalon kohdalla ulkonäön osalta tärkeä yksityiskohta.",
-        valikoima: "Meidän tuotevalikoimassa on <b>nelja erilaista (ulkopinnan muotoilun osalta) ovityyppiä:</b>",
+        valikoima: "Meidän tuotevalikoimassa on nelja erilaista (ulkopinnan muotoilun osalta) ovityyppiä:",
         valikoimaItems: {
           item1: "Kapea (vaakasuora laudoitus)",
           item2: "Leveä (vaakasuora laudoitus)",
@@ -161,14 +162,13 @@ export const fi = {
       },
       laatu: {
         title: "Laatu ja kestävyys",
-        info1: "Ovien liikkeet ovat sujuvia, sen varmistavat torsiojouset, jotka kompensoivat oven painon. Jousien käyttöikä on 25 000 kokonaissykliä eli noin <b>10 vuotta jatkuvaa käyttöä.</b>",
+        info1: "Ovien liikkeet ovat sujuvia, sen varmistavat torsiojouset, jotka kompensoivat oven painon. Jousien käyttöikä on 25000 kokonaissykliä eli noin <b>10 vuotta jatkuvaa käyttöä.</b>",
         info2: "Oven osat on valmistettu 0,5 mm paksuisesta <b>teräspellistä</b>, joka on kuumasinkitty ja päällystetty polyesterimaalilla. Osat on täytetty <b>freonivapaalla vaahtopolyuretaanilla</b>, jonka paksuus on 40 mm. Ovet valmistetaan EU:n turvallisuusstandardien normien mukaisesti ja tuotteiden laadun varmistavat:",
         info2Items: {
           item1: "Tekniset sertifikaatit",
           item2: "ISO 9001:2000 sertifikaatti",
         },
         info3: "Lamellioville ja lisätarvikkeille myönnetään <b>kahden vuoden takuu!</b>",
-        sell: "Haluatko lisätietoja omakotitalon autotallinovista?",
       }
     },
     rullaOvet: {

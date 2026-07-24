@@ -18,3 +18,15 @@
 .text-center {
   text-align: center;
 }
+
+.not-a-link {
+  cursor: default;
+  pointer-events: none;
+  transition: none;
+
+  &:hover {
+    border: 1px solid transparent;
+    box-shadow: none;
+    color: inherit;
+  }
+}

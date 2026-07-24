@@ -1,6 +1,7 @@
 ---
 import Tuotekuvia from "@/components/pages/tuotteet/TuoteKuvat.astro";
 import TuoteValikoima from "@/components/pages/tuotteet/TuoteValikoima.astro";
+import TuoteIntro from "./TuoteIntro.astro";
 import Sell from "@/components/pages/tuotteet/Sell.astro";
 import { t } from "@/i18n";
 
@@ -9,10 +10,7 @@ const paloOvet = i18n.tuotteet.paloOvet;
 ---
 
 <main class="tuote-page">
-  <div class="wrapper tuote-intro">
-    <h1>{paloOvet.title}</h1>
-    <p>{paloOvet.info.intro}</p>
-  </div>
+  <TuoteIntro title={paloOvet.title} intro={paloOvet.info.intro} />
   <TuoteValikoima
     title={paloOvet.info.valikoima}
     items={[

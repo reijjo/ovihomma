@@ -128,6 +128,7 @@ export const en = {
     nostoOvet: {
       title: "Sectional doors",
       description: "",
+      sell: "Would you like more information about garage doors for detached houses?",
       info: {
         intro: "For every detached house, sectional doors are an important detail in terms of appearance.",
         valikoima: "Our product range includes <b>four different door types (in terms of the exterior surface design):</b>",
@@ -172,7 +173,6 @@ export const en = {
           item2: "ISO 9001:2000 certificate",
         },
         info3: "The door panels and accessories come with a <b>two-year warranty!</b>",
-        sell: "Would you like more information about garage doors for detached houses?",
       },
     },
     rullaOvet: {
