@@ -206,26 +206,26 @@ export const es = {
         info: "La <b>marca EI</b> del certificado indica la <b>resistencia al fuego</b> de las puertas en minutos. EI 120 significa que la resistencia al fuego de la puerta se ha verificado durante 120 minutos.",
       },
       metalliovet: {
-        title: "Metalliovet",
-        intro: "Palonkestäviä metalliovia käytetään paloturvallisuuden suurentamiseen omakotitaloissa, kerrostaloissa, teollisuus- ja tuotantolaitoksissa, toimistoissa ym. Ovet on valmistettu laadukkaasta <b>sähkösinkitystä teräslevystä</b>, jota voidaan käyttää sekä sisä- että ulkotiloissa.",
+        title: "Puertas metálicas",
+        intro: "Las puertas metálicas resistentes al fuego se utilizan para mejorar la seguridad contra incendios en viviendas unifamiliares, edificios de apartamentos, instalaciones industriales y de producción, oficinas y otros edificios. Las puertas están fabricadas con <b>chapa de acero electrocincado</b> de alta calidad, apta tanto para interiores como para exteriores.",
         ominaisuudet: {
-          title: "Metalliovien ominaisuudet",
-          info: "Meidän tuotevalikoimaan kuuluvat laadukkaat metalliovet, jotka täyttävät turvallisuusvaatimukset ja varmistavat paloturvallisuuden:",
+          title: "Características de las puertas metálicas",
+          info: "Nuestra gama de productos incluye puertas metálicas de alta calidad que cumplen los requisitos de seguridad y contribuyen a garantizar la seguridad contra incendios:",
           items: {
-            item1: "Ovien valmistukseen käytetään 1 mm paksuista sähkösinkittyä teräslevyä",
-            item2: "Teräslevy viimeistellään jauhemaalilla (valikoimassa laaja valikoima värisävyjä)",
-            item3: "Sähkönsinkitty teräslevy on korroosion kestävä",
-            item4: "Ovilevyn kokonaispaksuus on 62mm, karmin paksuus 100 mm",
-            item5: "Saranat on valmistettu rst-teräksestä",
-            item6: "Oviin voidaan lisätä myös lasiaukko",
-            item7: "Lukitus voidaan lisätä tilaajan toivomusten ja tarpeen mukaan"
+            item1: "Las puertas se fabrican con chapa de acero electrocincado de 1 mm de espesor",
+            item2: "La chapa de acero se termina con pintura en polvo, disponible en una amplia gama de colores",
+            item3: "La chapa de acero electrocincado es resistente a la corrosión",
+            item4: "La hoja de la puerta tiene un espesor de 62 mm y el marco de 100 mm",
+            item5: "Las bisagras están fabricadas en acero inoxidable",
+            item6: "También se puede añadir un acristalamiento a las puertas",
+            item7: "El sistema de cierre puede añadirse según los deseos y las necesidades del cliente"
           }
         },
         turvallisuus: {
-          title: "Turvallisuus ja sertifikaatit",
-          info: "Meidän tarjoamille metallioville on myönnetty EI luokan sertifikaatti EI 15, EI 30, EI 45, EI 60, EI 90 ja EI 120. EI- merkintä viittaa ovien palonkestoon minuuteissa eli EI 120 tarkoittaa, että oven palonkesto on varmistettu 120 minuutin ajaksi. EI luokan merkintä varmistaa lisäksi palon sattuessa palon rajoittamisen lisäksi myös lämpösäteilyn leviämisen hidastamiseen.",
+          title: "Seguridad y certificaciones",
+          info: "Nuestras puertas metálicas cuentan con certificaciones de clase EI: EI 15, EI 30, EI 45, EI 60, EI 90 y EI 120. La marca EI indica la resistencia al fuego de las puertas en minutos; EI 120 significa que la resistencia al fuego de la puerta se ha verificado durante 120 minutos. La clasificación EI también garantiza que, en caso de incendio, se ralentiza la propagación de la radiación térmica además de limitar el fuego.",
         },
-        sell: "Haluatko lisätietoja metalliovista? Lähetä hintapyyntö heti!"
+        sell: "¿Quieres más información sobre puertas metálicas? ¡Solicita un presupuesto ahora!"
       }
     },
     puomit: {
