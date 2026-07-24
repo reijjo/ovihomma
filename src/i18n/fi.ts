@@ -200,6 +200,28 @@ export const fi = {
           kaihtimet: "Paloturvallisuuskaihtimille on annettu E 120 sertifikaatti."
         },
         info: "<b>EI-merkintä</b> sertifikaatissa viittaa ovien <b>palonkestoon</b> minuuteissa eli EI 120 tarkoittaa, että oven palonkesto on varmistettu 120 minuutin ajaksi.",
+      },
+      metalliovet: {
+        title: "Metalliovet",
+        intro: "Palonkestäviä metalliovia käytetään paloturvallisuuden suurentamiseen omakotitaloissa, kerrostaloissa, teollisuus- ja tuotantolaitoksissa, toimistoissa ym. Ovet on valmistettu laadukkaasta <b>sähkösinkitystä teräslevystä</b>, jota voidaan käyttää sekä sisä- että ulkotiloissa.",
+        ominaisuudet: {
+          title: "Metalliovien ominaisuudet",
+          info: "Meidän tuotevalikoimaan kuuluvat laadukkaat metalliovet, jotka täyttävät turvallisuusvaatimukset ja varmistavat paloturvallisuuden:",
+          items: {
+            item1: "Ovien valmistukseen käytetään 1 mm paksuista sähkösinkittyä teräslevyä",
+            item2: "Teräslevy viimeistellään jauhemaalilla (valikoimassa laaja valikoima värisävyjä)",
+            item3: "Sähkönsinkitty teräslevy on korroosion kestävä",
+            item4: "Ovilevyn kokonaispaksuus on 62mm, karmin paksuus 100 mm",
+            item5: "Saranat on valmistettu rst-teräksestä",
+            item6: "Oviin voidaan lisätä myös lasiaukko",
+            item7: "Lukitus voidaan lisätä tilaajan toivomusten ja tarpeen mukaan"
+          }
+        },
+        turvallisuus: {
+          title: "Turvallisuus ja sertifikaatit",
+          info: "Meidän tarjoamille metallioville on myönnetty EI luokan sertifikaatti EI 15, EI 30, EI 45, EI 60, EI 90 ja EI 120. EI- merkintä viittaa ovien palonkestoon minuuteissa eli EI 120 tarkoittaa, että oven palonkesto on varmistettu 120 minuutin ajaksi. EI luokan merkintä varmistaa lisäksi palon sattuessa palon rajoittamisen lisäksi myös lämpösäteilyn leviämisen hidastamiseen.",
+        },
+        sell: "Haluatko lisätietoja metalliovista? Lähetä hintapyyntö heti!"
       }
     },
     puomit: {

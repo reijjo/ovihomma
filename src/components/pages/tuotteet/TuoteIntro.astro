@@ -10,7 +10,7 @@ const { title, intro, extraClass } = Astro.props
 
 <section class={`wrapper tuote-intro ${extraClass}`}>
   <h1>{title}</h1>
-  <p>{intro}</p>
+  <p set:html={intro}/>
 </section>
 
 <style>
