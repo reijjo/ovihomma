@@ -205,7 +205,28 @@ export const en = {
         },
         info: "The <b>EI marking</b> on a certificate refers to the doors' <b>fire resistance</b> in minutes. EI 120 means that the door's fire resistance has been verified for 120 minutes.",
       },
-
+      metalliovet: {
+        title: "Metal doors",
+        intro: "Fire-resistant metal doors are used to improve fire safety in detached houses, apartment buildings, industrial and production facilities, offices, and other buildings. The doors are made of high-quality <b>electro-galvanised steel sheet</b> suitable for both indoor and outdoor use.",
+        ominaisuudet: {
+          title: "Features of metal doors",
+          info: "Our product range includes high-quality metal doors that meet safety requirements and help ensure fire safety:",
+          items: {
+            item1: "The doors are made of 1 mm thick electro-galvanised steel sheet",
+            item2: "The steel sheet is finished with powder coating, with a wide range of colours available",
+            item3: "Electro-galvanised steel sheet is corrosion-resistant",
+            item4: "The door leaf is 62 mm thick and the frame is 100 mm thick",
+            item5: "The hinges are made of stainless steel",
+            item6: "A glazed section can also be added to the doors",
+            item7: "The locking system can be added according to the customer's wishes and requirements"
+          }
+        },
+        turvallisuus: {
+          title: "Safety and certifications",
+          info: "Our metal doors have been awarded EI-class certifications EI 15, EI 30, EI 45, EI 60, EI 90, and EI 120. The EI marking refers to the doors' fire resistance in minutes; EI 120 means that the door's fire resistance has been verified for 120 minutes. The EI classification also ensures that, in the event of a fire, the spread of heat radiation is slowed in addition to limiting the fire.",
+        },
+        sell: "Would you like more information about metal doors? Request a quote now!"
+      }
     },
     puomit: {
       title: "Barriers",

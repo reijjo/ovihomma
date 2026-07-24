@@ -1,0 +1,79 @@
+---
+import TuoteIntro from "../TuoteIntro.astro"
+import Tuotekuvia from "../TuoteKuvat.astro"
+import Sell from "../Sell.astro"
+import { t } from "@/i18n"
+
+const i18n = t(Astro.currentLocale)
+const metalliOvet = i18n.tuotteet.paloOvet.metalliovet
+---
+
+<main class="tuote-page">
+  <TuoteIntro title={metalliOvet.title} intro={metalliOvet.intro} />
+    <div class="wrapper tuote-sertifikaatit">
+      <h2>{metalliOvet.ominaisuudet.title}</h2>
+      <ul class="tuote-lista">
+        <li set:html={metalliOvet.ominaisuudet.items.item1} />
+        <li set:html={metalliOvet.ominaisuudet.items.item2} />
+        <li set:html={metalliOvet.ominaisuudet.items.item3} />
+        <li set:html={metalliOvet.ominaisuudet.items.item4} />
+        <li set:html={metalliOvet.ominaisuudet.items.item5} />
+        <li set:html={metalliOvet.ominaisuudet.items.item6} />
+        <li set:html={metalliOvet.ominaisuudet.items.item7} />
+      </ul>
+    </div>
+    <div class="tuote-highlight">
+      <div class="wrapper tuote-sertifikaatit">
+        <h2>{metalliOvet.turvallisuus.title}</h2>
+        <p>{metalliOvet.turvallisuus.info}</p>
+      </div>
+    </div>
+    <Tuotekuvia images={[
+      { src: "/images/ovet/palo-ovet/metalluks6.webp", alt: "Metalluks6" },
+      { src: "/images/ovet/palo-ovet/palometalli1.webp", alt: "palometalli1" },
+      { src: "/images/ovet/palo-ovet/palometalli2.webp", alt: "palometalli2" },
+      { src: "/images/ovet/palo-ovet/palometalli3.webp", alt: "palometalli3" },
+    ]} />
+    <Sell heading={metalliOvet.sell} buttonText={i18n.yleiset.otayhteys} />
+</main>
+
+<style>
+  .tuote-page {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .float-img {
+    float: right;
+    width: 250px;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+  }
+
+  .tuote-highlight {
+    background-color: var(--accent-xxlight);
+    padding-block: 1rem;
+  }
+
+  .tuote-sertifikaatit {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 800px);
+    text-wrap: pretty;
+
+    & h2 {
+      text-transform: uppercase;
+    }
+  }
+
+  .tuote-lista {
+    list-style-position: inside;
+
+    & li {
+      padding-left: 1rem;
+    }
+  }
+</style>
