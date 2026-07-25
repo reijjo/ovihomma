@@ -178,6 +178,9 @@ export const en = {
     rullaOvet: {
       title: "Roller doors & security shutters",
       description: "",
+      info: {
+        intro: "Thanks to its space-saving roller mechanism and durable roller shutter, the Teckentrup roller door is particularly well suited to high and wide openings subject to heavy loads, such as strong winds. Roller doors are the best choice when the surface structure makes attaching guide rails difficult or even impossible. Simple, strong, and flexible roller doors and tightly coiled shutters offer a wide range of applications. These demanding door systems stand out for their cost-effectiveness, durability, and simple construction."
+      }
     },
     paloOvet: {
       title: "Fire doors",
@@ -226,15 +229,36 @@ export const en = {
           info: "Our metal doors have been awarded EI-class certifications EI 15, EI 30, EI 45, EI 60, EI 90, and EI 120. The EI marking refers to the doors' fire resistance in minutes; EI 120 means that the door's fire resistance has been verified for 120 minutes. The EI classification also ensures that, in the event of a fire, the spread of heat radiation is slowed in addition to limiting the fire.",
         },
         sell: "Would you like more information about metal doors? Request a quote now!"
+      },
+      rullaovet: {
+        title: "Fire-rated roller doors",
+        intro: "Fire-rated roller doors are an ideal solution for ensuring fire safety in a wide range of spaces. They are used in warehouses, shopping centres, public buildings, offices, and other locations where limiting the spread of fire is essential. Thanks to their roller mechanism, the doors take up little space and are easy to install in narrow openings.",
+        sell: "Would you like more information about fire-rated roller doors? Request a quote now!"
+      },
+      liukuovet: {
+        title: "Fire-rated sliding doors",
+        intro: "Fire-rated sliding doors provide effective fire protection in public buildings, shopping centres, production facilities, underground car parks, and other spaces where fire must be prevented from spreading between areas. Depending on their design, sliding doors open either horizontally or vertically.",
+        sell: "Would you like more information about fire-rated sliding doors? Request a quote now!"
+      },
+      kaihtimet: {
+        title: "Fire-rated shutters",
+        intro: "Fire-rated shutters are well suited to a wide range of buildings, protecting against the spread of fire and separating spaces with a higher fire risk. They are durable and suitable for narrow openings because they do not require additional space for a vertically opening door. In terms of fire spread and resistance, the shutters are classified as <b>non-combustible</b> and as <b>doors that prevent the spread of fire</b>.",
+        sell: "Would you like more information about fire-rated shutters? Request a quote now!"
       }
     },
     puomit: {
       title: "Barriers",
       description: "",
+      info: {
+        intro: "Barrier systems provide controlled access and help improve the security and flow of vehicles and pedestrians."
+      }
     },
     hyllyt: {
       title: "Shelving",
       description: "",
+      info: {
+        intro: "Shelving systems make efficient use of available space and keep goods and equipment organised."
+      }
     },
   }
 };

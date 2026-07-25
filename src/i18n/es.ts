@@ -178,6 +178,9 @@ export const es = {
     rullaOvet: {
       title: "Puertas enrollables y persianas de seguridad",
       description: "",
+      info: {
+        intro: "Gracias a su sistema enrollable que ahorra espacio y a su persiana enrollable resistente, la puerta enrollable Teckentrup es especialmente adecuada para huecos altos y anchos sometidos a grandes esfuerzos, como los provocados por vientos fuertes. Las puertas enrollables son la mejor opción cuando la estructura de la superficie dificulta o incluso imposibilita la fijación de los rieles de guía. Las puertas enrollables sencillas, resistentes y flexibles, junto con las persianas enrolladas de forma compacta, ofrecen una amplia variedad de aplicaciones. Estos sistemas de puertas exigentes destacan por su rentabilidad, durabilidad y construcción sencilla."
+      }
     },
     paloOvet: {
       title: "Puertas cortafuego",
@@ -226,15 +229,36 @@ export const es = {
           info: "Nuestras puertas metálicas cuentan con certificaciones de clase EI: EI 15, EI 30, EI 45, EI 60, EI 90 y EI 120. La marca EI indica la resistencia al fuego de las puertas en minutos; EI 120 significa que la resistencia al fuego de la puerta se ha verificado durante 120 minutos. La clasificación EI también garantiza que, en caso de incendio, se ralentiza la propagación de la radiación térmica además de limitar el fuego.",
         },
         sell: "¿Quieres más información sobre puertas metálicas? ¡Solicita un presupuesto ahora!"
+      },
+      rullaovet: {
+        title: "Puertas enrollables cortafuego",
+        intro: "Las puertas enrollables cortafuego son una solución ideal para garantizar la seguridad contra incendios en todo tipo de espacios. Se utilizan en almacenes, centros comerciales, edificios públicos, oficinas y otros lugares donde es esencial limitar la propagación del fuego. Gracias a su sistema enrollable, ocupan poco espacio y son fáciles de instalar en huecos estrechos.",
+        sell: "¿Quieres más información sobre las puertas enrollables cortafuego? ¡Solicita un presupuesto ahora!"
+      },
+      liukuovet: {
+        title: "Puertas correderas cortafuego",
+        intro: "Las puertas correderas cortafuego ofrecen una protección eficaz contra incendios en edificios públicos, centros comerciales, instalaciones de producción, aparcamientos subterráneos y otros espacios donde debe evitarse la propagación del fuego entre distintas zonas. Según su diseño, las puertas correderas se abren horizontal o verticalmente.",
+        sell: "¿Quieres más información sobre las puertas correderas cortafuego? ¡Solicita un presupuesto ahora!"
+      },
+      kaihtimet: {
+        title: "Persianas cortafuego",
+        intro: "Las persianas cortafuego son ideales para una amplia variedad de edificios, ya que protegen contra la propagación del fuego y separan espacios con un mayor riesgo de incendio. Son resistentes y adecuadas para huecos estrechos porque no necesitan espacio adicional para la apertura vertical de una puerta. En cuanto a la propagación y resistencia al fuego, las persianas están clasificadas como <b>no combustibles</b> y como <b>puertas que impiden la propagación del fuego</b>.",
+        sell: "¿Quieres más información sobre las persianas cortafuego? ¡Solicita un presupuesto ahora!"
       }
     },
     puomit: {
       title: "Barreras",
       description: "",
+      info: {
+        intro: "Los sistemas de barrera permiten controlar el acceso y mejorar la seguridad y el flujo de vehículos y peatones."
+      }
     },
     hyllyt: {
       title: "Estanterías",
       description: "",
+      info: {
+        intro: "Los sistemas de estanterías aprovechan eficazmente el espacio disponible y mantienen organizados los productos y equipos."
+      }
     },
   }
 };

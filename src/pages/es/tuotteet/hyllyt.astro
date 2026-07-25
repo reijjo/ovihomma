@@ -1,0 +1,14 @@
+---
+import Layout from "@/components/layouts/Layout.astro";
+import TuoteIntro from "@/components/pages/tuotteet/TuoteIntro.astro";
+import { t } from "@/i18n";
+
+const i18n = t(Astro.currentLocale);
+const hyllyt = i18n.tuotteet.hyllyt;
+---
+
+<Layout title={hyllyt.title} description={hyllyt.description}>
+  <main class="tuote-page">
+    <TuoteIntro title={hyllyt.title} intro={hyllyt.info.intro} />
+  </main>
+</Layout>

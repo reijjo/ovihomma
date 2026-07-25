@@ -8,7 +8,7 @@ const i18n = t(Astro.currentLocale);
 <section class="hero-section">
   <div class="hero-content wrapper">
     <h1 class="hero-header">{i18n.homepage.hero.header}</h1>
-    <Linkbutton href="/yhteystiedot" class="hero-button">{i18n.homepage.hero.heroCta}</Linkbutton>
+    <Linkbutton href="/yhteystiedot" class="hero-button">{i18n.yleiset.hintatarjous}</Linkbutton>
     <div class="hero-overlay"></div>
   </div>
 </section>
@@ -57,6 +57,10 @@ const i18n = t(Astro.currentLocale);
     z-index: 2;
     color: white;
     position: relative;
+
+    @media (max-width: 640px) {
+      font-size: 2rem;
+    }
   }
 
   .hero-button {
@@ -64,6 +68,10 @@ const i18n = t(Astro.currentLocale);
     z-index: 2;
     height: 3rem;
     transform: scale(1.125);
+
+    @media (max-width: 640px) {
+      height: 2.5rem;
+    }
   }
 
   .hero-overlay {

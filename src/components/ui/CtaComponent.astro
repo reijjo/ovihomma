@@ -3,10 +3,16 @@ import { t } from "@/i18n";
 import Linkbutton from "@/components/ui/Linkbutton.astro";
 
 const i18n = t(Astro.currentLocale);
+
+type Props = {
+  title: string
+}
+
+const { title } = Astro.props
 ---
 
 <section class="cta-component-section">
-  <h4>{i18n.homepage.ctaComp.text}</h4>
+  <h4>{title}</h4>
   <Linkbutton href="/yhteystiedot"
     >{i18n.homepage.ctaComp.buttonText}</Linkbutton
   >
@@ -25,7 +31,7 @@ const i18n = t(Astro.currentLocale);
     background-color: var(--black-base);
 
     & h4 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: white;
     }
 

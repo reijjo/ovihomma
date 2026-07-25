@@ -1,9 +1,9 @@
 ---
 import Tuotekuvia from "@/components/pages/tuotteet/TuoteKuvat.astro";
 import TuoteValikoima from "@/components/pages/tuotteet/TuoteValikoima.astro";
-import Sell from "@/components/pages/tuotteet/Sell.astro"
 import { t } from "@/i18n";
 import TuoteIntro from "./TuoteIntro.astro";
+import CtaComponent from "@/components/ui/CtaComponent.astro";
 
 const i18n = t(Astro.currentLocale);
 const nostoOvet = i18n.tuotteet.nostoOvet
@@ -61,8 +61,6 @@ const nostoOvet = i18n.tuotteet.nostoOvet
     </div>
   </div>
 
-  <Sell heading={nostoOvet.sell} buttonText={i18n.yleiset.otayhteys} />
-
   <Tuotekuvia images={[
     { src: "/images/ovet/nosto-ovet/kapea1.webp", alt: "kapea 1"},
     { src: "/images/ovet/nosto-ovet/kapea2.webp", alt: "kapea 2"},
@@ -74,6 +72,7 @@ const nostoOvet = i18n.tuotteet.nostoOvet
     { src: "/images/ovet/nosto-ovet/silea3.webp", alt: "silea 3"},
     { src: "/images/ovet/nosto-ovet/silea2.webp", alt: "silea 2"},
   ]} />
+  <CtaComponent title={nostoOvet.sell} />
 </main>
 
 <style>

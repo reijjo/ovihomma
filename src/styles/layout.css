@@ -23,6 +23,7 @@
   cursor: default;
   pointer-events: none;
   transition: none;
+  text-decoration: none !important;
 
   &:hover {
     border: 1px solid transparent;

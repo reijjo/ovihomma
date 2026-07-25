@@ -1,8 +1,8 @@
 ---
 import TuoteIntro from "../TuoteIntro.astro"
 import Tuotekuvia from "../TuoteKuvat.astro"
-import Sell from "../Sell.astro"
 import { t } from "@/i18n"
+import CtaComponent from "@/components/ui/CtaComponent.astro"
 
 const i18n = t(Astro.currentLocale)
 const metalliOvet = i18n.tuotteet.paloOvet.metalliovet
@@ -34,7 +34,7 @@ const metalliOvet = i18n.tuotteet.paloOvet.metalliovet
       { src: "/images/ovet/palo-ovet/palometalli2.webp", alt: "palometalli2" },
       { src: "/images/ovet/palo-ovet/palometalli3.webp", alt: "palometalli3" },
     ]} />
-    <Sell heading={metalliOvet.sell} buttonText={i18n.yleiset.otayhteys} />
+    <CtaComponent title={metalliOvet.sell} />
 </main>
 
 <style>

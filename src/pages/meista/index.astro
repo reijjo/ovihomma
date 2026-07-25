@@ -2,7 +2,7 @@
 import Layout from "@/components/layouts/Layout.astro";
 import AboutUs from "@/components/pages/about/AboutUs.astro";
 import Laatu from "@/components/pages/about/Laatu.astro"
-import LaatuKysy from "@/components/pages/about/LaatuKysy.astro"
+import CtaComponent from "@/components/ui/CtaComponent.astro";
 import { t } from "@/i18n"
 
 const i18n = t(Astro.currentLocale);
@@ -13,7 +13,7 @@ const i18n = t(Astro.currentLocale);
     <h1>{i18n.aboutUs.title}</h1>
     <AboutUs />
     <Laatu />
-    <LaatuKysy />
+    <CtaComponent title={i18n.aboutUs.yrityksesta.laatutakuu} />
   </main>
 </Layout>
 
