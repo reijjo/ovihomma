@@ -1,8 +1,11 @@
 ---
-import PaloOviDetailPage from "@/components/pages/tuotteet/PaloOviDetailPage.astro";
+import Layout from "@/components/layouts/Layout.astro";
+import RullaovetPage from "@/components/pages/tuotteet/palo-ovet/RullaovetPage.astro";
 import { t } from "@/i18n";
 
 const i18n = t(Astro.currentLocale);
 ---
 
-<PaloOviDetailPage title={i18n.tuotteet.paloOvet.info.valikoimaItems.rulla} />
+<Layout title={i18n.tuotteet.paloOvet.rullaovet.title}>
+  <RullaovetPage />
+</Layout>

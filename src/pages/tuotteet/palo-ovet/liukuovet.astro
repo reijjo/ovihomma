@@ -1,0 +1,11 @@
+---
+import Layout from "@/components/layouts/Layout.astro"
+import LiukuovetPage from "@/components/pages/tuotteet/palo-ovet/LiukuovetPage.astro"
+import { t } from "@/i18n"
+
+const i18n = t(Astro.currentLocale)
+---
+
+<Layout title={i18n.tuotteet.paloOvet.liukuovet.title}>
+  <LiukuovetPage />
+</Layout>

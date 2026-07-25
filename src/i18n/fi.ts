@@ -108,7 +108,7 @@ export const fi = {
       ja: "ja ",
       span2: "joustavuus",
       laatu2: " - kaikki ovet valmistetaan tilaajan antamien tietojen pohjalta ja pystymme tarjoamaan ratkaisun myös hyvin haasteellisiin käyttötilanteisiin.",
-      laatutakuu: "tuotteet edustavat suomalaista huippulaatua. Ota yhteyttä jo tänään ja me tarjoamme sinulle parhaan ratkaisun!"
+      laatutakuu: "FIRMANNIMI tuotteet edustavat suomalaista huippulaatua. Ota yhteyttä jo tänään ja me tarjoamme sinulle parhaan ratkaisun!"
     }
   },
   huolto: {
@@ -120,7 +120,7 @@ export const fi = {
   },
   tuotteet: {
     title: "Tuotteet",
-    esimerkkeja: "Töitämme:",
+    esimerkkeja: "Esimerkkejä:",
     nostoOvet: {
       title: "Nosto-ovet",
       description: "",
@@ -174,6 +174,9 @@ export const fi = {
     rullaOvet: {
       title: "Rullaovet & turvakaihtimet",
       description: "",
+      info: {
+        intro: "Tilaa säästävän rullatekniikan ja kestävän rullakaihtimen ansiosta Teckentrup-rullaovi sopii poikkeuksellisen hyvin rakennusten sellaisiin korkeisiin ja leveisiin kulkuaukkoihin, jotka ovat ankaran rasituksen alaisina, esimerkiksi erittäin kovalla tuulella. Rullaovet ovat paras valinta, kun päällysteen olemus tekee ohjauskiskojen kiinnityksen hankalaksi tai jopa mahdottomaksi. Rakenteeltaan yksinkertaiset, lujat ja joustavat rullaovet ja tiiviisti kelatut ovikaihtimet tarjoavat laajan valikoiman käyttömahdollisuuksia. Hankalat ovijärjestelmät erottuvat kustannustehokkuudellaan, kestävyydellään ja yksinkertaisella rakenteellaan."
+      }
     },
     paloOvet: {
       title: "Palo-ovet",
@@ -222,15 +225,36 @@ export const fi = {
           info: "Meidän tarjoamille metallioville on myönnetty EI luokan sertifikaatti EI 15, EI 30, EI 45, EI 60, EI 90 ja EI 120. EI- merkintä viittaa ovien palonkestoon minuuteissa eli EI 120 tarkoittaa, että oven palonkesto on varmistettu 120 minuutin ajaksi. EI luokan merkintä varmistaa lisäksi palon sattuessa palon rajoittamisen lisäksi myös lämpösäteilyn leviämisen hidastamiseen.",
         },
         sell: "Haluatko lisätietoja metalliovista? Lähetä hintapyyntö heti!"
+      },
+      rullaovet: {
+        title: "Rullaovet",
+        intro: "Palonkestävät rullaovet ovat ihanteellinen ratkaisu erilaisten tilojen paloturvallisuuden varmistamiseen. Rullaovia käytetään mm. varastorakennuksissa, kauppakeskuksissa, julkisissa rakennuksissa, toimistoissa ym., jossa palon rajoittaminen on ensiarvoisen tärkeää. Ovet vievät rullajärjestelmän ansiosta vähän tilaa ja niitä on helppo asentaa kapeisiin käyttökohteisiin.",
+        sell: "Haluatko lisätietoja rullaovista? Lähetä hintapyyntö heti!"
+      },
+      liukuovet: {
+        title: "Liukuovet",
+        intro: "Palonkestävät liukuovet varmistavat tehokkaan paloturvallisuuden- julkisissa rakennuksissa, ostokeskuksissa, tuotantokeskuksissa, maanalaisissa parkkihalleissa ym. tiloissa, joissa tulee estää palon leviäminen eri tilojen välissä. Liukuovet avautuvat rakenteen mukaan joko vaaka- tai pystysuunnassa.",
+        sell: "Kysy lisää liukuovista, lähetä hintapyyntö!"
+      },
+      kaihtimet: {
+        title: "Kaihtimet",
+        intro: "Palonkestävät kaihtimet soveltuvat erinomaisesti käytettäväksi erilaisissa rakennuksissa suojaamaan palon leviämiseltä ja eristämään tiloja, joissa on suurempi palovaara kuin muissa tiloissa. Kaihtimet ovat kestäviä ja sopivat käytettäväksi kapeissa käyttökohteissa, sillä se ei tarvitse lisätilaa oven pystysuoran avautumistilan kustannuksella. Kaihtimet on palon leviämisen ja palonkeston kannalta luokiteltu <b>palamattomina</b> ja <b>palon leviämisen estävinä ovina</b>",
+        sell: "Kysy lisää palonkestävistä kaihtimista, lähetä hintapyyntö!"
       }
     },
     puomit: {
       title: "Puomit",
       description: "",
+      info: {
+        intro: "Puomeista jotain"
+      }
     },
     hyllyt: {
       title: "Hyllyt",
       description: "",
+      info: {
+        intro: "Hyllyistä jotain"
+      }
     },
   }
 };

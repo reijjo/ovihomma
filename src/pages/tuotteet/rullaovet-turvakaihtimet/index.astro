@@ -1,0 +1,11 @@
+---
+import Layout from "@/components/layouts/Layout.astro"
+import RullaOvetPage from "@/components/pages/tuotteet/rullaovet/RullaOvetPage.astro"
+import { t } from "@/i18n"
+
+const i18n = t(Astro.currentLocale)
+---
+
+<Layout title={i18n.tuotteet.rullaOvet.title} description={i18n.tuotteet.rullaOvet.description}>
+  <RullaOvetPage />
+</Layout>

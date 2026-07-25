@@ -1,0 +1,21 @@
+---
+import TuoteIntro from "../TuoteIntro.astro"
+import { t } from "@/i18n"
+import CtaComponent from "@/components/ui/CtaComponent.astro"
+
+const i18n = t(Astro.currentLocale)
+const liukuOvet = i18n.tuotteet.paloOvet.liukuovet
+---
+
+<main class="tuote-page">
+  <TuoteIntro title={liukuOvet.title} intro={liukuOvet.intro} />
+  <CtaComponent title={liukuOvet.sell} />
+</main>
+
+<style>
+  .tuote-page {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+</style>
