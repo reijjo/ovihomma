@@ -1,16 +1,13 @@
 export const en = {
   nav: {
     home: "Home",
-    tuotteet: "Products",
-    products: {
-      nostoOvet: "Sectional doors",
-      rullaovetTurvakaihtimet: "Roller doors & security shutters",
-      paloOvet: "Fire doors",
-      puomit: "Barriers",
-      hyllyt: "Shelving",
-    },
+    nostoOvet: "Sectional doors",
+    rullaovetTurvakaihtimet: "Roller doors & security shutters",
+    paloOvet: "Fire doors",
+    pihaportitAidat: "Yard gates & fences",
+    kaapit: "Storage systems",
+    galleria: "Gallery",
     huolto: "Maintenance",
-    meistä: "About us",
     yhteystiedot: "Contact",
     openMenu: "Open menu",
     closeMenu: "Close menu",
@@ -18,6 +15,7 @@ export const en = {
   yleiset: {
     hintatarjous: "Request a quote",
     otayhteys: "Contact us",
+    firmanNimi: "J & P BEST PARTNERS SL",
   },
   contact: {
     title: "Contact",
@@ -27,10 +25,20 @@ export const en = {
     phone: "Phone",
     requestDetails: "Details about the subject of the quote request",
     submit: "Submit",
-    companyName: "FIRMANNIMI",
+    companyName: "J & P BEST PARTNERS SL",
     address: "Address",
     companyPhone: "Phone",
     companyEmail: "Email",
+  },
+  gallery: {
+    title: "Gallery",
+    description: "Explore examples of our doors and other solutions.",
+    intro: "Explore examples of the projects and products we have delivered.",
+    sectionTitle: "Door solutions",
+    close: "Close image",
+    previous: "Previous image",
+    next: "Next image",
+    imageAlt: "Door solution",
   },
   homepage: {
     hero: {

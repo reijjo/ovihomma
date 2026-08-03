@@ -22,7 +22,7 @@ const dict = t(currentLocale);
     aria-label={dict.nav.openMenu}
     aria-expanded="false"
   />
-  <a href={localizedHref(currentLocale)} class="nav-logo">Logo/firmannimi</a>
+  <a href={localizedHref(currentLocale)} class="nav-logo">{dict.yleiset.firmanNimi}</a>
   <LanguageSwitcher />
 
   <div
@@ -96,15 +96,11 @@ const dict = t(currentLocale);
 
 <!-- Style -->
 <style>
-  .mobile-nav {
-    display: none;
+.mobile-nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
-    @media (width <= 800px) {
-      display: flex;
-    }
   }
 
   .mobile-nav-links {
