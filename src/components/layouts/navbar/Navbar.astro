@@ -1,7 +1,6 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
 
-import DesktopNav from "./DesktopNav.astro";
 import MobileNav from "./MobileNav.astro";
 
 const currentLocale = Astro.currentLocale ?? "fi";
@@ -13,7 +12,6 @@ function localizedHref(locale: string, key?: string) {
 
 <nav class="site-nav">
   <div class="wrapper nav-content">
-    <DesktopNav localizedHref={localizedHref} currentLocale={currentLocale} />
     <MobileNav localizedHref={localizedHref} currentLocale={currentLocale} />
   </div>
 </nav>
@@ -33,11 +31,10 @@ function localizedHref(locale: string, key?: string) {
       if (!href) return;
 
       const normalizedHref = normalizePath(href);
-      const isProductsRoute = normalizedHref.endsWith("/tuotteet");
       link.classList.toggle(
         "active",
         normalizedHref === currentPath ||
-          (isProductsRoute && currentPath.startsWith(`${normalizedHref}/`)),
+          (normalizedHref !== "/" && currentPath.startsWith(`${normalizedHref}/`)),
       );
     });
   }
@@ -87,30 +84,8 @@ function localizedHref(locale: string, key?: string) {
     min-width: 0;
   }
 
-  @media (max-width: 900px) {
-    .nav-content {
-      gap: 0.75rem;
-    }
-
-    .nav-actions {
-      gap: 0.5rem;
-    }
-  }
-
-  @media (max-width: 720px) {
-    .nav-content {
-      flex-wrap: wrap;
-      padding-block: 0.5rem;
-    }
-
-    .nav-actions {
-      width: 100%;
-      justify-content: space-between;
-    }
-
-    .nav-links-list {
-      justify-content: flex-start;
-      gap: 0.75rem;
-    }
+  .nav-content {
+    gap: 0.75rem;
+    padding-block: 0.5rem;
   }
 </style>

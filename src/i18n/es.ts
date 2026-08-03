@@ -1,16 +1,13 @@
 export const es = {
   nav: {
     home: "Inicio",
-    tuotteet: "Productos",
-    products: {
-      nostoOvet: "Puertas seccionales",
-      rullaovetTurvakaihtimet: "Puertas enrollables y persianas de seguridad",
-      paloOvet: "Puertas cortafuego",
-      puomit: "Barreras",
-      hyllyt: "Estanterías",
-    },
+    nostoOvet: "Puertas seccionales",
+    rullaovetTurvakaihtimet: "Puertas enrollables y persianas de seguridad",
+    paloOvet: "Puertas cortafuego",
+    pihaportitAidat: "Puertas y vallas de jardín",
+    kaapit: "Sistemas de almacenamiento",
+    galleria: "Galería",
     huolto: "Mantenimiento",
-    meistä: "Sobre nosotros",
     yhteystiedot: "Contacto",
     openMenu: "Abrir menú",
     closeMenu: "Cerrar menú",
@@ -18,6 +15,7 @@ export const es = {
   yleiset: {
     hintatarjous: "Solicitar presupuesto",
     otayhteys: "Contáctanos",
+    firmanNimi: "J & P BEST PARTNERS SL",
   },
   contact: {
     title: "Contacto",
@@ -27,10 +25,20 @@ export const es = {
     phone: "Teléfono",
     requestDetails: "Información sobre el objeto de la solicitud de presupuesto",
     submit: "Enviar",
-    companyName: "FIRMANNIMI",
+    companyName: "J & P BEST PARTNERS SL",
     address: "Dirección",
     companyPhone: "Teléfono",
     companyEmail: "Correo electrónico",
+  },
+  gallery: {
+    title: "Galería",
+    description: "Descubre ejemplos de nuestras puertas y otras soluciones.",
+    intro: "Descubre ejemplos de proyectos y productos que hemos realizado.",
+    sectionTitle: "Soluciones para puertas",
+    close: "Cerrar imagen",
+    previous: "Imagen anterior",
+    next: "Imagen siguiente",
+    imageAlt: "Solución para puertas",
   },
   homepage: {
     hero: {

@@ -1,0 +1,31 @@
+---
+import Layout from "@/components/layouts/Layout.astro";
+import GalleryPage from "@/components/pages/gallery/GalleryPage.astro";
+import { t } from "@/i18n";
+
+const i18n = t(Astro.currentLocale);
+const sections = [
+  {
+    title: i18n.gallery.sectionTitle,
+    images: [
+      { src: "/images/ovet/hallirakennus.jpg", alt: "Industrial building with a sectional door" },
+      { src: "/images/ovet/harmaa_halli2.jpg", alt: "Grey industrial hall" },
+      { src: "/images/ovet/iso_harmaa_sisa.jpg", alt: "Inside of an industrial door" },
+      { src: "/images/ovet/ecolid-4-delad-4-rader-glas.jpg", alt: "Sectional door with windows" },
+      { src: "/images/ovet/Floda-Västergårdsväg.jpg", alt: "Industrial door in a building" },
+      { src: "/images/ovet/kauppa_verkko.jpg", alt: "Mesh door in a commercial space" },
+      { src: "/images/ovet/paloasema.jpg", alt: "Fire station doors" },
+      { src: "/images/ovet/Rullaovet.jpg", alt: "Roller door" },
+    ],
+  },
+];
+---
+
+<Layout title={i18n.gallery.title} description={i18n.gallery.description}>
+  <GalleryPage
+    title={i18n.gallery.title}
+    intro={i18n.gallery.intro}
+    sections={sections}
+    labels={i18n.gallery}
+  />
+</Layout>

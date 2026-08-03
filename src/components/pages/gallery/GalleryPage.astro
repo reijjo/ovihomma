@@ -1,0 +1,283 @@
+---
+type GalleryImage = {
+  src: string;
+  alt: string;
+  caption?: string;
+};
+
+type GallerySection = {
+  title: string;
+  images: GalleryImage[];
+};
+
+type Props = {
+  title: string;
+  intro: string;
+  sections: GallerySection[];
+  labels: {
+    close: string;
+    previous: string;
+    next: string;
+  };
+};
+
+const { title, intro, sections, labels } = Astro.props;
+const images = sections.flatMap((section) => section.images);
+---
+
+<main class="gallery-page">
+  <div class="wrapper gallery-intro">
+    <h1>{title}</h1>
+    <p>{intro}</p>
+  </div>
+
+  <div class="wrapper gallery-sections">
+    {
+      sections.map((section) => (
+        <section class="gallery-section" aria-labelledby={`gallery-${section.title}`}>
+          <h2 id={`gallery-${section.title}`}>{section.title}</h2>
+          <div class="gallery-grid">
+            {section.images.map((image) => {
+              const index = images.indexOf(image);
+              return (
+                <button
+                  class="gallery-card"
+                  type="button"
+                  data-gallery-index={index}
+                  aria-label={image.caption ?? image.alt}
+                >
+                  <img src={image.src} alt={image.alt} loading="lazy" />
+                  {image.caption && <span>{image.caption}</span>}
+                </button>
+              );
+            })}
+          </div>
+        </section>
+      ))
+    }
+  </div>
+</main>
+
+<div class="gallery-lightbox" data-gallery-modal hidden>
+  <div class="gallery-lightbox-backdrop" data-gallery-close></div>
+  <div
+    class="gallery-lightbox-content"
+    role="dialog"
+    aria-modal="true"
+    aria-label={title}
+  >
+    <button class="gallery-lightbox-close" type="button" data-gallery-close aria-label={labels.close}>
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <button class="gallery-lightbox-control previous" type="button" data-gallery-previous aria-label={labels.previous}>
+      <span aria-hidden="true">&#8249;</span>
+    </button>
+    <figure>
+      <img data-gallery-modal-image src="" alt="" />
+      <figcaption data-gallery-modal-caption></figcaption>
+    </figure>
+    <button class="gallery-lightbox-control next" type="button" data-gallery-next aria-label={labels.next}>
+      <span aria-hidden="true">&#8250;</span>
+    </button>
+  </div>
+</div>
+
+<script is:inline define:vars={{ images }}>
+  const galleryImages = images;
+  const modal = document.querySelector("[data-gallery-modal]");
+  const modalImage = document.querySelector("[data-gallery-modal-image]");
+  const modalCaption = document.querySelector("[data-gallery-modal-caption]");
+  const previousButton = document.querySelector("[data-gallery-previous]");
+  const nextButton = document.querySelector("[data-gallery-next]");
+  let currentIndex = 0;
+  let lastFocusedElement = null;
+
+  function renderImage(index) {
+    currentIndex = (index + galleryImages.length) % galleryImages.length;
+    const image = galleryImages[currentIndex];
+    if (!modalImage || !modalCaption || !previousButton || !nextButton) return;
+
+    modalImage.src = image.src;
+    modalImage.alt = image.alt;
+    modalCaption.textContent = image.caption ?? "";
+    previousButton.hidden = galleryImages.length < 2;
+    nextButton.hidden = galleryImages.length < 2;
+  }
+
+  function closeModal() {
+    if (!modal) return;
+    modal.hidden = true;
+    document.body.style.overflow = "";
+    lastFocusedElement?.focus();
+  }
+
+  document.addEventListener("click", (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+
+    const card = target.closest("[data-gallery-index]");
+    if (card && modal) {
+      lastFocusedElement = card;
+      renderImage(Number(card.dataset.galleryIndex));
+      modal.hidden = false;
+      document.body.style.overflow = "hidden";
+      modal.querySelector(".gallery-lightbox-close")?.focus();
+      return;
+    }
+
+    if (target.closest("[data-gallery-close]")) closeModal();
+    if (target.closest("[data-gallery-previous]")) renderImage(currentIndex - 1);
+    if (target.closest("[data-gallery-next]")) renderImage(currentIndex + 1);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (!modal || modal.hidden) return;
+    if (event.key === "Escape") closeModal();
+    if (event.key === "ArrowLeft") renderImage(currentIndex - 1);
+    if (event.key === "ArrowRight") renderImage(currentIndex + 1);
+  });
+</script>
+
+<style>
+  .gallery-page {
+    display: block;
+    padding-bottom: 3rem;
+  }
+
+  .gallery-intro {
+    display: grid;
+    gap: 0.75rem;
+    padding-block: 1rem 2rem;
+    text-align: center;
+  }
+
+  .gallery-intro p {
+    max-width: 42rem;
+    margin-inline: auto;
+  }
+
+  .gallery-sections {
+    display: grid;
+    gap: 2.5rem;
+  }
+
+  .gallery-section {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .gallery-section h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: 1rem;
+  }
+
+  .gallery-card {
+    display: grid;
+    gap: 0.5rem;
+    padding: 0;
+    border: 0;
+    background: var(--white-xlight);
+    color: inherit;
+    text-align: left;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+  }
+
+  .gallery-card:hover,
+  .gallery-card:focus-visible {
+    transform: translateY(-0.2rem);
+    box-shadow: var(--shadow-xs);
+  }
+
+  .gallery-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .gallery-card span {
+    padding: 0 0.75rem 0.75rem;
+  }
+
+  .gallery-lightbox[hidden] {
+    display: none;
+  }
+
+  .gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+  }
+
+  .gallery-lightbox-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(11, 11, 11, 0.88);
+  }
+
+  .gallery-lightbox-content {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    width: min(100%, 72rem);
+    gap: 0.75rem;
+  }
+
+  .gallery-lightbox figure {
+    display: grid;
+    gap: 0.5rem;
+    justify-items: center;
+  }
+
+  .gallery-lightbox img {
+    width: 100%;
+    max-height: 82dvh;
+    object-fit: contain;
+  }
+
+  .gallery-lightbox figcaption {
+    color: var(--white-xlight);
+    text-align: center;
+  }
+
+  .gallery-lightbox-close,
+  .gallery-lightbox-control {
+    border: 0;
+    color: var(--white-xlight);
+    background: transparent;
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .gallery-lightbox-close {
+    position: absolute;
+    top: -0.5rem;
+    right: 0;
+    transform: translateY(-100%);
+  }
+
+  .gallery-lightbox-control {
+    padding: 1rem 0.5rem;
+  }
+
+  @media (max-width: 600px) {
+    .gallery-lightbox-content {
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      gap: 0.25rem;
+    }
+
+    .gallery-lightbox-close {
+      right: 0.25rem;
+    }
+  }
+</style>

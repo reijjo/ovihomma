@@ -1,11 +1,3 @@
 ---
-import Layout from "@/components/layouts/Layout.astro";
-import KaihtimetPage from "@/components/pages/tuotteet/palo-ovet/KaihtimetPage.astro";
-import { t } from "@/i18n";
-
-const i18n = t(Astro.currentLocale);
+return Astro.redirect("/en/palo-ovet/kaihtimet", 308);
 ---
-
-<Layout title={i18n.tuotteet.paloOvet.kaihtimet.title}>
-  <KaihtimetPage />
-</Layout>

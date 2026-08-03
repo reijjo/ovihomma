@@ -1,23 +1,21 @@
 export const fi = {
   nav: {
     home: "Etusivu",
-    tuotteet: "Tuotteet",
-    products: {
-      nostoOvet: "Nosto-ovet",
-      rullaovetTurvakaihtimet: "Rullaovet & turvakaihtimet",
-      paloOvet: "Palo-ovet",
-      puomit: "Puomit",
-      hyllyt: "Hyllyt",
-    },
+    nostoOvet: "Nosto-ovet",
+    rullaovetTurvakaihtimet: "Rullaovet & turvakaihtimet",
+    paloOvet: "Palo-ovet",
+    pihaportitAidat: "Pihaportit & aidat",
+    kaapit: "Kaappien säilytysjärjestelmät",
+    galleria: "Galleria",
     huolto: "Huolto",
-    meistä: "Meistä",
     yhteystiedot: "Yhteystiedot",
     openMenu: "Avaa valikko",
     closeMenu: "Sulje valikko",
   },
   yleiset: {
     hintatarjous: "Pyydä tarjous",
-    otayhteys: "Ota yhteyttä"
+    otayhteys: "Ota yhteyttä",
+    firmanNimi: "J & P BEST PARTNERS SL"
   },
   contact: {
     title: "Yhteystiedot",
@@ -27,10 +25,20 @@ export const fi = {
     phone: "Puhelin",
     requestDetails: "Tiedot tarjouspyynnön kohteesta",
     submit: "lähetä",
-    companyName: "FIRMANNIMI",
+    companyName: "J & P BEST PARTNERS SL",
     address: "osoite",
     companyPhone: "puhelin",
     companyEmail: "sähköposti",
+  },
+  gallery: {
+    title: "Galleria",
+    description: "Tutustu toteuttamiimme oviin ja muihin ratkaisuihin.",
+    intro: "Tutustu esimerkkeihin toteuttamistamme kohteista ja tuotteista.",
+    sectionTitle: "Oviratkaisuja",
+    close: "Sulje kuva",
+    previous: "Edellinen kuva",
+    next: "Seuraava kuva",
+    imageAlt: "Oviratkaisu",
   },
   homepage: {
     hero: {
@@ -108,7 +116,7 @@ export const fi = {
       ja: "ja ",
       span2: "joustavuus",
       laatu2: " - kaikki ovet valmistetaan tilaajan antamien tietojen pohjalta ja pystymme tarjoamaan ratkaisun myös hyvin haasteellisiin käyttötilanteisiin.",
-      laatutakuu: "FIRMANNIMI tuotteet edustavat suomalaista huippulaatua. Ota yhteyttä jo tänään ja me tarjoamme sinulle parhaan ratkaisun!"
+      laatutakuu: "J & P BEST PARTNERS SL tuotteet edustavat suomalaista huippulaatua. Ota yhteyttä jo tänään ja me tarjoamme sinulle parhaan ratkaisun!"
     }
   },
   huolto: {

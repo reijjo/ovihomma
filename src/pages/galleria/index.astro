@@ -1,0 +1,31 @@
+---
+import Layout from "@/components/layouts/Layout.astro";
+import GalleryPage from "@/components/pages/gallery/GalleryPage.astro";
+import { t } from "@/i18n";
+
+const i18n = t(Astro.currentLocale);
+const sections = [
+  {
+    title: i18n.gallery.sectionTitle,
+    images: [
+      { src: "/images/ovet/hallirakennus.jpg", alt: "Hallirakennus ja nosto-ovi" },
+      { src: "/images/ovet/harmaa_halli2.jpg", alt: "Harmaa teollisuushalli" },
+      { src: "/images/ovet/iso_harmaa_sisa.jpg", alt: "Teollisuusoven sisäpuoli" },
+      { src: "/images/ovet/ecolid-4-delad-4-rader-glas.jpg", alt: "Nosto-ovi ikkunoilla" },
+      { src: "/images/ovet/Floda-Västergårdsväg.jpg", alt: "Teollisuusovi rakennuksessa" },
+      { src: "/images/ovet/kauppa_verkko.jpg", alt: "Verkko-ovi liiketilassa" },
+      { src: "/images/ovet/paloasema.jpg", alt: "Paloaseman ovet" },
+      { src: "/images/ovet/Rullaovet.jpg", alt: "Rullaovi" },
+    ],
+  },
+];
+---
+
+<Layout title={i18n.gallery.title} description={i18n.gallery.description}>
+  <GalleryPage
+    title={i18n.gallery.title}
+    intro={i18n.gallery.intro}
+    sections={sections}
+    labels={i18n.gallery}
+  />
+</Layout>
