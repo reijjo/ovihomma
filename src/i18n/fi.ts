@@ -9,6 +9,7 @@ export const fi = {
     galleria: "Galleria",
     huolto: "Huolto",
     yhteystiedot: "Yhteystiedot",
+    footerLinks: "Linkit",
     openMenu: "Avaa valikko",
     closeMenu: "Sulje valikko",
   },
@@ -29,6 +30,11 @@ export const fi = {
     address: "osoite",
     companyPhone: "puhelin",
     companyEmail: "sähköposti",
+    sending: "Lähetetään...",
+    successMessage: "Viesti lähetettiin onnistuneesti.",
+    validationError: "Tarkista kentät ja yritä uudelleen.",
+    serverError: "Viestin lähetys ei onnistunut. Yritä hetken kuluttua uudelleen.",
+    rateLimited: "Viestejä lähetettiin liian nopeasti. Yritä myöhemmin uudelleen.",
   },
   gallery: {
     title: "Galleria",
@@ -42,12 +48,12 @@ export const fi = {
   },
   homepage: {
     hero: {
-      header: "Suomalaisella ammattitaidolla porttia ja muuta",
+      header: "Suomalaisella ammattitaidolla nosto-ovien, rullaovien ja turvakaihtimien, palo-ovien, pihaporttien ja aitojen sekä kaappien säilytysjärjestelmien asennukset",
       heroCta: "Pyydä tarjous tai jotain?",
     },
     lyhyesti: {
       aboutUs:
-        "Yrityksemme huoltaa ja asentaa kaikkenmaailman ovet ja puomit ja hyllyköt (tähän siis paljon paremmin parempi teksti) monen vuoden kokemuksella",
+        "Yrityksemme henkilöstöllä on yli 10 vuoden kokemus erilaisten nosto-ovien parissa",
       kuvat: {
         nostoOvet: {
           header: "Nosto-ovet",
@@ -62,12 +68,12 @@ export const fi = {
           subHeader: "Teräsovet, rullaovet, liukuovet",
         },
         puomit: {
-          header: "Puomit",
-          subHeader: "Puomi sitä puomi tätä",
+          header: "Pihaportit ja aidat",
+          subHeader: "Portit ja aidat",
         },
         hyllykot: {
-          header: "Hyllyt",
-          subHeader: "Tavarat järjestykseen",
+          header: "Säilytysjärjestelmät",
+          subHeader: "Kaappien säilytysjärjestelmät",
         },
       },
     },

@@ -1,12 +1,24 @@
 <footer>
   <div class="footer-content">
-    <div class="footer-content wrapper">&copy; 2026</div>
+    <div class="wrapper">
+      <!-- <nav aria-labelledby="footer-links-heading" class="footer-links-heading">
+        <h2 id="footer-links-heading">{dict.nav.footerLinks}</h2>
+        <ul class="footer-links">
+          {
+            navLinks.map((link) => (
+              <li><a href={localizedHref(link.key)}>{link.label}</a></li>
+            ))
+          }
+        </ul>
+      </nav> -->
+      <p class="copyright">&copy; 2026 J & P BEST PARNERTS SL</p>
+    </div>
   </div>
 </footer>
 
 <style>
   footer {
-    min-height: 2rem;
+    min-height: 3rem;
     display: flex;
     align-items: center;
     background-color: var(--white-xlight);
@@ -15,5 +27,41 @@
 
   .footer-content {
     padding-block: 0.5rem;
+    width: 100%;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    text-align: left;
+  }
+
+  .footer-links-heading {
+    width: max-content;
+    margin-left: auto;
+  }
+
+  h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+  }
+
+  .footer-links a {
+    transition: color 160ms ease;
+  }
+
+  .footer-links a:hover,
+  .footer-links a:focus-visible {
+    color: var(--accent-base);
+  }
+
+  .copyright {
+    margin: 0;
+    text-align: left;
   }
 </style>

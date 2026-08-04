@@ -9,6 +9,7 @@ export const es = {
     galleria: "Galería",
     huolto: "Mantenimiento",
     yhteystiedot: "Contacto",
+    footerLinks: "Enlaces",
     openMenu: "Abrir menú",
     closeMenu: "Cerrar menú",
   },
@@ -29,6 +30,11 @@ export const es = {
     address: "Dirección",
     companyPhone: "Teléfono",
     companyEmail: "Correo electrónico",
+    sending: "Enviando...",
+    successMessage: "Tu mensaje se envió correctamente.",
+    validationError: "Revisa los campos e inténtalo de nuevo.",
+    serverError: "No se pudo enviar el mensaje. Inténtalo de nuevo más tarde.",
+    rateLimited: "Se enviaron demasiados mensajes. Inténtalo más tarde.",
   },
   gallery: {
     title: "Galería",
@@ -42,12 +48,12 @@ export const es = {
   },
   homepage: {
     hero: {
-      header: "Puertas y mucho más, fabricadas con experiencia finlandesa",
+      header: "Instalación de puertas seccionales, puertas enrollables y persianas de seguridad, puertas cortafuego, puertas y vallas de jardín y sistemas de almacenamiento para armarios con experiencia finlandesa",
       heroCta: "¿Solicitar presupuesto o algo?",
     },
     lyhyesti: {
       aboutUs:
-        "Nuestra empresa mantiene e instala todo tipo de puertas, barreras y sistemas de estanterías con muchos años de experiencia.",
+        "Nuestro equipo cuenta con más de 10 años de experiencia trabajando con distintos tipos de puertas seccionales.",
       kuvat: {
         nostoOvet: {
           header: "Puertas seccionales",
@@ -62,12 +68,12 @@ export const es = {
           subHeader: "Puertas de acero, puertas enrollables, puertas correderas",
         },
         puomit: {
-          header: "Barreras",
-          subHeader: "Sistemas de barrera para control de acceso",
+          header: "Puertas y vallas de jardín",
+          subHeader: "Puertas y vallas",
         },
         hyllykot: {
-          header: "Sistemas de estanterías",
-          subHeader: "Soluciones de almacenamiento para mantener todo en orden",
+          header: "Sistemas de almacenamiento",
+          subHeader: "Sistemas de almacenamiento para armarios",
         },
       },
     },
