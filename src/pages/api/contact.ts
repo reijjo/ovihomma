@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { env } from "cloudflare:workers";
 
 const MAX_NAME_LENGTH = 100;
 const MAX_EMAIL_LENGTH = 254;
@@ -71,11 +72,10 @@ async function isRateLimited(store: RateLimitStore | undefined, key: string) {
   return false;
 }
 
-export const POST: APIRoute = async ({ request, clientAddress, locals }) => {
-  const runtime = (locals as { runtime?: { env?: RuntimeEnv } }).runtime;
-  const env = runtime?.env;
+export const POST: APIRoute = async ({ request, clientAddress }) => {
+  const runtimeEnv = env as unknown as RuntimeEnv;
 
-  if (!env?.RESEND_API_KEY || !env.CONTACT_TO_EMAIL || !env.CONTACT_FROM_EMAIL || !env.CONTACT_RATE_LIMIT) {
+  if (!runtimeEnv.RESEND_API_KEY || !runtimeEnv.CONTACT_TO_EMAIL || !runtimeEnv.CONTACT_FROM_EMAIL || !runtimeEnv.CONTACT_RATE_LIMIT) {
     return json({ code: "server_error" }, 500);
   }
 
@@ -107,7 +107,7 @@ export const POST: APIRoute = async ({ request, clientAddress, locals }) => {
 
   const ip = clientAddress ?? request.headers.get("CF-Connecting-IP") ?? "unknown";
   try {
-    if (await isRateLimited(env.CONTACT_RATE_LIMIT, `contact:${ip}`)) {
+    if (await isRateLimited(runtimeEnv.CONTACT_RATE_LIMIT, `contact:${ip}`)) {
       return json({ code: "rate_limited" }, 429);
     }
   } catch {
@@ -131,12 +131,12 @@ export const POST: APIRoute = async ({ request, clientAddress, locals }) => {
       method: "POST",
       signal: controller.signal,
       headers: {
-        Authorization: `Bearer ${env.RESEND_API_KEY}`,
+        Authorization: `Bearer ${runtimeEnv.RESEND_API_KEY}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: env.CONTACT_FROM_EMAIL,
-        to: [env.CONTACT_TO_EMAIL],
+        from: runtimeEnv.CONTACT_FROM_EMAIL,
+        to: [runtimeEnv.CONTACT_TO_EMAIL],
         reply_to: email,
         subject: `New contact form message from ${name}`,
         text: message,
