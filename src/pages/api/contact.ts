@@ -75,7 +75,7 @@ export const POST: APIRoute = async ({ request, clientAddress, locals }) => {
   const runtime = (locals as { runtime?: { env?: RuntimeEnv } }).runtime;
   const env = runtime?.env;
 
-  if (!env?.RESEND_API_KEY || !env.CONTACT_TO_EMAIL || !env.CONTACT_FROM_EMAIL) {
+  if (!env?.RESEND_API_KEY || !env.CONTACT_TO_EMAIL || !env.CONTACT_FROM_EMAIL || !env.CONTACT_RATE_LIMIT) {
     return json({ code: "server_error" }, 500);
   }
 
@@ -123,9 +123,13 @@ export const POST: APIRoute = async ({ request, clientAddress, locals }) => {
     requestDetails,
   ].join("\n");
 
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 10_000)
+
   try {
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
+      signal: controller.signal,
       headers: {
         Authorization: `Bearer ${env.RESEND_API_KEY}`,
         "Content-Type": "application/json",
@@ -142,6 +146,8 @@ export const POST: APIRoute = async ({ request, clientAddress, locals }) => {
     if (!response.ok) return json({ code: "server_error" }, 502);
   } catch {
     return json({ code: "server_error" }, 502);
+  } finally {
+    clearTimeout(timeout);
   }
 
   return json({ code: "success" });
