@@ -6,28 +6,44 @@ const i18n = t(Astro.currentLocale);
 const contact = i18n.contact;
 ---
 
-<form id="contact-form" class="contact-form">
+<form
+  id="contact-form"
+  class="contact-form"
+  action="/api/contact"
+  method="post"
+  data-success={contact.successMessage}
+  data-validation-error={contact.validationError}
+  data-server-error={contact.serverError}
+  data-rate-limited={contact.rateLimited}
+  data-sending={contact.sending}
+>
   <label>
     {contact.name}
-    <input type="text" name="nimi" autocomplete="name" required />
+    <input type="text" name="name" autocomplete="name" maxlength="100" required />
   </label>
 
   <label>
     {contact.email}
-    <input type="email" name="sähköposti" autocomplete="email" required />
+    <input type="email" name="email" autocomplete="email" maxlength="254" required />
   </label>
 
   <label>
     {contact.phone}
-    <input type="tel" name="puhelin" autocomplete="tel" required />
+    <input type="tel" name="phone" autocomplete="tel" maxlength="50" required />
   </label>
 
   <label>
     {contact.requestDetails}
-    <textarea name="tarjouspyyntö" rows="7" required></textarea>
+    <textarea name="requestDetails" rows="7" maxlength="3000" required></textarea>
+  </label>
+
+  <label class="honeypot" aria-hidden="true">
+    Website
+    <input type="text" name="website" tabindex="-1" autocomplete="off" />
   </label>
 
   <Button type="submit">{contact.submit}</Button>
+  <p class="form-status" role="status" aria-live="polite"></p>
 </form>
 
 <address class="company-details">
@@ -40,8 +56,41 @@ const contact = i18n.contact;
 <script>
   const form = document.querySelector<HTMLFormElement>("#contact-form");
 
-  form?.addEventListener("submit", (event) => {
+  form?.addEventListener("submit", async (event) => {
     event.preventDefault();
+    const submit = form.querySelector<HTMLButtonElement>("button[type=submit]");
+    const status = form.querySelector<HTMLElement>(".form-status");
+    const data = form.dataset;
+
+    if (!submit || !status) return;
+    submit.disabled = true;
+    status.className = "form-status";
+    status.textContent = data.sending ?? "Sending...";
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+      const result = await response.json() as { code?: string };
+      const message = result.code === "success"
+        ? data.success
+        : result.code === "validation_error" || result.code === "invalid_request"
+          ? data.validationError
+          : result.code === "rate_limited"
+            ? data.rateLimited
+            : data.serverError;
+
+      status.classList.add(result.code === "success" ? "success" : "error");
+      status.textContent = message ?? data.serverError ?? "Something went wrong.";
+      if (result.code === "success") form.reset();
+    } catch {
+      status.classList.add("error");
+      status.textContent = data.serverError ?? "Something went wrong.";
+    } finally {
+      submit.disabled = false;
+    }
   });
 </script>
 
@@ -87,6 +136,28 @@ const contact = i18n.contact;
     align-self: flex-start;
     margin-top: 0.25rem;
   }
+
+  .contact-form :global(.btn):disabled {
+    cursor: wait;
+    opacity: 0.65;
+  }
+
+  .honeypot {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .form-status {
+    min-height: 1.5rem;
+    margin: 0;
+  }
+
+  .form-status.success { color: #16733b; }
+  .form-status.error { color: #b42318; }
 
   .company-details {
     display: flex;

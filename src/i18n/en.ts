@@ -9,6 +9,7 @@ export const en = {
     galleria: "Gallery",
     huolto: "Maintenance",
     yhteystiedot: "Contact",
+    footerLinks: "Links",
     openMenu: "Open menu",
     closeMenu: "Close menu",
   },
@@ -29,6 +30,11 @@ export const en = {
     address: "Address",
     companyPhone: "Phone",
     companyEmail: "Email",
+    sending: "Sending...",
+    successMessage: "Your message was sent successfully.",
+    validationError: "Please check the fields and try again.",
+    serverError: "The message could not be sent. Please try again shortly.",
+    rateLimited: "Too many messages were sent. Please try again later.",
   },
   gallery: {
     title: "Gallery",
@@ -42,12 +48,12 @@ export const en = {
   },
   homepage: {
     hero: {
-      header: "Gates and more, made with Finnish expertise",
+      header: "Professional Finnish expertise in the installation of sectional doors, roller doors and security shutters, fire doors, yard gates and fences, and cabinet storage systems",
       heroCta: "Request a quote or something?",
     },
     lyhyesti: {
       aboutUs:
-        "Our company services and installs all kinds of doors, barriers, and shelving systems with many years of experience.",
+        "Our team has over 10 years of experience working with different types of sectional doors.",
       kuvat: {
         nostoOvet: {
           header: "Sectional doors",
@@ -62,12 +68,12 @@ export const en = {
           subHeader: "Steel doors, roller doors, sliding doors",
         },
         puomit: {
-          header: "Barriers",
-          subHeader: "Barrier systems for controlled access",
+          header: "Yard gates & fences",
+          subHeader: "Gates and fences",
         },
         hyllykot: {
-          header: "Shelving systems",
-          subHeader: "Storage solutions that keep things organized",
+          header: "Storage systems",
+          subHeader: "Cabinet storage systems",
         },
       },
     },

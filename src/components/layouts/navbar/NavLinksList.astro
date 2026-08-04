@@ -1,5 +1,5 @@
 ---
-import { t } from "@/i18n";
+import { getNavLinks } from "./navLinks";
 
 type Props = {
   localizedHref: (locale: string, key?: string) => string;
@@ -7,22 +7,7 @@ type Props = {
 };
 
 const { localizedHref, currentLocale } = Astro.props;
-const dict = t(currentLocale);
-
-const navLinks = [
-  { key: "", label: dict.nav.home },
-  { key: "nosto-ovet", label: dict.nav.nostoOvet },
-  {
-    key: "rullaovet-turvakaihtimet",
-    label: dict.nav.rullaovetTurvakaihtimet,
-  },
-  { key: "palo-ovet", label: dict.nav.paloOvet },
-  { key: "pihaportit", label: dict.nav.pihaportitAidat },
-  { key: "kaapit", label: dict.nav.kaapit },
-  { key: "galleria", label: dict.nav.galleria },
-  { key: "huolto", label: dict.nav.huolto },
-  { key: "yhteystiedot", label: dict.nav.yhteystiedot },
-];
+const navLinks = getNavLinks(currentLocale);
 ---
 
 <ul class="nav-links-list">
