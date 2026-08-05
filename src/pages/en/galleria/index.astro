@@ -1,6 +1,7 @@
 ---
 import Layout from "@/components/layouts/Layout.astro";
 import GalleryPage from "@/components/pages/gallery/GalleryPage.astro";
+import CtaComponent from "@/components/ui/CtaComponent.astro";
 import { t } from "@/i18n";
 
 const i18n = t(Astro.currentLocale);
@@ -52,7 +53,12 @@ const sections = [
   },
   {
     title: i18n.nav.kaapit,
-    images: [],
+    images: [
+      { src: "/images/hyllyt/hylly1.jpg", alt: "Storage system 1" },
+      { src: "/images/hyllyt/hylly2.jpg", alt: "Storage system 2" },
+      { src: "/images/hyllyt/hylly3.jpg", alt: "Storage system 3" },
+      { src: "/images/hyllyt/hylly4.jpg", alt: "Storage system 4" },
+    ],
   },
 ];
 ---
@@ -63,4 +69,5 @@ const sections = [
     sections={sections}
     labels={i18n.gallery}
   />
+  <CtaComponent title={i18n.gallery.sell} />
 </Layout>

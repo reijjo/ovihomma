@@ -50,7 +50,7 @@ export const es = {
   },
   homepage: {
     hero: {
-      header: "Instalación de puertas seccionales, puertas enrollables y persianas de seguridad, puertas cortafuego, puertas y vallas de jardín y sistemas de almacenamiento para armarios con experiencia finlandesa",
+      header: "Instalación de puertas seccionales, puertas cortafuego, puertas y vallas de jardín y sistemas de almacenamiento para armarios con experiencia finlandesa",
       heroCta: "¿Solicitar presupuesto o algo?",
     },
     lyhyesti: {
@@ -143,6 +143,10 @@ export const es = {
     esimerkkeja: "Nuestro trabajo",
     checkGallery: "Puedes encontrar más fotos en nuestra",
     galleriasta: "galería",
+    brochure: {
+      text: "Consulta más información en este folleto",
+      alt: "Folleto de Teckentrup Door Solutions",
+    },
     nostoOvet: {
       title: "Puertas seccionales",
       description: "",
@@ -197,7 +201,37 @@ export const es = {
       title: "Puertas enrollables y persianas de seguridad",
       description: "",
       info: {
-        intro: "Gracias a su sistema enrollable que ahorra espacio y a su persiana enrollable resistente, la puerta enrollable Teckentrup es especialmente adecuada para huecos altos y anchos sometidos a grandes esfuerzos, como los provocados por vientos fuertes. Las puertas enrollables son la mejor opción cuando la estructura de la superficie dificulta o incluso imposibilita la fijación de los rieles de guía. Las puertas enrollables sencillas, resistentes y flexibles, junto con las persianas enrolladas de forma compacta, ofrecen una amplia variedad de aplicaciones. Estos sistemas de puertas exigentes destacan por su rentabilidad, durabilidad y construcción sencilla."
+        intro: "Gracias a su sistema enrollable que ahorra espacio y a su persiana enrollable resistente, la puerta enrollable Teckentrup es especialmente adecuada para huecos altos y anchos sometidos a grandes esfuerzos, como los provocados por vientos fuertes. Las puertas enrollables son la mejor opción cuando la estructura de la superficie dificulta o incluso imposibilita la fijación de los rieles de guía. Las puertas enrollables sencillas, resistentes y flexibles, junto con las persianas enrolladas de forma compacta, ofrecen una amplia variedad de aplicaciones. Estos sistemas de puertas exigentes destacan por su rentabilidad, durabilidad y construcción sencilla.",
+        intro2: "Las puertas enrollables destinadas al uso industrial, con rieles de guía laterales y una persiana enrollable recogida en un eje situado sobre el hueco, se utilizan allí donde se necesitan puertas industriales sencillas y resistentes. Las persianas están disponibles en versiones de pared simple y doble. El diseño sencillo de las puertas enrollables no necesita bisagras, ya que los perfiles individuales simplemente encajan unos en otros. La amplia gama de colores permite a diseñadores y arquitectos crear un estilo personalizado y adaptar las puertas a la arquitectura existente de la fachada.",
+        intro3: "Las puertas enrollables Teckentrup cumplen todos los requisitos y especificaciones de seguridad de la norma EN 13241-1. Esto significa que las propiedades mecánicas, la seguridad de uso, el aislamiento térmico y acústico, la estanqueidad y la carga de viento de cada puerta se evalúan conforme a las normas europeas. Los eficientes sistemas de accionamiento y control están perfectamente ajustados entre sí y se pueden instalar y programar fácilmente. Los modernos elementos de control hacen más cómodo abrir y cerrar las puertas a diario."
+      },
+      sell: "¿Quieres más información sobre puertas enrollables? ¡Solicita un presupuesto!",
+      valikoima: {
+        title: "Puertas enrollables y persianas:",
+        thermotech: {
+          title: "Puerta enrollable ThermoTeck",
+          info: "Nuestra puerta enrollable ThermoTeck aislada y de doble pared está formada por perfiles de acero revestidos. Está equipada con una junta superior, un eje de enrollamiento adecuado y un accionamiento trifásico de 400 V montado en la parte superior."
+        },
+        thermotechEasy: {
+          title: 'Puerta enrollable ThermoTeck "Easy"',
+          info: 'La puerta enrollable Teckentrup "Easy" destaca por su diseño sencillo y resistente. Sus componentes inteligentemente simplificados eliminan la necesidad de realizar mediciones complicadas.'
+        },
+        rullaKalterit: {
+          title: "Rejas enrollables",
+          info: "Las diferentes rejas enrollables de diseño entramado de Teckentrup garantizan una ventilación, visibilidad y protección ideales. Sus usos habituales incluyen los pasillos comerciales de centros comerciales con grandes escaparates, garajes subterráneos y aparcamientos."
+        },
+        xxl: {
+          title: "Puertas enrollables XXL",
+          info: "Las puertas enrollables dobles constan de al menos dos puertas colocadas muy cerca entre sí, con una altura de hasta 10 metros. Un soporte central redondo de acero galvanizado de 50 cm de ancho se encarga del movimiento lateral y permite desplazar fácilmente hacia los lados las puertas elevadas. Una puerta individual puede tener una <b>anchura máxima de 18 metros</b> y una puerta enrollable doble, una <b>anchura máxima de 36 metros.</b>"
+        },
+        pikaRullaovet: {
+          title: "Puertas enrollables rápidas",
+          info: "Una puerta enrollable grande y robusta, que funciona continuamente a velocidades de hasta 1,5 metros por segundo, satisface las necesidades de todos los ámbitos de uso, especialmente cuando se utiliza como puerta exterior.",
+        },
+        pvc: {
+          title: "Puertas enrollables rápidas de PVC",
+          info: "Las puertas enrollables rápidas de Teckentrup son adecuadas para un uso exigente y continuo, tanto en interiores como en exteriores. Garantizan un flujo de movimiento fluido y reducen al mínimo la pérdida de energía durante la estación fría."
+        }
       }
     },
     paloOvet: {

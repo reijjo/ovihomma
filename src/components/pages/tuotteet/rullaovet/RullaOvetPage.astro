@@ -1,19 +1,108 @@
 ---
 import { t } from "@/i18n"
+import { getRelativeLocaleUrl } from "astro:i18n"
+
 import TuoteIntro from "../TuoteIntro.astro"
+import TuoteValikoimaInfo from "../TuoteValikoimaInfo.astro"
+import CtaComponent from "@/components/ui/CtaComponent.astro"
 
 const i18n = t(Astro.currentLocale)
 const rullaOvet = i18n.tuotteet.rullaOvet
+const currentLocale = Astro.currentLocale ?? "fi"
+
 ---
 
 <main class="tuote-page">
   <TuoteIntro title={rullaOvet.title} intro={rullaOvet.info.intro} />
+
+  <div class="wrapper tuote-moreInfo">
+    <p set:html={rullaOvet.info.intro2} />
+  </div>
+
+  <TuoteValikoimaInfo title={rullaOvet.valikoima.title} items={[
+    { header: rullaOvet.valikoima.thermotech.title, extraInfo: rullaOvet.valikoima.thermotech.info, img: "/images/ovet/rullaovet/thermoteck.webp" },
+    { header: rullaOvet.valikoima.thermotechEasy.title, extraInfo: rullaOvet.valikoima.thermotechEasy.info, img: "/images/ovet/rullaovet/thermoteckeasy.webp" },
+    { header: rullaOvet.valikoima.rullaKalterit.title, extraInfo: rullaOvet.valikoima.rullaKalterit.info, img: "/images/ovet/rullaovet/kalterit.webp" },
+    { header: rullaOvet.valikoima.xxl.title, extraInfo: rullaOvet.valikoima.xxl.info, img: "/images/ovet/rullaovet/xxl.webp" },
+    { header: rullaOvet.valikoima.pikaRullaovet.title, extraInfo: rullaOvet.valikoima.pikaRullaovet.info, img: "/images/ovet/rullaovet/pikarulla.webp" },
+    { header: rullaOvet.valikoima.pvc.title, extraInfo: rullaOvet.valikoima.pvc.info, img: "/images/ovet/rullaovet/pvc.webp" },
+  ]} />
+
+  <div class="check-gallery"><p>{i18n.tuotteet.checkGallery}</p> <a href={getRelativeLocaleUrl(currentLocale, "galleria")}>{i18n.tuotteet.galleriasta}</a></div>
+
+  <div class="tuote-highlight">
+    <div class="wrapper tuote-moreInfo">
+      <p set:html={rullaOvet.info.intro3} />
+    </div>
+  </div>
+
+  <div class="brochure">
+    <a href="/images/ovet/rullaovet/esite.pdf" target="_blank" rel="noopener noreferrer">
+      <img src="/images/ovet/rullaovet/esite.webp" alt={i18n.tuotteet.brochure.alt} />
+      <span>{i18n.tuotteet.brochure.text}</span>
+    </a>
+  </div>
+
+  <CtaComponent title={rullaOvet.sell} />
 </main>
 
 <style>
-.tuote-page {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+  .tuote-page {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .tuote-moreInfo {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 800px);
+    text-wrap: pretty;
+  }
+
+  .tuote-highlight {
+    background-color: var(--accent-xxlight);
+    padding-block: 1rem;
+  }
+
+  .brochure {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    & a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent-xdark);
+      text-decoration: underline;
+
+      &:hover {
+        color: var(--accent-base);
+      }
+    }
+
+    & img {
+      width: min(100%, 240px);
+    }
+  }
+
+  .check-gallery {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25em;
+
+    & a {
+      color: var(--accent-xdark);
+      text-decoration: underline;
+
+      &:hover {
+        color: var(--accent-base);
+      }
+    }
 </style>
