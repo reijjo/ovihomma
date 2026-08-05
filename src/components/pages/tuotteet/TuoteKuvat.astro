@@ -1,6 +1,8 @@
 ---
 import { t } from "@/i18n"
+import { getRelativeLocaleUrl } from "astro:i18n"
 const i18n = t(Astro.currentLocale)
+const currentLocale = Astro.currentLocale ?? "fi"
 
 interface Props {
   images: { src: string; alt: string }[];
@@ -15,6 +17,7 @@ const { images } = Astro.props;
       <img src={img.src} alt={img.alt} loading="lazy" />
     ))}
   </div>
+  <div class="check-gallery"><p>{i18n.tuotteet.checkGallery}</p> <a href={getRelativeLocaleUrl(currentLocale, "galleria")}>{i18n.tuotteet.galleriasta}</a></div>
 </div>
 
 <style>
@@ -40,6 +43,24 @@ const { images } = Astro.props;
       object-fit: cover;
       border-radius: 4px;
       justify-self: center;
+    }
+  }
+
+  .check-gallery {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25em;
+
+    & a {
+      color: var(--accent-xdark);
+      text-decoration: underline;
+
+      &:hover {
+        color: var(--accent-base);
+      }
     }
   }
 </style>

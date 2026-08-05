@@ -45,6 +45,7 @@ export const en = {
     previous: "Previous image",
     next: "Next image",
     imageAlt: "Door solution",
+    sell: "Feel free to ask for more information about our products!"
   },
   homepage: {
     hero: {
@@ -139,6 +140,8 @@ export const en = {
   tuotteet: {
     title: "Products",
     esimerkkeja: "Our work",
+    checkGallery: "Find more photos in our",
+    galleriasta: "gallery",
     nostoOvet: {
       title: "Sectional doors",
       description: "",
@@ -261,17 +264,19 @@ export const en = {
       }
     },
     puomit: {
-      title: "Barriers",
+      title: "Yard gates & fences",
       description: "",
+      sell: "Would you like more information about yard gates and fences? Request a quote now!",
       info: {
-        intro: "Barrier systems provide controlled access and help improve the security and flow of vehicles and pedestrians."
+        intro: "More information coming soon..."
       }
     },
     hyllyt: {
-      title: "Shelving",
+      title: "Cabinet storage systems",
       description: "",
+      sell: "Would you like more information about cabinet storage systems? Request a quote now!",
       info: {
-        intro: "Shelving systems make efficient use of available space and keep goods and equipment organised."
+        intro: "More information coming soon..."
       }
     },
   }

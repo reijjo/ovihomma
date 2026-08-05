@@ -6,17 +6,53 @@ import { t } from "@/i18n";
 const i18n = t(Astro.currentLocale);
 const sections = [
   {
-    title: i18n.gallery.sectionTitle,
+    title: i18n.nav.nostoOvet,
     images: [
-      { src: "/images/ovet/hallirakennus.jpg", alt: "Edificio industrial con puerta seccional" },
-      { src: "/images/ovet/harmaa_halli2.jpg", alt: "Nave industrial gris" },
-      { src: "/images/ovet/iso_harmaa_sisa.jpg", alt: "Interior de una puerta industrial" },
-      { src: "/images/ovet/ecolid-4-delad-4-rader-glas.jpg", alt: "Puerta seccional con ventanas" },
-      { src: "/images/ovet/Floda-Västergårdsväg.jpg", alt: "Puerta industrial en un edificio" },
-      { src: "/images/ovet/kauppa_verkko.jpg", alt: "Puerta de malla en un local comercial" },
-      { src: "/images/ovet/paloasema.jpg", alt: "Puertas de estación de bomberos" },
-      { src: "/images/ovet/Rullaovet.jpg", alt: "Puerta enrollable" },
+      { src: "/images/ovet/nosto-ovet/kapea1.webp", alt: "Puerta seccional estrecha" },
+      { src: "/images/ovet/nosto-ovet/kapea2.webp", alt: "Puerta seccional estrecha" },
+      { src: "/images/ovet/nosto-ovet/kapea3.jpg", alt: "Puerta seccional estrecha" },
+      { src: "/images/ovet/nosto-ovet/levea1.webp", alt: "Puerta seccional ancha" },
+      { src: "/images/ovet/nosto-ovet/levea2.webp", alt: "Puerta seccional ancha" },
+      { src: "/images/ovet/nosto-ovet/ovella.jpg", alt: "Puerta seccional en un edificio" },
+      { src: "/images/ovet/nosto-ovet/silea1.webp", alt: "Puerta seccional lisa" },
+      { src: "/images/ovet/nosto-ovet/silea2.webp", alt: "Puerta seccional lisa" },
+      { src: "/images/ovet/nosto-ovet/silea3.webp", alt: "Puerta seccional lisa" },
     ],
+  },
+  {
+    title: i18n.nav.paloOvet,
+    images: [
+      { src: "/images/ovet/palo-ovet/metalluks6.webp", alt: "Puerta metálica cortafuego" },
+      { src: "/images/ovet/palo-ovet/palokaihdin1.webp", alt: "Persiana cortafuego" },
+      { src: "/images/ovet/palo-ovet/paloliuku1.webp", alt: "Puerta corredera cortafuego" },
+      { src: "/images/ovet/palo-ovet/paloliuku2.webp", alt: "Puerta corredera cortafuego" },
+      { src: "/images/ovet/palo-ovet/paloliuku3.webp", alt: "Puerta corredera cortafuego" },
+      { src: "/images/ovet/palo-ovet/paloliuku4.webp", alt: "Puerta corredera cortafuego" },
+      { src: "/images/ovet/palo-ovet/palometalli1.webp", alt: "Puerta metálica cortafuego" },
+      { src: "/images/ovet/palo-ovet/palometalli2.webp", alt: "Puerta metálica cortafuego" },
+      { src: "/images/ovet/palo-ovet/palometalli3.webp", alt: "Puerta metálica cortafuego" },
+      { src: "/images/ovet/palo-ovet/palorulla1.webp", alt: "Puerta enrollable cortafuego" },
+      { src: "/images/ovet/palo-ovet/palorulla2.webp", alt: "Puerta enrollable cortafuego" },
+    ],
+  },
+  {
+    title: i18n.nav.rullaovetTurvakaihtimet,
+    images: [
+      { src: "/images/ovet/rullaovet/kalterit.webp", alt: "Rejas de seguridad" },
+      { src: "/images/ovet/rullaovet/pikarulla.webp", alt: "Puerta enrollable rápida" },
+      { src: "/images/ovet/rullaovet/pvc.webp", alt: "Puerta enrollable de PVC" },
+      { src: "/images/ovet/rullaovet/thermoteck.webp", alt: "Puerta enrollable Thermoteck" },
+      { src: "/images/ovet/rullaovet/thermoteckeasy.webp", alt: "Puerta enrollable Thermoteck Easy" },
+      { src: "/images/ovet/rullaovet/xxl.webp", alt: "Puerta enrollable XXL" },
+    ],
+  },
+  {
+    title: i18n.nav.pihaportitAidat,
+    images: [],
+  },
+  {
+    title: i18n.nav.kaapit,
+    images: [],
   },
 ];
 ---
@@ -24,7 +60,6 @@ const sections = [
 <Layout title={i18n.gallery.title} description={i18n.gallery.description}>
   <GalleryPage
     title={i18n.gallery.title}
-    intro={i18n.gallery.intro}
     sections={sections}
     labels={i18n.gallery}
   />

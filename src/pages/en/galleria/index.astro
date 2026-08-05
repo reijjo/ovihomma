@@ -6,17 +6,53 @@ import { t } from "@/i18n";
 const i18n = t(Astro.currentLocale);
 const sections = [
   {
-    title: i18n.gallery.sectionTitle,
+    title: i18n.nav.nostoOvet,
     images: [
-      { src: "/images/ovet/hallirakennus.jpg", alt: "Industrial building with a sectional door" },
-      { src: "/images/ovet/harmaa_halli2.jpg", alt: "Grey industrial hall" },
-      { src: "/images/ovet/iso_harmaa_sisa.jpg", alt: "Inside of an industrial door" },
-      { src: "/images/ovet/ecolid-4-delad-4-rader-glas.jpg", alt: "Sectional door with windows" },
-      { src: "/images/ovet/Floda-Västergårdsväg.jpg", alt: "Industrial door in a building" },
-      { src: "/images/ovet/kauppa_verkko.jpg", alt: "Mesh door in a commercial space" },
-      { src: "/images/ovet/paloasema.jpg", alt: "Fire station doors" },
-      { src: "/images/ovet/Rullaovet.jpg", alt: "Roller door" },
+      { src: "/images/ovet/nosto-ovet/kapea1.webp", alt: "Narrow sectional door" },
+      { src: "/images/ovet/nosto-ovet/kapea2.webp", alt: "Narrow sectional door" },
+      { src: "/images/ovet/nosto-ovet/kapea3.jpg", alt: "Narrow sectional door" },
+      { src: "/images/ovet/nosto-ovet/levea1.webp", alt: "Wide sectional door" },
+      { src: "/images/ovet/nosto-ovet/levea2.webp", alt: "Wide sectional door" },
+      { src: "/images/ovet/nosto-ovet/ovella.jpg", alt: "Sectional door in a building" },
+      { src: "/images/ovet/nosto-ovet/silea1.webp", alt: "Smooth sectional door" },
+      { src: "/images/ovet/nosto-ovet/silea2.webp", alt: "Smooth sectional door" },
+      { src: "/images/ovet/nosto-ovet/silea3.webp", alt: "Smooth sectional door" },
     ],
+  },
+  {
+    title: i18n.nav.paloOvet,
+    images: [
+      { src: "/images/ovet/palo-ovet/metalluks6.webp", alt: "Fire-resistant steel door" },
+      { src: "/images/ovet/palo-ovet/palokaihdin1.webp", alt: "Fire-resistant shutter" },
+      { src: "/images/ovet/palo-ovet/paloliuku1.webp", alt: "Fire-resistant sliding door" },
+      { src: "/images/ovet/palo-ovet/paloliuku2.webp", alt: "Fire-resistant sliding door" },
+      { src: "/images/ovet/palo-ovet/paloliuku3.webp", alt: "Fire-resistant sliding door" },
+      { src: "/images/ovet/palo-ovet/paloliuku4.webp", alt: "Fire-resistant sliding door" },
+      { src: "/images/ovet/palo-ovet/palometalli1.webp", alt: "Fire-resistant steel door" },
+      { src: "/images/ovet/palo-ovet/palometalli2.webp", alt: "Fire-resistant steel door" },
+      { src: "/images/ovet/palo-ovet/palometalli3.webp", alt: "Fire-resistant steel door" },
+      { src: "/images/ovet/palo-ovet/palorulla1.webp", alt: "Fire-resistant roller door" },
+      { src: "/images/ovet/palo-ovet/palorulla2.webp", alt: "Fire-resistant roller door" },
+    ],
+  },
+  {
+    title: i18n.nav.rullaovetTurvakaihtimet,
+    images: [
+      { src: "/images/ovet/rullaovet/kalterit.webp", alt: "Security grilles" },
+      { src: "/images/ovet/rullaovet/pikarulla.webp", alt: "High-speed roller door" },
+      { src: "/images/ovet/rullaovet/pvc.webp", alt: "PVC roller door" },
+      { src: "/images/ovet/rullaovet/thermoteck.webp", alt: "Thermoteck roller door" },
+      { src: "/images/ovet/rullaovet/thermoteckeasy.webp", alt: "Thermoteck Easy roller door" },
+      { src: "/images/ovet/rullaovet/xxl.webp", alt: "XXL roller door" },
+    ],
+  },
+  {
+    title: i18n.nav.pihaportitAidat,
+    images: [],
+  },
+  {
+    title: i18n.nav.kaapit,
+    images: [],
   },
 ];
 ---
@@ -24,7 +60,6 @@ const sections = [
 <Layout title={i18n.gallery.title} description={i18n.gallery.description}>
   <GalleryPage
     title={i18n.gallery.title}
-    intro={i18n.gallery.intro}
     sections={sections}
     labels={i18n.gallery}
   />

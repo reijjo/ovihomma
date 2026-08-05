@@ -45,6 +45,8 @@ export const es = {
     previous: "Imagen anterior",
     next: "Imagen siguiente",
     imageAlt: "Solución para puertas",
+    sell: "¡No dudes en preguntarnos más sobre nuestros productos!"
+
   },
   homepage: {
     hero: {
@@ -139,6 +141,8 @@ export const es = {
   tuotteet: {
     title: "Productos",
     esimerkkeja: "Nuestro trabajo",
+    checkGallery: "Puedes encontrar más fotos en nuestra",
+    galleriasta: "galería",
     nostoOvet: {
       title: "Puertas seccionales",
       description: "",
@@ -261,17 +265,19 @@ export const es = {
       }
     },
     puomit: {
-      title: "Barreras",
+      title: "Puertas y vallas de jardín",
       description: "",
+      sell: "¿Quieres más información sobre puertas y vallas de jardín? ¡Solicita un presupuesto ahora!",
       info: {
-        intro: "Los sistemas de barrera permiten controlar el acceso y mejorar la seguridad y el flujo de vehículos y peatones."
+        intro: "Más información próximamente..."
       }
     },
     hyllyt: {
-      title: "Estanterías",
+      title: "Sistemas de almacenamiento para armarios",
       description: "",
+      sell: "¿Quieres más información sobre sistemas de almacenamiento para armarios? ¡Solicita un presupuesto ahora!",
       info: {
-        intro: "Los sistemas de estanterías aprovechan eficazmente el espacio disponible y mantienen organizados los productos y equipos."
+        intro: "Más información próximamente..."
       }
     },
   }
