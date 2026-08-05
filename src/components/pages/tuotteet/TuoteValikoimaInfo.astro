@@ -1,0 +1,70 @@
+---
+type Item = {
+  header: string;
+  extraInfo: string;
+  img: string;
+};
+
+type Props = {
+  title: string;
+  items: Item[];
+  extraClass?: string;
+};
+
+const { title, items, extraClass } = Astro.props;
+---
+
+<div class="wrapper tuote-valikoima">
+  <p class="text-center"><b>{title}</b></p>
+  <div class="tuote-list">
+    {items.map((item) => (
+      <article class={`tuote-list-item ${extraClass ?? ""}`}>
+        <img class="tuote-list-img" src={item.img} alt={item.header} />
+        <h3 class="tuote-list-header">{item.header}</h3>
+        <p class="tuote-list-info" set:html={item.extraInfo} />
+      </article>
+    ))}
+  </div>
+</div>
+
+<style>
+.tuote-valikoima {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 800px);
+  text-wrap: pretty;
+  gap: 1rem;
+}
+
+.tuote-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  place-items: start center;
+}
+
+.tuote-list-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  gap: 0.5rem;
+}
+
+.tuote-list-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.tuote-list-header {
+  font-size: 1.125rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tuote-list-info {
+  text-wrap: pretty;
+}
+</style>

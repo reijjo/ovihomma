@@ -49,7 +49,7 @@ export const fi = {
   },
   homepage: {
     hero: {
-      header: "Suomalaisella ammattitaidolla nosto-ovien, rullaovien ja turvakaihtimien, palo-ovien, pihaporttien ja aitojen sekä kaappien säilytysjärjestelmien asennukset",
+      header: "Suomalaisella ammattitaidolla nosto-ovien, palo-ovien, pihaporttien ja aitojen sekä kaappien säilytysjärjestelmien asennukset",
       heroCta: "Pyydä tarjous tai jotain?",
     },
     lyhyesti: {
@@ -138,6 +138,10 @@ export const fi = {
     esimerkkeja: "Esimerkkejä:",
     checkGallery: "Lisää kuvia löydät ",
     galleriasta: "galleriastamme",
+    brochure: {
+      text: "Katso lisätietoja tästä esitteestä",
+      alt: "Teckentrup Door Solutions -esite",
+    },
     nostoOvet: {
       title: "Nosto-ovet",
       description: "",
@@ -192,7 +196,37 @@ export const fi = {
       title: "Rullaovet & turvakaihtimet",
       description: "",
       info: {
-        intro: "Tilaa säästävän rullatekniikan ja kestävän rullakaihtimen ansiosta Teckentrup-rullaovi sopii poikkeuksellisen hyvin rakennusten sellaisiin korkeisiin ja leveisiin kulkuaukkoihin, jotka ovat ankaran rasituksen alaisina, esimerkiksi erittäin kovalla tuulella. Rullaovet ovat paras valinta, kun päällysteen olemus tekee ohjauskiskojen kiinnityksen hankalaksi tai jopa mahdottomaksi. Rakenteeltaan yksinkertaiset, lujat ja joustavat rullaovet ja tiiviisti kelatut ovikaihtimet tarjoavat laajan valikoiman käyttömahdollisuuksia. Hankalat ovijärjestelmät erottuvat kustannustehokkuudellaan, kestävyydellään ja yksinkertaisella rakenteellaan."
+        intro: "Tilaa säästävän rullatekniikan ja kestävän rullakaihtimen ansiosta Teckentrup-rullaovi sopii poikkeuksellisen hyvin rakennusten sellaisiin korkeisiin ja leveisiin kulkuaukkoihin, jotka ovat ankaran rasituksen alaisina, esimerkiksi erittäin kovalla tuulella. Rullaovet ovat paras valinta, kun päällysteen olemus tekee ohjauskiskojen kiinnityksen hankalaksi tai jopa mahdottomaksi. Rakenteeltaan yksinkertaiset, lujat ja joustavat rullaovet ja tiiviisti kelatut ovikaihtimet tarjoavat laajan valikoiman käyttömahdollisuuksia. Hankalat ovijärjestelmät erottuvat kustannustehokkuudellaan, kestävyydellään ja yksinkertaisella rakenteellaan.",
+        intro2: "Teollisuuskäyttöön tarkoitettuja rullaovia, joissa on sivuilla ohjauskiskot ja ovena kulkuaukon ylityksessä olevaan akseliin kelattu rullakaihdin, käytetään kaikkialla, jossa tarvitaan yksinkertaisia ja kestäviä teollisia rullaovia. Ovikaihtimet voi valmistaa yhden seinän ja kaksoisseinä-versioina. Rullaovien yksinkertainen muotoilu ei vaadi saranoita, sillä yksittäiset profiilit työnnetään vain toistensa sisään. Laajan värivalikoiman ansiosta suunnittelijat ja arkkitehdit voivat käyttää luovuuden kannalta tärkeää voimavaraa, toteuttaa yksilöllistä tyyliään ja sovittaa ovet olemassa olevaan julkisivuarkkitehtuuriin.",
+        intro3: "Teckentrup-rullaovet vastaavat kaikkia EN 13241-1 turvallisuusvaatimuksia ja erittelyitä. Se tarkoittaa, että jokaisen oven osalta mekaanisia näkökantoja, käytön turvallisuutta, lämpöeristystä, äänieristystä, tiiviyttä ja tuulikuormaa käsitellään eurooppalaisten standardien mukaan. Tehokkaat käyttölaite- ja ohjausjärjestelmät ovat keskenään ihanteellisesti säädetyt ja ne voi helposti asentaa ja ohjelmoida. Nykyaikaisten ohjauselementtien käyttö varmistaa ovien päivittäiseen avaamiseen ja sulkemiseen lisämukavuutta."
+      },
+      sell: "Haluatko lisätietoja rullaovista? Lähetä hintapyyntö!",
+      valikoima: {
+        title: "Erilaisia rullaovia ja kaihtimia:",
+        thermotech: {
+          title: "Rullaovi ThermoTeck",
+          info: "Meidän kaksinkertaisella seinällä varustettu ja eristetty ThermoTeck -rullaovemme koostuu katetuista teräsprofiileista. Se on varustettu ylätiivisteellä ja sopivalla käämiakselilla sekä 400 V 3-vaiheisella päältä liitetyllä käyttölaitteella."
+        },
+        thermotechEasy: {
+          title: 'Rullaovi ThermoTeck "yksinkertainen"',
+          info: 'Teckentrup ”Easy” (“yksinkertainen”) rullaovi erottuu yksinkertaisella ja lujalla muotoilullaan. Älykkäästi yksinkertaistettujen komponenttien ansiosta hankalia mittaustöitä ei tarvita.'
+        },
+        rullaKalterit: {
+          title: "Rullakalterit",
+          info: "Teckentrupin erilaiset ristikkomuotoiset rullakalterit takaavat ihanteellisen ilmanvaihdon, näkyvyyden ja suojan. Suosittuja käyttöalueita ovat suurin näyteikkunoin varustettujen kauppakeskusten myyntikäytävät, maanalaiset autotallit ja pysäköintipaikat."
+        },
+        xxl: {
+          title: "XXL Rullaovet",
+          info: "Kaksoisrullaovet koostuvat vähintään kahdesta toisiaan lähellä olevasta ovesta, joiden korkeus on jopa 10 metri, jonka osalta pyöreä 50 cm levyinen sinkitystä teräksestä valmistettu keskituki vastaa sivuttaisesta liikkeestä ja mahdollistaa nostettujen ovien kevyen sivuille työntämisen. Yksipuolisen oven <b>leveys max. 18 metriä</b>, kaksoisrullaoven <b>leveys max. 36 metriä.</b>"
+        },
+        pikaRullaovet: {
+          title: "Pikarullaovet",
+          info: "Suuri, jatkuvasti jopa 1,5 metrin sekuntinopeudella toimiva ja lujarakenteinen rullaovi vastaa kaikkien käyttöalojen vaatimuksia, ennen kaikkea ulko-ovena käytettäessä.",
+        },
+        pvc: {
+          title: "PVC Pikarullaovet",
+          info: "Teckentrupin nopeat pikarullaovet sopivat vaativaan ja jatkuvaan käyttöön sekä sisä- että ulko-olosuhteisiin. Ne takaavat sujuvan liikevirran ja vähentävät kylmään vuodenaikaan energiahukan minimiin."
+        }
       }
     },
     paloOvet: {

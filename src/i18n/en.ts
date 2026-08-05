@@ -49,7 +49,7 @@ export const en = {
   },
   homepage: {
     hero: {
-      header: "Professional Finnish expertise in the installation of sectional doors, roller doors and security shutters, fire doors, yard gates and fences, and cabinet storage systems",
+      header: "Professional Finnish expertise in the installation of sectional doors, fire doors, yard gates and fences, and cabinet storage systems",
       heroCta: "Request a quote or something?",
     },
     lyhyesti: {
@@ -142,6 +142,10 @@ export const en = {
     esimerkkeja: "Our work",
     checkGallery: "Find more photos in our",
     galleriasta: "gallery",
+    brochure: {
+      text: "See more information in this brochure",
+      alt: "Teckentrup Door Solutions brochure",
+    },
     nostoOvet: {
       title: "Sectional doors",
       description: "",
@@ -196,8 +200,39 @@ export const en = {
       title: "Roller doors & security shutters",
       description: "",
       info: {
-        intro: "Thanks to its space-saving roller mechanism and durable roller shutter, the Teckentrup roller door is particularly well suited to high and wide openings subject to heavy loads, such as strong winds. Roller doors are the best choice when the surface structure makes attaching guide rails difficult or even impossible. Simple, strong, and flexible roller doors and tightly coiled shutters offer a wide range of applications. These demanding door systems stand out for their cost-effectiveness, durability, and simple construction."
+        intro: "Thanks to its space-saving roller mechanism and durable roller shutter, the Teckentrup roller door is particularly well suited to high and wide openings subject to heavy loads, such as strong winds. Roller doors are the best choice when the surface structure makes attaching guide rails difficult or even impossible. Simple, strong, and flexible roller doors and tightly coiled shutters offer a wide range of applications. These demanding door systems stand out for their cost-effectiveness, durability, and simple construction.",
+        intro2: "Roller doors intended for industrial use, with guide rails on the sides and a roller shutter wound onto a shaft above the opening, are used wherever simple and durable industrial roller doors are needed. The shutters are available in single-wall and double-wall versions. The simple design of roller doors does not require hinges, as the individual profiles are simply fitted into one another. The wide range of colours gives designers and architects the freedom to create an individual style and match the doors to the existing facade architecture.",
+        intro3: "Teckentrup roller doors meet all EN 13241-1 safety requirements and specifications. This means that the mechanical properties, operational safety, thermal insulation, sound insulation, airtightness, and wind load of every door are assessed according to European standards. The efficient operators and control systems are ideally adjusted to one another and can be installed and programmed easily. Modern control elements make the doors more convenient to open and close every day."
+      },
+      sell: "Would you like more information about roller doors? Request a quote!",
+      valikoima: {
+        title: "Different roller doors and shutters:",
+        thermotech: {
+          title: "ThermoTeck roller door",
+          info: "Our insulated, double-wall ThermoTeck roller door consists of covered steel profiles. It is equipped with a top seal, a suitable winding shaft, and a top-mounted 400 V three-phase operator."
+        },
+        thermotechEasy: {
+          title: 'ThermoTeck "Easy" roller door',
+          info: 'The Teckentrup "Easy" roller door stands out with its simple and sturdy design. Its intelligently simplified components eliminate the need for complicated measuring work.'
+        },
+        rullaKalterit: {
+          title: "Roller grilles",
+          info: "Teckentrup's various lattice-style roller grilles provide ideal ventilation, visibility, and protection. Common applications include shopping-centre sales corridors with large display windows, underground garages, and parking facilities."
+        },
+        xxl: {
+          title: "XXL roller doors",
+          info: "Double roller doors consist of at least two closely positioned doors, with a height of up to 10 metres. A round, 50 cm-wide galvanised-steel centre support handles lateral movement and allows raised doors to be pushed easily to the sides. A single door can be <b>up to 18 metres wide</b>, while a double roller door can be <b>up to 36 metres wide.</b>"
+        },
+        pikaRullaovet: {
+          title: "High-speed roller doors",
+          info: "A large, robust roller door that operates continuously at speeds of up to 1.5 metres per second meets the requirements of all applications, especially when used as an exterior door.",
+        },
+        pvc: {
+          title: "PVC high-speed roller doors",
+          info: "Teckentrup's high-speed roller doors are suitable for demanding, continuous use both indoors and outdoors. They ensure smooth traffic flow and minimise energy loss during the cold season."
+        }
       }
+
     },
     paloOvet: {
       title: "Fire doors",

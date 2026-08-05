@@ -4,6 +4,7 @@ import { t } from "@/i18n";
 import autotalli from "./kuvat/autotalli.webp";
 import rullaovi from "./kuvat/rullaovi.webp";
 import paloOvi from "./kuvat/palo-ovi.webp";
+import hyllyt from "./kuvat/hylly4.jpg"
 
 const i18n = t(Astro.currentLocale);
 ---
@@ -36,7 +37,7 @@ const i18n = t(Astro.currentLocale);
       subheader={i18n.homepage.lyhyesti.kuvat.puomit.subHeader}
     />
     <LyhyestiKuva
-      src={paloOvi.src}
+      src={hyllyt.src}
       alt={i18n.homepage.lyhyesti.kuvat.hyllykot.header}
       header={i18n.homepage.lyhyesti.kuvat.hyllykot.header}
       subheader={i18n.homepage.lyhyesti.kuvat.hyllykot.subHeader}
@@ -59,6 +60,7 @@ const i18n = t(Astro.currentLocale);
     font-size: 1.25rem;
     text-wrap: pretty;
     max-width: 800px;
+    font-weight: 600;
   }
 
   .lyhyesti-kuvat-container {
