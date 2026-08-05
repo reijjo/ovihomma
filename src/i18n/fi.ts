@@ -45,7 +45,7 @@ export const fi = {
     previous: "Edellinen kuva",
     next: "Seuraava kuva",
     imageAlt: "Oviratkaisu",
-    sell: "Kysy rohkeasti lisää tuotteeistamme!"
+    sell: "Kysy rohkeasti lisää tuotteistamme!"
   },
   homepage: {
     hero: {
