@@ -12,7 +12,6 @@ type GallerySection = {
 
 type Props = {
   title: string;
-  intro: string;
   sections: GallerySection[];
   labels: {
     close: string;
@@ -21,19 +20,19 @@ type Props = {
   };
 };
 
-const { title, intro, sections, labels } = Astro.props;
-const images = sections.flatMap((section) => section.images);
+const { title, sections, labels } = Astro.props;
+const visibleSections = sections.filter((section) => section.images.length > 0);
+const images = visibleSections.flatMap((section) => section.images);
 ---
 
 <main class="gallery-page">
   <div class="wrapper gallery-intro">
     <h1>{title}</h1>
-    <p>{intro}</p>
   </div>
 
   <div class="wrapper gallery-sections">
     {
-      sections.map((section) => (
+      visibleSections.map((section) => (
         <section class="gallery-section" aria-labelledby={`gallery-${section.title}`}>
           <h2 id={`gallery-${section.title}`}>{section.title}</h2>
           <div class="gallery-grid">
@@ -198,6 +197,8 @@ const images = sections.flatMap((section) => section.images);
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
+    border-radius: 4px;
+
   }
 
   .gallery-card span {

@@ -45,6 +45,7 @@ export const fi = {
     previous: "Edellinen kuva",
     next: "Seuraava kuva",
     imageAlt: "Oviratkaisu",
+    sell: "Kysy rohkeasti lisää tuotteeistamme!"
   },
   homepage: {
     hero: {
@@ -135,6 +136,8 @@ export const fi = {
   tuotteet: {
     title: "Tuotteet",
     esimerkkeja: "Esimerkkejä:",
+    checkGallery: "Lisää kuvia löydät ",
+    galleriasta: "galleriastamme",
     nostoOvet: {
       title: "Nosto-ovet",
       description: "",
@@ -257,17 +260,19 @@ export const fi = {
       }
     },
     puomit: {
-      title: "Puomit",
+      title: "Pihaportit & aidat",
       description: "",
+      sell: "Kysy lisää pihaporteista ja aidoista",
       info: {
-        intro: "Puomeista jotain"
+        intro: "Lisätietoja tulossa pian..."
       }
     },
     hyllyt: {
-      title: "Hyllyt",
+      title: "Kaappien säilytysjärjestelmät",
       description: "",
+      sell: "Kysy lisää kaappien säilytysjärjestelmistä",
       info: {
-        intro: "Hyllyistä jotain"
+        intro: "Lisätietoja tulossa pian..."
       }
     },
   }

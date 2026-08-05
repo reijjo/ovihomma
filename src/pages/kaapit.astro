@@ -1,6 +1,8 @@
 ---
 import Layout from "@/components/layouts/Layout.astro";
 import TuoteIntro from "@/components/pages/tuotteet/TuoteIntro.astro";
+import TuoteKuvia from "@/components/pages/tuotteet/TuoteKuvat.astro";
+import CtaComponent from "@/components/ui/CtaComponent.astro";
 import { t } from "@/i18n";
 
 const i18n = t(Astro.currentLocale);
@@ -8,7 +10,29 @@ const kaapit = i18n.tuotteet.hyllyt;
 ---
 
 <Layout title={i18n.nav.kaapit} description={kaapit.description}>
-  <main class="tuote-page">
-    <TuoteIntro title={i18n.nav.kaapit} intro={kaapit.info.intro} />
+  <main class="tuote-page semi-empty">
+    <TuoteIntro title={kaapit.title} intro={kaapit.info.intro} />
+    <TuoteKuvia images={[
+      { src: "/images/hyllyt/hylly3.jpg", alt: "Hylly 3"},
+      { src: "/images/hyllyt/hylly2.jpg", alt: "Hylly 2"},
+      { src: "/images/hyllyt/hylly4.jpg", alt: "Hylly 4"}
+
+    ]} />
+    <CtaComponent title={kaapit.sell} />
   </main>
 </Layout>
+
+<style>
+  .tuote-page {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .semi-empty {
+    justify-content: space-between;
+    min-height: 100dvh;
+    text-align: center;
+  }
+
+</style>
