@@ -5,8 +5,11 @@ import autotalli from "./kuvat/autotalli.webp";
 import rullaovi from "./kuvat/rullaovi.webp";
 import paloOvi from "./kuvat/palo-ovi.webp";
 import hyllyt from "./kuvat/hylly4.jpg"
+import aita from "./kuvat/piha-aita.jpg"
 
 const i18n = t(Astro.currentLocale);
+const localizedPath = (path: string) =>
+  Astro.currentLocale === "fi" ? `/${path}` : `/${Astro.currentLocale}/${path}`;
 ---
 
 <section class="lyhyesti wrapper">
@@ -14,30 +17,35 @@ const i18n = t(Astro.currentLocale);
   <div class="lyhyesti-kuvat-container">
     <LyhyestiKuva
       src={autotalli.src}
+      href={localizedPath("nosto-ovet")}
       alt={i18n.homepage.lyhyesti.kuvat.nostoOvet.header}
       header={i18n.homepage.lyhyesti.kuvat.nostoOvet.header}
       subheader={i18n.homepage.lyhyesti.kuvat.nostoOvet.subHeader}
     />
     <LyhyestiKuva
       src={rullaovi.src}
+      href={localizedPath("rullaovet-turvakaihtimet")}
       alt={i18n.homepage.lyhyesti.kuvat.rullaovet.header}
       header={i18n.homepage.lyhyesti.kuvat.rullaovet.header}
       subheader={i18n.homepage.lyhyesti.kuvat.rullaovet.subHeader}
     />
     <LyhyestiKuva
       src={paloOvi.src}
+      href={localizedPath("palo-ovet")}
       alt={i18n.homepage.lyhyesti.kuvat.paloOvet.header}
       header={i18n.homepage.lyhyesti.kuvat.paloOvet.header}
       subheader={i18n.homepage.lyhyesti.kuvat.paloOvet.subHeader}
     />
     <LyhyestiKuva
-      src={paloOvi.src}
+      src={aita.src}
+      href={localizedPath("pihaportit")}
       alt={i18n.homepage.lyhyesti.kuvat.puomit.header}
       header={i18n.homepage.lyhyesti.kuvat.puomit.header}
       subheader={i18n.homepage.lyhyesti.kuvat.puomit.subHeader}
     />
     <LyhyestiKuva
       src={hyllyt.src}
+      href={localizedPath("kaapit")}
       alt={i18n.homepage.lyhyesti.kuvat.hyllykot.header}
       header={i18n.homepage.lyhyesti.kuvat.hyllykot.header}
       subheader={i18n.homepage.lyhyesti.kuvat.hyllykot.subHeader}
