@@ -138,7 +138,7 @@ export const POST: APIRoute = async ({ request, clientAddress }) => {
         from: runtimeEnv.CONTACT_FROM_EMAIL,
         to: [runtimeEnv.CONTACT_TO_EMAIL],
         reply_to: email,
-        subject: `New contact form message from ${name}`,
+        subject: `YHTEYDENOTTO: ${name}`,
         text: message,
       }),
     });

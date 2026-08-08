@@ -1,0 +1,9 @@
+---
+const [locale] = (Astro.params.path ?? "").split("/");
+
+if (locale === "api") {
+  return new Response(null, { status: 404 });
+}
+
+return Astro.redirect(locale === "en" ? "/en" : locale === "es" ? "/es" : "/", 302);
+---

@@ -101,7 +101,7 @@ export const en = {
     title: "About us",
     yrityksesta: {
       esittely:
-        " has offered high-quality interior doors, garage doors, and industrial doors on the Estonian market for 12 years. M.K. International OÜ has also been active in the Finnish market since 2014. Long experience, flexibility, and the ability to provide custom solutions are the best guarantee of customer satisfaction over the years.",
+        " has offered high-quality interior doors, garage doors, and industrial doors on the Estonian market for 12 years. We have also been active in the Finnish market since 2014. Long experience, flexibility, and the ability to provide custom solutions are the best guarantee of customer satisfaction over the years.",
       tuotevalikoima: {
         otsikko: "Our product range includes",
         nostettavat: "Sectional garage doors",

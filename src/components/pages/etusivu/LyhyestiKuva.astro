@@ -1,12 +1,12 @@
 ---
 type Props = {
-  href?: string;
+  href: string;
   src: string;
   alt: string;
   header: string;
   subheader: string;
 };
-const { href = "#", src, alt, header, subheader } = Astro.props;
+const { href, src, alt, header, subheader } = Astro.props;
 ---
 
 <a href={href} class="lyhyesti-kuva-link">

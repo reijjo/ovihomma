@@ -102,7 +102,7 @@ export const es = {
     title: "Sobre nosotros",
     yrityksesta: {
       esittely:
-        " ha ofrecido puertas interiores, puertas de garaje y puertas industriales de alta calidad en el mercado estonio durante 12 años. M.K. International OÜ también ha estado activa en el mercado finlandés desde 2014. La larga experiencia, la flexibilidad y la capacidad de ofrecer soluciones a medida son la mejor garantía de satisfacción del cliente a lo largo de los años.",
+        " ha ofrecido puertas interiores, puertas de garaje y puertas industriales de alta calidad en el mercado estonio durante 12 años. También hemos estado activos en el mercado finlandés desde 2014. La larga experiencia, la flexibilidad y la capacidad de ofrecer soluciones a medida son la mejor garantía de satisfacción del cliente a lo largo de los años.",
       tuotevalikoima: {
         otsikko: "Nuestra gama de productos incluye",
         nostettavat: "Puertas de garaje seccionales",
