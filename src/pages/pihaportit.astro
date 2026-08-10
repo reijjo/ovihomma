@@ -11,7 +11,11 @@ const i18n = t(Astro.currentLocale);
 <Layout title={i18n.nav.pihaportitAidat} description={i18n.nav.pihaportitAidat}>
   <main class="tuote-page semi-empty">
     <TuoteIntro title={i18n.tuotteet.puomit.title} intro={i18n.tuotteet.puomit.info.intro} />
-    <TuoteKuvia images={[]} />
+    <TuoteKuvia images={[
+      { src: "/images/aidat/piha-aita.jpg", alt: "Piha-aita"},
+      { src: "/images/aidat/karu1.jpg", alt: "aita1"},
+      { src: "/images/aidat/karu2.jpg", alt: "aita2"}
+    ]} />
     <CtaComponent title={i18n.tuotteet.puomit.sell} />
   </main>
 </Layout>
