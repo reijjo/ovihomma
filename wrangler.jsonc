@@ -14,6 +14,10 @@
 	"observability": {
 		"enabled": true,
 	},
+	"vars": {
+	  "CONTACT_TO_EMAIL": "info@bestpartners.fi",
+		"CONTACT_FROM_EMAIL": "J&P Best Partners SL <info@bestpartners.fi>"
+	},
 	"kv_namespaces": [
 		{
 			"binding": "CONTACT_RATE_LIMIT",
