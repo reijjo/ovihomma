@@ -1,6 +1,11 @@
 ---
 import Layout from "@/components/layouts/Layout.astro";
 import TuoteIntro from "@/components/pages/tuotteet/TuoteIntro.astro";
+import HighlightSection from "@/components/common/HighlightSection.astro";
+import InfoList from "@/components/common/InfoList.astro";
+import MoreInfo from "@/components/common/MoreInfo.astro";
+import CtaComponent from "@/components/ui/CtaComponent.astro";
+import TuoteKuvat from "@/components/pages/tuotteet/TuoteKuvat.astro";
 import { t } from "@/i18n";
 
 const i18n = t(Astro.currentLocale);
@@ -10,5 +15,51 @@ const page = i18n.tuotteet.rullaOvet.pikarullaovet;
 <Layout title={page.title} description={page.intro}>
   <main class="tuote-page">
     <TuoteIntro title={page.title} intro={page.intro} />
+    <HighlightSection>
+      <InfoList title={page.pikarulla.edut.title} items={[
+        page.pikarulla.edut.item1,
+        page.pikarulla.edut.item2,
+        page.pikarulla.edut.item3,
+        page.pikarulla.edut.item4,
+        page.pikarulla.edut.item5,
+        page.pikarulla.edut.item6,
+      ]} />
+    </HighlightSection>
+    <MoreInfo>
+      <p set:html={page.pikarulla.edut.more} />
+    </MoreInfo>
+
+    <TuoteKuvat images={[
+      { src: "/images/pikarullaovet/pikarulla.webp", alt: "Puerta enrollable rápida" }
+    ]} />
+
+    <div class="wrapper separator" aria-hidden="true" />
+
+    <TuoteIntro title={page.title2} intro={page.intro2} />
+    <HighlightSection>
+      <InfoList title={page.pvc.edut.title} items={[
+        page.pvc.edut.item1,
+        page.pvc.edut.item2,
+        page.pvc.edut.item3,
+        page.pvc.edut.item4,
+        page.pvc.edut.item5,
+        page.pvc.edut.item6,
+        page.pvc.edut.item7,
+      ]} />
+    </HighlightSection>
+
+    <TuoteKuvat images={[
+      { src: "/images/pikarullaovet/pvcpika.webp", alt: "Puerta enrollable rápida de PVC" }
+    ]} />
+
+    <CtaComponent title={page.sell} />
   </main>
 </Layout>
+
+<style>
+  .separator {
+    width: 90%;
+    height: 1rem;
+    background: linear-gradient(black, black) center / 100% 1px no-repeat;
+  }
+</style>

@@ -213,8 +213,35 @@ export const es = {
         rullaturvakaihtimet: "persianas enrollables de seguridad",
       },
       pikarullaovet: {
+        sell: "¿Te interesa?",
         title: "Puertas enrollables rápidas",
-        intro: "Las puertas enrollables rápidas se parecen a las puertas enrollables convencionales, pero su seguridad se ha <b>mejorado</b> y utilizan un <b>sistema de automatización más rápido</b> para garantizar un movimiento más veloz."
+        title2: "Puertas enrollables rápidas de PVC",
+        intro: "Las puertas enrollables rápidas se parecen a las puertas enrollables convencionales, pero su seguridad se ha <b>mejorado</b> y utilizan un <b>sistema de automatización más rápido</b> para garantizar un movimiento más veloz.",
+        intro2: "Las puertas enrollables rápidas de PVC se utilizan a menudo en edificios industriales y tiendas para separar las zonas de almacenamiento. Pueden utilizarse tanto en interiores como en exteriores y reducen significativamente la pérdida de calor durante los fríos meses de invierno.",
+        pikarulla: {
+          edut: {
+            title: "Ventajas de las puertas enrollables rápidas:",
+            item1: "Excelente durabilidad en uso continuo",
+            item2: "Control mediante convertidor de frecuencia: la función de arranque/parada protege los materiales y prolonga la vida útil de las puertas",
+            item3: "Las barreras y los bordes de seguridad integrados protegen contra posibles daños",
+            item4: "El rápido sistema de apertura y cierre reduce la pérdida de calor",
+            item5: "Velocidad media de apertura de 550 mm/s",
+            item6: "Dimensiones máximas de hasta 6000 x 8000 mm",
+            more: "Las puertas enrollables rápidas se utilizan, por ejemplo, en la industria alimentaria, instalaciones de producción, almacenes mayoristas y tiendas donde se requieren <b>pocas pérdidas de calor</b> y un <b>funcionamiento fluido</b> mediante una apertura y un cierre rápidos."
+          }
+        },
+        pvc: {
+          edut: {
+            title: "Ventajas de las puertas enrollables rápidas de PVC",
+            item1: "Lamas laterales autoportantes de acero galvanizado en caliente",
+            item2: "Lona de PVC transparente con alta resistencia a la tracción",
+            item3: "Tensado de la lona con un borde especial protegido contra impactos",
+            item4: "Bordes de cepillo especiales entre las lamas laterales y la lona de PVC",
+            item5: "Motor de alta eficiencia con husillo de alimentación e interruptor digital",
+            item6: "Velocidad media de apertura de 0,8–2,5 m/s",
+            item7: "Velocidad media de cierre de 0,8 m/s",
+          }
+        }
       },
       rullaturvakaihtimet: {
         title: "Persianas enrollables de seguridad",
