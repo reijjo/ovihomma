@@ -10,7 +10,7 @@ const { text, href } = Astro.props;
 ---
 <div class="go-back wrapper">
   <ArrowLeft size={16} />
-  <a href={href} data-go-back>{text}</a>
+  <a href={href}>{text}</a>
 </div>
 
 <style>
@@ -25,22 +25,3 @@ const { text, href } = Astro.props;
     }
   }
 </style>
-
-<script>
-  function bindGoBackLinks() {
-    document.querySelectorAll<HTMLAnchorElement>("[data-go-back]").forEach((link) => {
-      if (link.dataset.goBackBound) return;
-
-      link.dataset.goBackBound = "true";
-      link.addEventListener("click", (event) => {
-        if (history.length <= 1) return;
-
-        event.preventDefault();
-        history.back();
-      });
-    });
-  }
-
-  bindGoBackLinks();
-  document.addEventListener("astro:page-load", bindGoBackLinks);
-</script>

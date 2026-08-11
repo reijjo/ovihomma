@@ -328,7 +328,25 @@ export const fi = {
       rullaovet: {
         title: "Rullaovet",
         intro: "Palonkestävät rullaovet ovat ihanteellinen ratkaisu erilaisten tilojen paloturvallisuuden varmistamiseen. Rullaovia käytetään mm. varastorakennuksissa, kauppakeskuksissa, julkisissa rakennuksissa, toimistoissa ym., jossa palon rajoittaminen on ensiarvoisen tärkeää. Ovet vievät rullajärjestelmän ansiosta vähän tilaa ja niitä on helppo asentaa kapeisiin käyttökohteisiin.",
-        sell: "Haluatko lisätietoja rullaovista? Lähetä hintapyyntö heti!"
+        sell: "Haluatko lisätietoja rullaovista? Lähetä hintapyyntö heti!",
+        ominaisuudet: {
+          title: "Rullaovien ominaisuudet",
+          info: "",
+          items: {
+            item1: "Ovet on peitetty kuumasinkityllä teräksellä",
+            item2: "Ovet on lämpöeristetty",
+            item3: "Oviin on asennettu turvalliset törmäyslistat",
+            item4: "Oviakseli ja laakerit ovat korroosion kestäviä",
+            item5: "Palonkestävässä käyttölaitteessa (400V) on etuakselin voimansiirrossa jarrutusjärjestelmä, joka asettaa ovien sulkeutumisen nopeudeksi enintään 15 cm/s.",
+            item6: "Ovi sulkeutuu palon puhjetessa automaattisesti oman painonsa vaikutuksesta",
+            item7: "Oviin on asennettu paloilmaisimet ja –hälyttimet, hälytinkatkaisija ja ohjain (24V)",
+            item8: "Ovien odotettavissa oleva käyttöaika on noin 30 vuotta",
+          },
+        },
+        turvallisuus: {
+          title: "Turvallisuus ja sertifikaatit",
+          info: "Rullaovia on perusteellisesti testattu ja ne kestävät varmuudella vähintään 10 000 käyttökertaa. Oville on myönnetty EI-luokan paloturvallisuussertifikaatti EI 60 ja EI 120. Ovet varmistavat hyvän palonsuojan ja niitä on pakollista käyttää mm. vaarallisia aineita käsittelevissä laitoksissa."
+        }
       },
       liukuovet: {
         title: "Liukuovet",
