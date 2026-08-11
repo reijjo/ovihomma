@@ -1,0 +1,14 @@
+---
+import { t } from "@/i18n";
+import Layout from "@/components/layouts/Layout.astro";
+import TuoteIntro from "@/components/pages/tuotteet/TuoteIntro.astro";
+
+const i18n = t(Astro.currentLocale);
+const pikaRullaOvet = i18n.tuotteet.rullaOvet.pikarullaovet;
+---
+
+<Layout title={pikaRullaOvet.title} description={pikaRullaOvet.intro}>
+  <main class="tuote-page">
+    <TuoteIntro title={pikaRullaOvet.title} intro={pikaRullaOvet.intro} />
+  </main>
+</Layout>

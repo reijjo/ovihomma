@@ -1,0 +1,31 @@
+---
+import { t } from "@/i18n"
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const i18n = t(Astro.currentLocale)
+const currentLocale = Astro.currentLocale ?? "fi"
+---
+
+<div class="check-gallery">
+  <p>{i18n.tuotteet.checkGallery}</p>
+  <a href={getRelativeLocaleUrl(currentLocale, "galleria")}>{i18n.tuotteet.galleriasta}</a>
+</div>
+
+<style>
+  .check-gallery {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25em;
+
+    & a {
+      color: var(--accent-xdark);
+      text-decoration: underline;
+
+      &:hover {
+        color: var(--accent-base);
+      }
+    }
+</style>

@@ -1,0 +1,35 @@
+---
+import Layout from "@/components/layouts/Layout.astro";
+import TuoteIntro from "@/components/pages/tuotteet/TuoteIntro.astro";
+import MoreInfo from "@/components/common/MoreInfo.astro";
+import HighlightSection from "@/components/common/HighlightSection.astro";
+import CtaComponent from "@/components/ui/CtaComponent.astro";
+import TuoteKuvat from "@/components/pages/tuotteet/TuoteKuvat.astro";
+import { t } from "@/i18n";
+
+const i18n = t(Astro.currentLocale);
+const page = i18n.tuotteet.rullaOvet.rullaturvakaihtimet;
+---
+
+<Layout title={page.title} description={page.intro}>
+  <main class="tuote-page">
+    <TuoteIntro title={page.title} intro={page.intro} />
+    <HighlightSection>
+      <MoreInfo>
+        <h2 class="text-center">{page.more.title}</h2>
+        <p set:html={page.more.info1} />
+        <p set:html={page.more.info2} />
+        <p set:html={page.more.info3} />
+      </MoreInfo>
+    </HighlightSection>
+
+    <TuoteKuvat images={[
+      { src: "/images/rullaturvakaihtimet/rullaovi-grill.webp", alt: "Security roller grille" },
+      { src: "/images/rullaturvakaihtimet/rullaturva2.webp", alt: "Security roller shutter" },
+      { src: "/images/rullaturvakaihtimet/rullaturva3.webp", alt: "Security roller shutter" },
+      { src: "/images/rullaturvakaihtimet/rullaturva4.webp", alt: "Security roller shutter" },
+    ]} />
+
+    <CtaComponent title={page.sell} />
+  </main>
+</Layout>

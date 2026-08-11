@@ -1,0 +1,37 @@
+---
+import { t } from "@/i18n";
+
+import Layout from "@/components/layouts/Layout.astro";
+import TuoteIntro from "@/components/pages/tuotteet/TuoteIntro.astro";
+import MoreInfo from "@/components/common/MoreInfo.astro";
+import HighlightSection from "@/components/common/HighlightSection.astro"
+import CtaComponent from "@/components/ui/CtaComponent.astro";
+import TuoteKuvat from "@/components/pages/tuotteet/TuoteKuvat.astro";
+
+const i18n = t(Astro.currentLocale);
+const rullaTurvaKaihtimet = i18n.tuotteet.rullaOvet.rullaturvakaihtimet;
+---
+
+<Layout title={rullaTurvaKaihtimet.title} description={rullaTurvaKaihtimet.intro}>
+  <main class="tuote-page">
+    <TuoteIntro title={rullaTurvaKaihtimet.title} intro={rullaTurvaKaihtimet.intro} />
+    <HighlightSection>
+
+    <MoreInfo>
+      <h2 class="text-center">{rullaTurvaKaihtimet.more.title}</h2>
+      <p set:html={rullaTurvaKaihtimet.more.info1} />
+      <p set:html={rullaTurvaKaihtimet.more.info2} />
+      <p set:html={rullaTurvaKaihtimet.more.info3} />
+    </MoreInfo>
+    </HighlightSection>
+
+    <TuoteKuvat images={[
+      { src: "/images/rullaturvakaihtimet/rullaovi-grill.webp", alt: "rullaturva1" },
+      { src: "/images/rullaturvakaihtimet/rullaturva2.webp", alt: "rullaturva2" },
+      { src: "/images/rullaturvakaihtimet/rullaturva3.webp", alt: "rullaturva3" },
+      { src: "/images/rullaturvakaihtimet/rullaturva4.webp", alt: "rullaturva4" },
+    ]} />
+
+    <CtaComponent title={rullaTurvaKaihtimet.sell} />
+  </main>
+</Layout>
