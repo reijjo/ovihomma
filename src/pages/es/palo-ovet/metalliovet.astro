@@ -3,37 +3,36 @@ import { t } from "@/i18n";
 
 import Layout from "@/components/layouts/Layout.astro";
 import TuoteIntro from "@/components/pages/tuotteet/TuoteIntro.astro";
+import InfoList from "@/components/common/InfoList.astro";
 import HighlightSection from "@/components/common/HighlightSection.astro";
 import CtaComponent from "@/components/ui/CtaComponent.astro";
 import TuoteKuvat from "@/components/pages/tuotteet/TuoteKuvat.astro";
 import GoBack from "@/components/common/GoBack.astro";
+import MoreInfo from "@/components/common/MoreInfo.astro";
 
 const i18n = t(Astro.currentLocale);
 const paloMetalli = i18n.tuotteet.paloOvet.metalliovet;
 ---
 
 <Layout title={paloMetalli.title} description={paloMetalli.intro}>
-  <main class="tuote-page">
+  <main class="tuote-page small-first-gap">
     <GoBack text={i18n.tuotteet.paloOvet.title} href="/es/palo-ovet" />
     <TuoteIntro title={paloMetalli.title} intro={paloMetalli.intro} />
-    <div class="wrapper tuote-sertifikaatit">
-      <h2>{paloMetalli.ominaisuudet.title}</h2>
-      <ul class="tuote-lista">
-        <li set:html={paloMetalli.ominaisuudet.items.item1} />
-        <li set:html={paloMetalli.ominaisuudet.items.item2} />
-        <li set:html={paloMetalli.ominaisuudet.items.item3} />
-        <li set:html={paloMetalli.ominaisuudet.items.item4} />
-        <li set:html={paloMetalli.ominaisuudet.items.item5} />
-        <li set:html={paloMetalli.ominaisuudet.items.item6} />
-        <li set:html={paloMetalli.ominaisuudet.items.item7} />
-      </ul>
-    </div>
+    <InfoList title={paloMetalli.ominaisuudet.title} items={[
+      paloMetalli.ominaisuudet.items.item1,
+      paloMetalli.ominaisuudet.items.item2,
+      paloMetalli.ominaisuudet.items.item3,
+      paloMetalli.ominaisuudet.items.item4,
+      paloMetalli.ominaisuudet.items.item5,
+      paloMetalli.ominaisuudet.items.item6,
+      paloMetalli.ominaisuudet.items.item7
+    ]} />
 
     <HighlightSection>
-      <div class="wrapper tuote-sertifikaatit">
-        <h2>{paloMetalli.turvallisuus.title}</h2>
-        <p>{paloMetalli.turvallisuus.info}</p>
-      </div>
+      <MoreInfo>
+        <h2 class="text-center">{paloMetalli.turvallisuus.title}</h2>
+        <p set:html={paloMetalli.turvallisuus.info} />
+      </MoreInfo>
     </HighlightSection>
 
     <TuoteKuvat images={[
