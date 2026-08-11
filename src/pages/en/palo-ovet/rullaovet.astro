@@ -1,3 +1,46 @@
 ---
-return Astro.redirect("/en/palo-ovet", 308);
+import { t } from "@/i18n"
+
+import Layout from "@/components/layouts/Layout.astro";
+import TuoteIntro from "@/components/pages/tuotteet/TuoteIntro.astro";
+import InfoList from "@/components/common/InfoList.astro";
+import HighlightSection from "@/components/common/HighlightSection.astro"
+import CtaComponent from "@/components/ui/CtaComponent.astro";
+import TuoteKuvat from "@/components/pages/tuotteet/TuoteKuvat.astro";
+import GoBack from "@/components/common/GoBack.astro";
+import MoreInfo from "@/components/common/MoreInfo.astro";
+
+const i18n = t(Astro.currentLocale);
+const paloRulla = i18n.tuotteet.paloOvet.rullaovet
 ---
+
+<Layout title={paloRulla.title} description={paloRulla.intro}>
+  <main class="tuote-page small small-first-gap">
+    <GoBack text={i18n.tuotteet.paloOvet.title} href="/en/palo-ovet" />
+    <TuoteIntro title={paloRulla.title} intro={paloRulla.intro} />
+    <InfoList title={paloRulla.ominaisuudet.title} items={[
+      paloRulla.ominaisuudet.items.item1,
+      paloRulla.ominaisuudet.items.item2,
+      paloRulla.ominaisuudet.items.item3,
+      paloRulla.ominaisuudet.items.item4,
+      paloRulla.ominaisuudet.items.item5,
+      paloRulla.ominaisuudet.items.item6,
+      paloRulla.ominaisuudet.items.item7,
+      paloRulla.ominaisuudet.items.item8,
+    ]} />
+    <HighlightSection>
+      <MoreInfo>
+        <h2 class="text-center">{paloRulla.turvallisuus.title}</h2>
+        <p set:html={paloRulla.turvallisuus.info} />
+      </MoreInfo>
+    </HighlightSection>
+
+    <TuoteKuvat images={[
+      { src: "/images/ovet/palo-ovet/palorulla1.webp", alt: "fire-rated roller door 1" },
+      { src: "/images/ovet/palo-ovet/palorulla2.webp", alt: "fire-rated roller door 2" },
+      { src: "/images/ovet/palo-ovet/palorulla3.webp", alt: "fire-rated roller door 3" },
+    ]} />
+
+    <CtaComponent title={paloRulla.sell} />
+  </main>
+</Layout>

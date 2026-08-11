@@ -333,7 +333,25 @@ export const es = {
       rullaovet: {
         title: "Puertas enrollables cortafuego",
         intro: "Las puertas enrollables cortafuego son una solución ideal para garantizar la seguridad contra incendios en todo tipo de espacios. Se utilizan en almacenes, centros comerciales, edificios públicos, oficinas y otros lugares donde es esencial limitar la propagación del fuego. Gracias a su sistema enrollable, ocupan poco espacio y son fáciles de instalar en huecos estrechos.",
-        sell: "¿Quieres más información sobre las puertas enrollables cortafuego? ¡Solicita un presupuesto ahora!"
+        sell: "¿Quieres más información sobre las puertas enrollables cortafuego? ¡Solicita un presupuesto ahora!",
+        ominaisuudet: {
+          title: "Características de las puertas enrollables cortafuego",
+          info: "",
+          items: {
+            item1: "Las puertas están revestidas de acero galvanizado en caliente",
+            item2: "Las puertas están aisladas térmicamente",
+            item3: "Las puertas están equipadas con bandas de impacto de seguridad",
+            item4: "El eje y los rodamientos de la puerta son resistentes a la corrosión",
+            item5: "El accionamiento resistente al fuego (400 V) incorpora un sistema de frenado en la transmisión del eje delantero que limita la velocidad de cierre de las puertas a un máximo de 15 cm/s.",
+            item6: "En caso de incendio, la puerta se cierra automáticamente por su propio peso",
+            item7: "Las puertas están equipadas con detectores y alarmas contra incendios, un interruptor de alarma y un controlador (24 V)",
+            item8: "La vida útil prevista de las puertas es de aproximadamente 30 años",
+          },
+        },
+        turvallisuus: {
+          title: "Seguridad y certificaciones",
+          info: "Las puertas enrollables se han sometido a pruebas exhaustivas y están garantizadas para soportar al menos 10.000 ciclos de funcionamiento. Las puertas cuentan con las certificaciones de seguridad contra incendios de clase EI 60 y EI 120. Proporcionan una protección fiable contra incendios y su uso es obligatorio, por ejemplo, en instalaciones que manipulan sustancias peligrosas."
+        }
       },
       liukuovet: {
         title: "Puertas correderas cortafuego",

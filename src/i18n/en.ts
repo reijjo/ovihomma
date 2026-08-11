@@ -333,7 +333,25 @@ export const en = {
       rullaovet: {
         title: "Fire-rated roller doors",
         intro: "Fire-rated roller doors are an ideal solution for ensuring fire safety in a wide range of spaces. They are used in warehouses, shopping centres, public buildings, offices, and other locations where limiting the spread of fire is essential. Thanks to their roller mechanism, the doors take up little space and are easy to install in narrow openings.",
-        sell: "Would you like more information about fire-rated roller doors? Request a quote now!"
+        sell: "Would you like more information about fire-rated roller doors? Request a quote now!",
+        ominaisuudet: {
+          title: "Features of fire-rated roller doors",
+          info: "",
+          items: {
+            item1: "The doors are covered with hot-dip galvanized steel",
+            item2: "The doors are thermally insulated",
+            item3: "The doors are fitted with safe impact strips",
+            item4: "The door shaft and bearings are corrosion-resistant",
+            item5: "The fire-resistant operator (400V) has a braking system in the front shaft drive that limits the door closing speed to a maximum of 15 cm/s.",
+            item6: "In the event of a fire, the door closes automatically under its own weight",
+            item7: "The doors are fitted with fire detectors and alarms, an alarm switch, and a controller (24V)",
+            item8: "The expected service life of the doors is approximately 30 years",
+          },
+        },
+        turvallisuus: {
+          title: "Safety and certifications",
+          info: "The roller doors have been thoroughly tested and are guaranteed to withstand at least 10,000 operating cycles. The doors have been awarded EI-class fire safety certifications EI 60 and EI 120. They provide reliable fire protection and are mandatory, for example, in facilities handling hazardous substances."
+        }
       },
       liukuovet: {
         title: "Fire-rated sliding doors",
