@@ -7,13 +7,15 @@ import InfoList from "@/components/common/InfoList.astro";
 import MoreInfo from "@/components/common/MoreInfo.astro";
 import CtaComponent from "@/components/ui/CtaComponent.astro"
 import TuoteKuvat from "@/components/pages/tuotteet/TuoteKuvat.astro"
+import GoBack from "@/components/common/GoBack.astro";
 
 const i18n = t(Astro.currentLocale);
 const pikaRullaOvet = i18n.tuotteet.rullaOvet.pikarullaovet;
 ---
 
 <Layout title={pikaRullaOvet.title} description={pikaRullaOvet.intro}>
-  <main class="tuote-page">
+  <main class="tuote-page small-first-gap">
+    <GoBack text={i18n.tuotteet.rullaOvet.title} href="/rullaovet-turvakaihtimet" />
     <TuoteIntro title={pikaRullaOvet.title} intro={pikaRullaOvet.intro} />
     <HighlightSection>
       <InfoList title={pikaRullaOvet.pikarulla.edut.title} items={[

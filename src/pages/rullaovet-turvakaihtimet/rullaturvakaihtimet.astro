@@ -7,22 +7,26 @@ import MoreInfo from "@/components/common/MoreInfo.astro";
 import HighlightSection from "@/components/common/HighlightSection.astro"
 import CtaComponent from "@/components/ui/CtaComponent.astro";
 import TuoteKuvat from "@/components/pages/tuotteet/TuoteKuvat.astro";
+import GoBack from "@/components/common/GoBack.astro";
+
 
 const i18n = t(Astro.currentLocale);
 const rullaTurvaKaihtimet = i18n.tuotteet.rullaOvet.rullaturvakaihtimet;
 ---
 
 <Layout title={rullaTurvaKaihtimet.title} description={rullaTurvaKaihtimet.intro}>
-  <main class="tuote-page">
-    <TuoteIntro title={rullaTurvaKaihtimet.title} intro={rullaTurvaKaihtimet.intro} />
-    <HighlightSection>
+  <main class="tuote-page small-first-gap">
+    <GoBack text={i18n.tuotteet.rullaOvet.title} href="/rullaovet-turvakaihtimet" />
 
-    <MoreInfo>
-      <h2 class="text-center">{rullaTurvaKaihtimet.more.title}</h2>
-      <p set:html={rullaTurvaKaihtimet.more.info1} />
-      <p set:html={rullaTurvaKaihtimet.more.info2} />
-      <p set:html={rullaTurvaKaihtimet.more.info3} />
-    </MoreInfo>
+    <TuoteIntro title={rullaTurvaKaihtimet.title} intro={rullaTurvaKaihtimet.intro} />
+
+    <HighlightSection>
+      <MoreInfo>
+        <h2 class="text-center">{rullaTurvaKaihtimet.more.title}</h2>
+        <p set:html={rullaTurvaKaihtimet.more.info1} />
+        <p set:html={rullaTurvaKaihtimet.more.info2} />
+        <p set:html={rullaTurvaKaihtimet.more.info3} />
+      </MoreInfo>
     </HighlightSection>
 
     <TuoteKuvat images={[
