@@ -149,7 +149,7 @@ export const es = {
     },
     nostoOvet: {
       title: "Puertas seccionales",
-      description: "",
+      description: "En toda vivienda unifamiliar, las puertas seccionales son un detalle importante por su aspecto.",
       sell: "¿Quieres más información sobre puertas de garaje para viviendas unifamiliares?",
       info: {
         intro: "En toda vivienda unifamiliar, las puertas seccionales son un detalle importante por su aspecto.",

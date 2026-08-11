@@ -148,7 +148,7 @@ export const en = {
     },
     nostoOvet: {
       title: "Sectional doors",
-      description: "",
+      description: "For every detached house, sectional doors are an important detail in terms of appearance.",
       sell: "Would you like more information about garage doors for detached houses?",
       info: {
         intro: "For every detached house, sectional doors are an important detail in terms of appearance.",

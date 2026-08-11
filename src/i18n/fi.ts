@@ -144,7 +144,7 @@ export const fi = {
     },
     nostoOvet: {
       title: "Nosto-ovet",
-      description: "",
+      description: "Nosto-ovet ovat jokaisen omakotitalon kohdalla ulkonäön osalta tärkeä yksityiskohta.",
       sell: "Haluatko lisätietoja omakotitalon autotallinovista?",
       info: {
         intro: "Nosto-ovet ovat jokaisen omakotitalon kohdalla ulkonäön osalta tärkeä yksityiskohta.",
