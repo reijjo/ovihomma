@@ -321,7 +321,7 @@ export const fi = {
         },
         turvallisuus: {
           title: "Turvallisuus ja sertifikaatit",
-          info: "Meidän tarjoamille metallioville on myönnetty EI luokan sertifikaatti EI 15, EI 30, EI 45, EI 60, EI 90 ja EI 120. EI- merkintä viittaa ovien palonkestoon minuuteissa eli EI 120 tarkoittaa, että oven palonkesto on varmistettu 120 minuutin ajaksi. EI luokan merkintä varmistaa lisäksi palon sattuessa palon rajoittamisen lisäksi myös lämpösäteilyn leviämisen hidastamiseen.",
+          info: "Meidän tarjoamille metallioville on myönnetty EI luokan sertifikaatti EI 15, EI 30, EI 45, EI 60, EI 90 ja EI 120. <b>EI-merkintä</b> viittaa ovien <b>palonkestoon minuuteissa</b> eli <b>EI 120 tarkoittaa, että oven palonkesto on varmistettu 120 minuutin ajaksi</b>. EI luokan merkintä varmistaa lisäksi palon sattuessa palon rajoittamisen lisäksi myös lämpösäteilyn leviämisen hidastamiseen.",
         },
         sell: "Haluatko lisätietoja metalliovista? Lähetä hintapyyntö heti!"
       },

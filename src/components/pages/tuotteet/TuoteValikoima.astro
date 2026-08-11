@@ -59,14 +59,13 @@ function localizedHref(href: string) {
   display: flex;
   flex-direction: column;
   border: 1px solid transparent;
-  text-decoration: underline;
 
   &:hover {
     border: 1px solid var(--border-xxlight);
     box-shadow: var(--shadow-xs);
 
     & .tuote-list-label {
-      color: var(--accent-xdark);
+      color: var(--accent-base);
     }
   }
 }
@@ -85,5 +84,8 @@ function localizedHref(href: string) {
   font-weight: 600;
   font-size: 1.125rem;
   padding-block: 0.5rem;
+  color: var(--accent-xdark);
+  text-decoration: underline;
+
 }
 </style>

@@ -1,0 +1,46 @@
+---
+interface Props {
+  text: string;
+  href: string;
+}
+
+import { ArrowLeft } from '@lucide/astro';
+
+const { text, href } = Astro.props;
+---
+<div class="go-back wrapper">
+  <ArrowLeft size={16} />
+  <a href={href} data-go-back>{text}</a>
+</div>
+
+<style>
+  .go-back {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent-xdark);
+
+    &:hover {
+      color: var(--accent-base);
+    }
+  }
+</style>
+
+<script>
+  function bindGoBackLinks() {
+    document.querySelectorAll<HTMLAnchorElement>("[data-go-back]").forEach((link) => {
+      if (link.dataset.goBackBound) return;
+
+      link.dataset.goBackBound = "true";
+      link.addEventListener("click", (event) => {
+        if (history.length <= 1) return;
+
+        event.preventDefault();
+        history.back();
+      });
+    });
+  }
+
+  bindGoBackLinks();
+  document.addEventListener("astro:page-load", bindGoBackLinks);
+</script>
