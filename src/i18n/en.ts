@@ -205,6 +205,27 @@ export const en = {
         intro3: "Teckentrup roller doors meet all EN 13241-1 safety requirements and specifications. This means that the mechanical properties, operational safety, thermal insulation, sound insulation, airtightness, and wind load of every door are assessed according to European standards. The efficient operators and control systems are ideally adjusted to one another and can be installed and programmed easily. Modern control elements make the doors more convenient to open and close every day."
       },
       sell: "Would you like more information about roller doors? Request a quote!",
+      readMore: {
+        intro: "Read more about ",
+        pikarullaovet: "high-speed roller doors",
+        separator: " or ",
+        rullaturvakaihtimet: "security roller shutters",
+      },
+      pikarullaovet: {
+        title: "High-speed roller doors",
+        intro: "High-speed roller doors resemble conventional roller doors, but their safety has been <b>improved</b> and a <b>faster automation system</b> is used to ensure faster door movement."
+      },
+      rullaturvakaihtimet: {
+        title: "Security roller shutters",
+        intro: "Every homeowner and business owner values their property. Security shutters are used both to <b>increase the security of detached homes</b> and to <b>protect commercial premises</b>. They protect shop owners against burglaries while allowing passers-by to see inside the shop even after closing. If additional security is required, shutters with closed slats can be installed.",
+        more: {
+          title: "How do security roller shutters work?",
+          info1: "Security roller shutters are overhead doors that operate with a <b>roller system</b>: when the door opens, it rolls around a shaft mounted in the ceiling. This system saves space and is easy to use.",
+          info2: "Security roller shutters have a simple construction and often consist of <b>mesh-like slats</b>. <b>Open slats</b> let light into the space and allow people to see inside. <b>Closed slats</b> provide additional protection by concealing the interior from outside view. Security roller shutters withstand impacts and break-in attempts well and provide excellent thermal insulation. They also reduce noise, helping ensure a peaceful night's sleep at home.",
+          info3: "Security roller shutters are stylish and can be removed at any time. They feature an <b>easy-to-use opening and monitoring system</b> that can be adjusted to suit individual needs. For added safety, the door's electrical control system can be connected to a <b>fire detector</b>, causing the door to open automatically as soon as the fire alarm is triggered."
+        },
+        sell: "Protect your property from break-ins—request a quote today!"
+      },
       valikoima: {
         title: "Different roller doors and shutters:",
         thermotech: {

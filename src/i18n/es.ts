@@ -206,6 +206,27 @@ export const es = {
         intro3: "Las puertas enrollables Teckentrup cumplen todos los requisitos y especificaciones de seguridad de la norma EN 13241-1. Esto significa que las propiedades mecánicas, la seguridad de uso, el aislamiento térmico y acústico, la estanqueidad y la carga de viento de cada puerta se evalúan conforme a las normas europeas. Los eficientes sistemas de accionamiento y control están perfectamente ajustados entre sí y se pueden instalar y programar fácilmente. Los modernos elementos de control hacen más cómodo abrir y cerrar las puertas a diario."
       },
       sell: "¿Quieres más información sobre puertas enrollables? ¡Solicita un presupuesto!",
+      readMore: {
+        intro: "Más información sobre ",
+        pikarullaovet: "puertas enrollables rápidas",
+        separator: " o ",
+        rullaturvakaihtimet: "persianas enrollables de seguridad",
+      },
+      pikarullaovet: {
+        title: "Puertas enrollables rápidas",
+        intro: "Las puertas enrollables rápidas se parecen a las puertas enrollables convencionales, pero su seguridad se ha <b>mejorado</b> y utilizan un <b>sistema de automatización más rápido</b> para garantizar un movimiento más veloz."
+      },
+      rullaturvakaihtimet: {
+        title: "Persianas enrollables de seguridad",
+        intro: "Todo propietario de una vivienda o negocio valora sus bienes. Las persianas de seguridad se utilizan tanto para <b>aumentar la seguridad de las viviendas unifamiliares</b> como para <b>proteger los locales comerciales</b>. Protegen a los propietarios de las tiendas frente a robos y permiten que los transeúntes vean el interior incluso después del cierre. Si se desea una mayor seguridad, pueden instalarse persianas con lamas cerradas.",
+        more: {
+          title: "¿Cómo funcionan las persianas enrollables de seguridad?",
+          info1: "Las persianas enrollables de seguridad son puertas elevables que funcionan mediante un <b>sistema enrollable</b>: al abrirse, la puerta se enrolla alrededor de un eje situado en el techo. Este sistema ahorra espacio y es fácil de usar.",
+          info2: "Las persianas enrollables de seguridad tienen una estructura sencilla y suelen estar compuestas por <b>lamas en forma de rejilla</b>. Las <b>lamas abiertas</b> dejan entrar la luz y permiten ver el interior. Las <b>lamas cerradas</b> ofrecen una protección adicional al ocultar el interior de las miradas del exterior. Las persianas resisten bien los golpes y los intentos de robo y proporcionan un excelente aislamiento térmico. Además, reducen el ruido y ayudan a garantizar un sueño tranquilo en casa.",
+          info3: "Las persianas enrollables de seguridad son elegantes y pueden retirarse en cualquier momento. Incorporan un <b>sistema de apertura y supervisión fácil de usar</b> que se puede ajustar a las necesidades individuales. Para aumentar la seguridad, el sistema eléctrico de control de la puerta puede conectarse a un <b>detector de incendios</b>, de modo que la puerta se abra automáticamente cuando se active la alarma de incendios."
+        },
+        sell: "Protege tus bienes frente a robos: ¡solicita un presupuesto hoy mismo!"
+      },
       valikoima: {
         title: "Puertas enrollables y persianas:",
         thermotech: {

@@ -201,6 +201,27 @@ export const fi = {
         intro3: "Teckentrup-rullaovet vastaavat kaikkia EN 13241-1 turvallisuusvaatimuksia ja erittelyitä. Se tarkoittaa, että jokaisen oven osalta mekaanisia näkökantoja, käytön turvallisuutta, lämpöeristystä, äänieristystä, tiiviyttä ja tuulikuormaa käsitellään eurooppalaisten standardien mukaan. Tehokkaat käyttölaite- ja ohjausjärjestelmät ovat keskenään ihanteellisesti säädetyt ja ne voi helposti asentaa ja ohjelmoida. Nykyaikaisten ohjauselementtien käyttö varmistaa ovien päivittäiseen avaamiseen ja sulkemiseen lisämukavuutta."
       },
       sell: "Haluatko lisätietoja rullaovista? Lähetä hintapyyntö!",
+      readMore: {
+        intro: "Lue lisää ",
+        pikarullaovet: "pikarullaovista",
+        separator: " tai ",
+        rullaturvakaihtimet: "rullaturvakaihtimista",
+      },
+      pikarullaovet: {
+        title: "Pikarullaovet",
+        intro: "Pikarullaovet muistuttavat tavanomaisia rullaovia, mutta ovien nopeamman liikkumisen varmistamiseen on <b>parannettu niiden turvallisuutta</b> ja käytetty <b>nopeampaa automaatiojärjestelmää</b>."
+      },
+      rullaturvakaihtimet: {
+        title: "Rullaturvakaihtimet",
+        intro: "Jokainen kodinomistaja tai yrittäjä pitää omaisuutta arvossaan. Turvakaihtimia käytetään sekä <b>omakotitalojen turvallisuuden lisäämiseen</b> että <b>liikehuoneistojen suojana</b>. Kaihtimet suojaavat myymälöiden omistajia murroilta ja sallivat samalla ohikulkijoiden katsovan myymälän sisätiloja myös sulkemisen jälkeen. Jos turvallisuutta halutaan parantaa entisestään, voidaan asentaa turvakaihtimet suljetuilla lamelleilla.",
+        more: {
+          title: "Miten turvakaihtimet toimivat?",
+          info1: "Turvakaihtimet ovat nosto-ovia, jotka toimivat <b>rullajärjestelmällä</b> eli ovien avautuessa ovi rullautuu katossa olevan akselin ympärille. Sellainen järjestelmä säästää tilaa ja on helppokäyttöinen.",
+          info2: "Turvakaihtimet ovat rakenteeltaan yksinkertaisia, usein <b>verkkomaisista lamelleista</b> koostuvia ovia. <b>Avatut lamellit</b> päästävät tilaan valoa ja mahdollistavat tilojen sisälle katsomisen. <b>Suljetut lamellit</b> tarjoavat lisäsuojaa, peittämällä rakennuksen sisätilat ulkopuolisten katseilta. Turvakaihtimet kestävät hyvin iskuja ja murtoja ja ovat erinomaisia lämmöneristimiä. Kaihtimet vaimentavat lisäetuna ääniä ja varmistavat kotioloissa rauhallisen unen.",
+          info3: "Turvakaihtimet ovat tyylikkäitä, ne voidaan poistaa milloin tahansa. Tätä varten on turvakaihtimissa <b>helppokäyttöinen avaus- ja valvontajärjestelmä</b>, jota on helppo säätää tarpeiden mukaan. Turvallisuuden parantamiseen voidaan ovien sähköinen ohjausjärjestelmä yhdistää <b>paloanturiin</b>, se tarkoittaa, että ovi avautuu automaattisesti heti, kun palohälytys käynnistyy."
+        },
+        sell: "Suojaa omaisuuttasi murroilta, lähetä hintapyyntö heti!"
+      },
       valikoima: {
         title: "Erilaisia rullaovia ja kaihtimia:",
         thermotech: {

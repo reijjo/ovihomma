@@ -5,6 +5,7 @@ import { getRelativeLocaleUrl } from "astro:i18n"
 import TuoteIntro from "../TuoteIntro.astro"
 import TuoteValikoimaInfo from "../TuoteValikoimaInfo.astro"
 import CtaComponent from "@/components/ui/CtaComponent.astro"
+import MoreInfo from "@/components/common/MoreInfo.astro"
 
 const i18n = t(Astro.currentLocale)
 const rullaOvet = i18n.tuotteet.rullaOvet
@@ -18,6 +19,15 @@ const currentLocale = Astro.currentLocale ?? "fi"
   <div class="wrapper tuote-moreInfo">
     <p set:html={rullaOvet.info.intro2} />
   </div>
+
+  <MoreInfo>
+    <p class="lue-lisaa">
+      {rullaOvet.readMore.intro}
+      <a href={getRelativeLocaleUrl(currentLocale, "rullaovet-turvakaihtimet/pikarullaovet")}>{rullaOvet.readMore.pikarullaovet}</a>
+      {rullaOvet.readMore.separator}
+      <a href={getRelativeLocaleUrl(currentLocale, "rullaovet-turvakaihtimet/rullaturvakaihtimet")}>{rullaOvet.readMore.rullaturvakaihtimet}</a>
+    </p>
+  </MoreInfo>
 
   <TuoteValikoimaInfo title={rullaOvet.valikoima.title} items={[
     { header: rullaOvet.valikoima.thermotech.title, extraInfo: rullaOvet.valikoima.thermotech.info, img: "/images/ovet/rullaovet/thermoteck.webp" },
@@ -59,6 +69,21 @@ const currentLocale = Astro.currentLocale ?? "fi"
     flex-direction: column;
     width: min(100%, 800px);
     text-wrap: pretty;
+  }
+
+  .lue-lisaa {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.125rem;
+
+    & a {
+      color: var(--accent-xdark);
+      text-decoration: underline;
+
+      &:hover {
+        color: var(--accent-base);
+      }
+    }
   }
 
   .tuote-highlight {
