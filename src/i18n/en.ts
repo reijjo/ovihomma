@@ -212,8 +212,35 @@ export const en = {
         rullaturvakaihtimet: "security roller shutters",
       },
       pikarullaovet: {
+        sell: "Interested?",
         title: "High-speed roller doors",
-        intro: "High-speed roller doors resemble conventional roller doors, but their safety has been <b>improved</b> and a <b>faster automation system</b> is used to ensure faster door movement."
+        title2: "PVC high-speed roller doors",
+        intro: "High-speed roller doors resemble conventional roller doors, but their safety has been <b>improved</b> and a <b>faster automation system</b> is used to ensure faster door movement.",
+        intro2: "PVC high-speed roller doors are often used in industrial buildings and shops to separate storage areas. They can be used both indoors and outdoors, and significantly reduce heat loss during the cold winter months.",
+        pikarulla: {
+          edut: {
+            title: "Benefits of high-speed roller doors:",
+            item1: "Excellent durability in continuous use",
+            item2: "Frequency converter control: the start/stop function protects materials and extends the service life of the doors",
+            item3: "Integrated safety barriers and edges protect against possible damage",
+            item4: "A fast opening and closing system reduces heat loss",
+            item5: "Average opening speed of 550 mm/s",
+            item6: "Maximum door dimensions up to 6000 x 8000 mm",
+            more: "High-speed roller doors are used, for example, in the food industry, production facilities, wholesale warehouses and shops where <b>low heat loss</b> and <b>smooth operation</b> through fast opening and closing are required."
+          }
+        },
+        pvc: {
+          edut: {
+            title: "Benefits of PVC high-speed roller doors",
+            item1: "Self-supporting hot-dip galvanized side slats",
+            item2: "Transparent PVC curtain with high tensile strength",
+            item3: "Curtain tensioning with a specially designed impact-protected edge",
+            item4: "Special brush edges between the side slats and PVC curtain",
+            item5: "High-efficiency motor with feed screw and digital switch",
+            item6: "Average opening speed of 0.8–2.5 m/s",
+            item7: "Average closing speed of 0.8 m/s",
+          }
+        }
       },
       rullaturvakaihtimet: {
         title: "Security roller shutters",

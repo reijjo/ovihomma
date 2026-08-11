@@ -2,6 +2,11 @@
 import { t } from "@/i18n";
 import Layout from "@/components/layouts/Layout.astro";
 import TuoteIntro from "@/components/pages/tuotteet/TuoteIntro.astro";
+import HighlightSection from "@/components/common/HighlightSection.astro";
+import InfoList from "@/components/common/InfoList.astro";
+import MoreInfo from "@/components/common/MoreInfo.astro";
+import CtaComponent from "@/components/ui/CtaComponent.astro"
+import TuoteKuvat from "@/components/pages/tuotteet/TuoteKuvat.astro"
 
 const i18n = t(Astro.currentLocale);
 const pikaRullaOvet = i18n.tuotteet.rullaOvet.pikarullaovet;
@@ -10,5 +15,51 @@ const pikaRullaOvet = i18n.tuotteet.rullaOvet.pikarullaovet;
 <Layout title={pikaRullaOvet.title} description={pikaRullaOvet.intro}>
   <main class="tuote-page">
     <TuoteIntro title={pikaRullaOvet.title} intro={pikaRullaOvet.intro} />
+    <HighlightSection>
+      <InfoList title={pikaRullaOvet.pikarulla.edut.title} items={[
+        pikaRullaOvet.pikarulla.edut.item1,
+        pikaRullaOvet.pikarulla.edut.item2,
+        pikaRullaOvet.pikarulla.edut.item3,
+        pikaRullaOvet.pikarulla.edut.item4,
+        pikaRullaOvet.pikarulla.edut.item5,
+        pikaRullaOvet.pikarulla.edut.item6,
+      ]} />
+    </HighlightSection>
+    <MoreInfo>
+      <p set:html={pikaRullaOvet.pikarulla.edut.more} />
+    </MoreInfo>
+
+    <TuoteKuvat images={[
+      { src: "/images/pikarullaovet/pikarulla.webp", alt: "Pikarullaovi"}
+    ]} />
+
+    <div class="wrapper separator" aria-hidden="true" />
+
+    <TuoteIntro title={pikaRullaOvet.title2} intro={pikaRullaOvet.intro2} />
+    <HighlightSection>
+      <InfoList title={pikaRullaOvet.pvc.edut.title} items={[
+        pikaRullaOvet.pvc.edut.item1,
+        pikaRullaOvet.pvc.edut.item2,
+        pikaRullaOvet.pvc.edut.item3,
+        pikaRullaOvet.pvc.edut.item4,
+        pikaRullaOvet.pvc.edut.item5,
+        pikaRullaOvet.pvc.edut.item6,
+        pikaRullaOvet.pvc.edut.item7,
+      ]} />
+    </HighlightSection>
+
+    <TuoteKuvat images={[
+      { src: "/images/pikarullaovet/pvcpika.webp", alt: "PVC pikarullaovi"}
+    ]} />
+
+    <CtaComponent title={pikaRullaOvet.sell} />
   </main>
 </Layout>
+
+<style>
+  .separator {
+    width: 90%;
+    height: 1rem;
+    background: linear-gradient(black, black) center / 100% 1px no-repeat;
+  }
+</style>

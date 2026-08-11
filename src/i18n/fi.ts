@@ -208,8 +208,35 @@ export const fi = {
         rullaturvakaihtimet: "rullaturvakaihtimista",
       },
       pikarullaovet: {
+        sell: "Heräsikö mielenkiinto?",
         title: "Pikarullaovet",
-        intro: "Pikarullaovet muistuttavat tavanomaisia rullaovia, mutta ovien nopeamman liikkumisen varmistamiseen on <b>parannettu niiden turvallisuutta</b> ja käytetty <b>nopeampaa automaatiojärjestelmää</b>."
+        title2: "PVC Pikarullaovet",
+        intro: "Pikarullaovet muistuttavat tavanomaisia rullaovia, mutta ovien nopeamman liikkumisen varmistamiseen on <b>parannettu niiden turvallisuutta</b> ja käytetty <b>nopeampaa automaatiojärjestelmää</b>.",
+        intro2: "PVC pikarullaovia käytetään usein teollisuusrakennuksissa tai myymälöissä varastotilojen eristämiseen. PVC-pikarullaovia voidaan käyttää sekä <b>sisä-</b> että <b>ulkotiloissa</b> ja ne <b>vähentävät</b> kylminä talvikuukausia <b>merkittävästi lämpöhävikkiä</b>.",
+        pikarulla: {
+          edut: {
+            title: "Pikarullaovien edut:",
+            item1: "Erinomainen kestävyys jatkuvassa käytössä",
+            item2: "Taajuusmuuntimen valvonta – käynnistys/pysäytystoiminto suojaa materiaaleja ja pidentää ovien käyttöikää",
+            item3: "Integroidut turvaesteet ja –reunat suojaavat mahdollisilta vaurioilta",
+            item4: "Nopea avaus- ja sulkujärjestelmä vähentää lämpöhävikkiä",
+            item5: "Keskimääräinen avaamisnopeus 550mm/s",
+            item6: "Pikarullaovien maksimimitat ovat enintään 6000x8000mm",
+            more: "Pikarullaovia käytetään mm. elintarviketeollisuudessa, tuotantolaitoksissa, tukkuvarastoissa, myymälöissä yms. jossa vaaditaan <b>pientä lämpöhävikkiä</b> ja <b>sujuvaa toimintaa</b> ovien nopealla sulkeutumisella ja avautumisella."
+          }
+        },
+        pvc: {
+          edut: {
+            title: "PVC PIKARULLAOVIEN EDUT",
+            item1: "Itsetukeutuvat kuumasinkityt sivulamellit",
+            item2: "Hyvän vetolujuuden omaava läpinäkyvä PVC ovenpeite",
+            item3: "Kaihtimen kiristäminen erikoisvalmisteisella törmäyssuojatulla reunalla",
+            item4: "Erikoisvalmisteiset harjareunat sivulamellien ja PVC kaihtimen välissä",
+            item5: "Huipputehokas syöttökierukalla varustettu moottori digitaalisella katkaisijalla",
+            item6: "Keskimääräinen avaamisnopeus 0,8 – 2,5 m/s",
+            item7: "Keskimääräinen sulkeutumisnopeus 0,8 m/s",
+          }
+        }
       },
       rullaturvakaihtimet: {
         title: "Rullaturvakaihtimet",

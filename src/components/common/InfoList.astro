@@ -1,0 +1,39 @@
+---
+interface Props {
+  title: string
+  info?: string
+  items: string[]
+}
+
+const { title, info, items } = Astro.props
+---
+
+<div class="wrapper tuote-sertifikaatit">
+  <h2>{title}</h2>
+  {info && <p>{info}</p>}
+  <ul class="tuote-lista">
+    {items.map((item) => <li set:html={item} />)}
+  </ul>
+</div>
+
+<style>
+  .tuote-sertifikaatit {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 800px);
+    text-wrap: pretty;
+
+    & h2 {
+      text-transform: uppercase;
+    }
+  }
+
+  .tuote-lista {
+    list-style-position: inside;
+
+    & li {
+      padding-left: 1rem;
+    }
+  }
+</style>
