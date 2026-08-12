@@ -1,3 +1,53 @@
 ---
-return Astro.redirect("/en/palo-ovet", 308);
+import { t } from "@/i18n";
+
+import Layout from "@/components/layouts/Layout.astro";
+import TuoteIntro from "@/components/pages/tuotteet/TuoteIntro.astro";
+import InfoList from "@/components/common/InfoList.astro";
+import HighlightSection from "@/components/common/HighlightSection.astro";
+import CtaComponent from "@/components/ui/CtaComponent.astro";
+import TuoteKuvat from "@/components/pages/tuotteet/TuoteKuvat.astro";
+import GoBack from "@/components/common/GoBack.astro";
+import MoreInfo from "@/components/common/MoreInfo.astro";
+
+const i18n = t(Astro.currentLocale);
+const paloLiuku = i18n.tuotteet.paloOvet.liukuovet;
 ---
+<Layout title={paloLiuku.title} description={paloLiuku.intro}>
+  <main class="tuote-page small-first-gap">
+    <GoBack text={i18n.tuotteet.paloOvet.title} href="/en/palo-ovet" />
+    <TuoteIntro title={paloLiuku.title} intro={paloLiuku.intro} />
+    <InfoList title={paloLiuku.ominaisuudet.title} items={[
+      paloLiuku.ominaisuudet.items.item1,
+      paloLiuku.ominaisuudet.items.item2,
+      paloLiuku.ominaisuudet.items.item3,
+      paloLiuku.ominaisuudet.items.item4,
+      paloLiuku.ominaisuudet.items.item5,
+      paloLiuku.ominaisuudet.items.item6,
+      paloLiuku.ominaisuudet.items.item7,
+      paloLiuku.ominaisuudet.items.item8,
+      paloLiuku.ominaisuudet.items.item9,
+    ]} />
+
+    <HighlightSection>
+      <MoreInfo>
+        <h2 class="text-center">{paloLiuku.turvallisuus.title}</h2>
+        <p set:html={paloLiuku.turvallisuus.info} />
+        <InfoList title="" items={[
+          paloLiuku.turvallisuus.items.item1,
+          paloLiuku.turvallisuus.items.item2,
+        ]} />
+        <p set:html={paloLiuku.turvallisuus.info2} />
+      </MoreInfo>
+    </HighlightSection>
+
+    <TuoteKuvat images={[
+      { src: "/images/ovet/palo-ovet/paloliuku1.webp", alt: "fire-rated sliding door 1" },
+      { src: "/images/ovet/palo-ovet/paloliuku2.webp", alt: "fire-rated sliding door 2" },
+      { src: "/images/ovet/palo-ovet/paloliuku3.webp", alt: "fire-rated sliding door 3" },
+      { src: "/images/ovet/palo-ovet/paloliuku4.webp", alt: "fire-rated sliding door 4" },
+    ]} />
+
+    <CtaComponent title={paloLiuku.sell} />
+  </main>
+</Layout>
