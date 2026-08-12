@@ -443,6 +443,32 @@ export const en = {
         intro:
           "Fire-rated shutters are well suited to a wide range of buildings, protecting against the spread of fire and separating spaces with a higher fire risk. They are durable and suitable for narrow openings because they do not require additional space for a vertically opening door. In terms of fire spread and resistance, the shutters are classified as <b>non-combustible</b> and as <b>doors that prevent the spread of fire</b>.",
         sell: "Would you like more information about fire-rated shutters? Request a quote now!",
+        ominaisuudet: {
+          title: "Features of the shutters",
+          info: "",
+          items: {
+            item1:
+              "EF® shutters are made of specially manufactured fibreglass reinforced with steel fibres (grey)",
+            item2:
+              "The shutters are equipped with safety devices that reliably keep the shutter between the guide slats",
+            item3:
+              "The door slats and shafts are made of hot-dip galvanised steel",
+            item4:
+              "The doors are equipped with an emergency brake and additional switches with a 230 V operator",
+            item5: "The door opening speed depends on the door dimensions and is 2–10 cm/s",
+            item6: "In an emergency, the door closing speed is 12 cm/s",
+            item7:
+              "The best possible fire safety for the shutters is ensured by: an optical audible-signal sensor, switches for the fire monitoring system, outputs for a maximum of 12 fire detectors, an alarm switch in the glass frames, at least 2 fire detectors, an emergency power supply system, and other equipment.",
+            item8:
+              "The doors have an electric operator; quick operators are also available (opening speed 1 m/s, closing speed 0.5 m/s)",
+            item9:
+              "Specially manufactured fire-safety shutters are available for isolating work areas in facilities carrying out welding work (temperature resistance max. 5000°C, electric operator 0.7 kW, opening and closing speed 10 cm/s)",
+          },
+          turvallisuus: {
+            title: "Safety and certificates",
+            info: "Fire-rated shutters meet the Class E fire-safety requirements E 30, E 60, and E 120.",
+          },
+        },
       },
     },
     puomit: {

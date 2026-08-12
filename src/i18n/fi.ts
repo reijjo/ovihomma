@@ -444,8 +444,34 @@ export const fi = {
       kaihtimet: {
         title: "Kaihtimet",
         intro:
-          "Palonkestävät kaihtimet soveltuvat erinomaisesti käytettäväksi erilaisissa rakennuksissa suojaamaan palon leviämiseltä ja eristämään tiloja, joissa on suurempi palovaara kuin muissa tiloissa. Kaihtimet ovat kestäviä ja sopivat käytettäväksi kapeissa käyttökohteissa, sillä se ei tarvitse lisätilaa oven pystysuoran avautumistilan kustannuksella. Kaihtimet on palon leviämisen ja palonkeston kannalta luokiteltu <b>palamattomina</b> ja <b>palon leviämisen estävinä ovina</b>",
+          "Palonkestävät kaihtimet soveltuvat erinomaisesti käytettäväksi erilaisissa rakennuksissa suojaamaan palon leviämiseltä ja eristämään tiloja, joissa on suurempi palovaara kuin muissa tiloissa. Kaihtimet ovat kestäviä ja sopivat käytettäväksi kapeissa käyttökohteissa, sillä se ei tarvitse lisätilaa oven pystysuoran avautumistilan kustannuksella. Kaihtimet on palon leviämisen ja palonkeston kannalta luokiteltu <b>palamattomina</b> ja <b>palon leviämisen estävinä ovina</b>.",
         sell: "Kysy lisää palonkestävistä kaihtimista, lähetä hintapyyntö!",
+        ominaisuudet: {
+          title: "Kaihtimien ominaisuudet",
+          info: "",
+          items: {
+            item1:
+              "EF® kaihtimet on valmistettu erikoisvalmisteisesta teräskuiduilla vahvistetusta lasikuitumateriaalista (harmaat)",
+            item2:
+              "Kaihtimet on varustettu turvalaitteilla, jotka pitävät kaihtimen luotettavasti johdinlamellien välissä",
+            item3:
+              "Ovilamellit ja akselit on valmistettu kuumasinkitystä teräksestä",
+            item4:
+              "Ovet on varustettu hätäjarrulla ja lisäkatkaisijoilla 230 V käyttölaitteella",
+            item5: "Oven avaamisnopeus on oven mitoista riippuen 2-10 cm/s",
+            item6: "Hätätilanteessa on ovien sulkeutumisen nopeus 12 cm/s",
+            item7:
+              "Kaihtimien parhaan mahdollisen paloturvallisuuden varmistavat: optisen äänimerkin anturi, palon valvontajärjestelmän katkaisijat, max. 12 paloilmaisimen lähtöä, hälytinkatkaisija lasikehyksissä, vähintään 2 paloilmaisinta, syöttöjärjestelmä hätätilanteeseen ym. laitteet.",
+            item8:
+              "Ovissa on sähköinen käyttölaite, saatavissa ovat myös pikakäyttölaitteet (avautumisnopeus 1 m/s, sulkeutumisnopeus 0,5 m/s)",
+            item9:
+              "Saatavissa erikoisvalmisteiset paloturvallisuuskaihtimet hitsaustöitä tekevien laitosten työtilojen eristämiseen (lämmönkesto max. 5000°C, sähköinen käyttölaite 0,7 kW, avautumis- ja sulkeutumisnopeus 10 cm/s)",
+          },
+          turvallisuus: {
+            title: "Turvallisuus ja sertifikaatit",
+            info: "Palonkestävät kaihtimet täyttävät E luokan paloturvallisuusvaatimukset  E 30, E 60, E 120.",
+          },
+        },
       },
     },
     puomit: {
