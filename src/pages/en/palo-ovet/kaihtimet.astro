@@ -1,3 +1,48 @@
 ---
-return Astro.redirect("/en/palo-ovet", 308);
+import { t } from "@/i18n";
+
+import Layout from "@/components/layouts/Layout.astro";
+import TuoteIntro from "@/components/pages/tuotteet/TuoteIntro.astro";
+import InfoList from "@/components/common/InfoList.astro";
+import HighlightSection from "@/components/common/HighlightSection.astro";
+import CtaComponent from "@/components/ui/CtaComponent.astro";
+import TuoteKuvat from "@/components/pages/tuotteet/TuoteKuvat.astro";
+import GoBack from "@/components/common/GoBack.astro";
+import MoreInfo from "@/components/common/MoreInfo.astro";
+
+const i18n = t(Astro.currentLocale);
+const fireShutters = i18n.tuotteet.paloOvet.kaihtimet;
 ---
+
+<Layout title={fireShutters.title} description={fireShutters.intro}>
+  <main class="tuote-page small-first-gap">
+    <GoBack text={i18n.tuotteet.paloOvet.title} href="/en/palo-ovet" />
+    <TuoteIntro title={fireShutters.title} intro={fireShutters.intro} />
+    <InfoList
+      title={fireShutters.ominaisuudet.title}
+      items={[
+        fireShutters.ominaisuudet.items.item1,
+        fireShutters.ominaisuudet.items.item2,
+        fireShutters.ominaisuudet.items.item3,
+        fireShutters.ominaisuudet.items.item4,
+        fireShutters.ominaisuudet.items.item5,
+        fireShutters.ominaisuudet.items.item6,
+        fireShutters.ominaisuudet.items.item7,
+        fireShutters.ominaisuudet.items.item8,
+        fireShutters.ominaisuudet.items.item9,
+      ]}
+    />
+
+    <HighlightSection>
+      <MoreInfo>
+        <h2 class="text-center">{fireShutters.ominaisuudet.turvallisuus.title}</h2>
+        <p set:html={fireShutters.ominaisuudet.turvallisuus.info} />
+      </MoreInfo>
+    </HighlightSection>
+
+    <TuoteKuvat
+      images={[{ src: "/images/ovet/palo-ovet/palokaihdin.webp", alt: "Fire-rated shutter" }]}
+    />
+    <CtaComponent title={fireShutters.sell} />
+  </main>
+</Layout>

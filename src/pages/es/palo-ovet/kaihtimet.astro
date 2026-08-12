@@ -1,3 +1,48 @@
 ---
-return Astro.redirect("/es/palo-ovet", 308);
+import { t } from "@/i18n";
+
+import Layout from "@/components/layouts/Layout.astro";
+import TuoteIntro from "@/components/pages/tuotteet/TuoteIntro.astro";
+import InfoList from "@/components/common/InfoList.astro";
+import HighlightSection from "@/components/common/HighlightSection.astro";
+import CtaComponent from "@/components/ui/CtaComponent.astro";
+import TuoteKuvat from "@/components/pages/tuotteet/TuoteKuvat.astro";
+import GoBack from "@/components/common/GoBack.astro";
+import MoreInfo from "@/components/common/MoreInfo.astro";
+
+const i18n = t(Astro.currentLocale);
+const persianasCortafuego = i18n.tuotteet.paloOvet.kaihtimet;
 ---
+
+<Layout title={persianasCortafuego.title} description={persianasCortafuego.intro}>
+  <main class="tuote-page small-first-gap">
+    <GoBack text={i18n.tuotteet.paloOvet.title} href="/es/palo-ovet" />
+    <TuoteIntro title={persianasCortafuego.title} intro={persianasCortafuego.intro} />
+    <InfoList
+      title={persianasCortafuego.ominaisuudet.title}
+      items={[
+        persianasCortafuego.ominaisuudet.items.item1,
+        persianasCortafuego.ominaisuudet.items.item2,
+        persianasCortafuego.ominaisuudet.items.item3,
+        persianasCortafuego.ominaisuudet.items.item4,
+        persianasCortafuego.ominaisuudet.items.item5,
+        persianasCortafuego.ominaisuudet.items.item6,
+        persianasCortafuego.ominaisuudet.items.item7,
+        persianasCortafuego.ominaisuudet.items.item8,
+        persianasCortafuego.ominaisuudet.items.item9,
+      ]}
+    />
+
+    <HighlightSection>
+      <MoreInfo>
+        <h2 class="text-center">{persianasCortafuego.ominaisuudet.turvallisuus.title}</h2>
+        <p set:html={persianasCortafuego.ominaisuudet.turvallisuus.info} />
+      </MoreInfo>
+    </HighlightSection>
+
+    <TuoteKuvat
+      images={[{ src: "/images/ovet/palo-ovet/palokaihdin.webp", alt: "Persiana cortafuego" }]}
+    />
+    <CtaComponent title={persianasCortafuego.sell} />
+  </main>
+</Layout>

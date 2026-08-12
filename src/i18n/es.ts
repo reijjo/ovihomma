@@ -459,6 +459,32 @@ export const es = {
         intro:
           "Las persianas cortafuego son ideales para una amplia variedad de edificios, ya que protegen contra la propagación del fuego y separan espacios con un mayor riesgo de incendio. Son resistentes y adecuadas para huecos estrechos porque no necesitan espacio adicional para la apertura vertical de una puerta. En cuanto a la propagación y resistencia al fuego, las persianas están clasificadas como <b>no combustibles</b> y como <b>puertas que impiden la propagación del fuego</b>.",
         sell: "¿Quieres más información sobre las persianas cortafuego? ¡Solicita un presupuesto ahora!",
+        ominaisuudet: {
+          title: "Características de las persianas",
+          info: "",
+          items: {
+            item1:
+              "Las persianas EF® están fabricadas con un material de fibra de vidrio reforzado con fibras de acero especialmente diseñado (gris)",
+            item2:
+              "Las persianas están equipadas con dispositivos de seguridad que mantienen la persiana de forma fiable entre las lamas guía",
+            item3:
+              "Las lamas de la puerta y los ejes están fabricados con acero galvanizado en caliente",
+            item4:
+              "Las puertas están equipadas con un freno de emergencia e interruptores adicionales con un accionamiento de 230 V",
+            item5: "La velocidad de apertura depende de las dimensiones de la puerta y es de 2-10 cm/s",
+            item6: "En caso de emergencia, la velocidad de cierre de la puerta es de 12 cm/s",
+            item7:
+              "La máxima seguridad contra incendios de las persianas está garantizada por: un sensor óptico de señal acústica, interruptores del sistema de control de incendios, salidas para un máximo de 12 detectores de incendios, un interruptor de alarma en los marcos de vidrio, al menos 2 detectores de incendios, un sistema de alimentación de emergencia y otros equipos.",
+            item8:
+              "Las puertas disponen de un accionamiento eléctrico; también hay disponibles accionamientos rápidos (velocidad de apertura de 1 m/s y de cierre de 0,5 m/s)",
+            item9:
+              "Hay disponibles persianas cortafuego especialmente diseñadas para aislar las zonas de trabajo de instalaciones donde se realizan trabajos de soldadura (resistencia térmica máx. 5000°C, accionamiento eléctrico de 0,7 kW, velocidad de apertura y cierre de 10 cm/s)",
+          },
+          turvallisuus: {
+            title: "Seguridad y certificados",
+            info: "Las persianas cortafuego cumplen los requisitos de seguridad contra incendios de la clase E: E 30, E 60 y E 120.",
+          },
+        },
       },
     },
     puomit: {
