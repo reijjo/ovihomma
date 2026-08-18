@@ -70,6 +70,24 @@ function localizedHref(href: string) {
   }
 }
 
+.not-a-link {
+  cursor: default;
+  pointer-events: none;
+  transition: none;
+  text-decoration: none !important;
+
+  &:hover {
+    border: 1px solid transparent;
+    box-shadow: none;
+    color: inherit;
+  }
+}
+
+.not-a-link .tuote-list-label {
+  color: inherit;
+  text-decoration: none;
+}
+
 .tuote-list-img {
   width: 100%;
   max-width: 300px;
@@ -86,6 +104,8 @@ function localizedHref(href: string) {
   padding-block: 0.5rem;
   color: var(--accent-xdark);
   text-decoration: underline;
-
 }
+
+
+
 </style>

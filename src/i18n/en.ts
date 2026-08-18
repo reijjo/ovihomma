@@ -28,8 +28,8 @@ export const en = {
     submit: "Submit",
     companyName: "J & P BEST PARTNERS SL",
     address: "Address",
-    companyPhone: "Phone",
-    companyEmail: "Email",
+    companyPhone: "+34607649646 / +34607646893",
+    companyEmail: "info@bestpartners.fi",
     sending: "Sending...",
     successMessage: "Your message was sent successfully.",
     validationError: "Please check the fields and try again.",
@@ -407,8 +407,7 @@ export const en = {
           title: "Features of fire-rated sliding doors",
           info: "",
           items: {
-            item1:
-              "The door leaves are 146 mm thick and covered with steel",
+            item1: "The door leaves are 146 mm thick and covered with steel",
             item2:
               "The doors are filled with mineral wool, which keeps them lightweight (29 kg/m2)",
             item3:
@@ -455,7 +454,8 @@ export const en = {
               "The door slats and shafts are made of hot-dip galvanised steel",
             item4:
               "The doors are equipped with an emergency brake and additional switches with a 230 V operator",
-            item5: "The door opening speed depends on the door dimensions and is 2–10 cm/s",
+            item5:
+              "The door opening speed depends on the door dimensions and is 2–10 cm/s",
             item6: "In an emergency, the door closing speed is 12 cm/s",
             item7:
               "The best possible fire safety for the shutters is ensured by: an optical audible-signal sensor, switches for the fire monitoring system, outputs for a maximum of 12 fire detectors, an alarm switch in the glass frames, at least 2 fire detectors, an emergency power supply system, and other equipment.",
