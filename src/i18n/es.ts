@@ -29,8 +29,8 @@ export const es = {
     submit: "Enviar",
     companyName: "J & P BEST PARTNERS SL",
     address: "Dirección",
-    companyPhone: "Teléfono",
-    companyEmail: "Correo electrónico",
+    companyPhone: "+34607649646 / +34607646893",
+    companyEmail: "info@bestpartners.fi",
     sending: "Enviando...",
     successMessage: "Tu mensaje se envió correctamente.",
     validationError: "Revisa los campos e inténtalo de nuevo.",
@@ -471,8 +471,10 @@ export const es = {
               "Las lamas de la puerta y los ejes están fabricados con acero galvanizado en caliente",
             item4:
               "Las puertas están equipadas con un freno de emergencia e interruptores adicionales con un accionamiento de 230 V",
-            item5: "La velocidad de apertura depende de las dimensiones de la puerta y es de 2-10 cm/s",
-            item6: "En caso de emergencia, la velocidad de cierre de la puerta es de 12 cm/s",
+            item5:
+              "La velocidad de apertura depende de las dimensiones de la puerta y es de 2-10 cm/s",
+            item6:
+              "En caso de emergencia, la velocidad de cierre de la puerta es de 12 cm/s",
             item7:
               "La máxima seguridad contra incendios de las persianas está garantizada por: un sensor óptico de señal acústica, interruptores del sistema de control de incendios, salidas para un máximo de 12 detectores de incendios, un interruptor de alarma en los marcos de vidrio, al menos 2 detectores de incendios, un sistema de alimentación de emergencia y otros equipos.",
             item8:
