@@ -138,7 +138,7 @@ export const en = {
     toka: "We provide maintenance services for all types of doors. Maintenance is carried out by <b>experienced specialists</b>, who also advise customers by phone. If necessary, we will visit the site to assess the situation and solve the problems on location.",
     kolmas:
       "We provide door maintenance <b>with or without a maintenance contract</b>.",
-    vika: "You can get more information about maintenance services by calling .",
+    vika: "You can get more information about maintenance services by calling +34607649646 / +34607646893.",
   },
   tuotteet: {
     title: "Products",
