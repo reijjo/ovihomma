@@ -142,7 +142,7 @@ export const es = {
     toka: "Ofrecemos servicios de mantenimiento para todo tipo de puertas. El mantenimiento lo realizan <b>especialistas con experiencia</b>, que también asesoran a los clientes por teléfono. Si es necesario, visitaremos el lugar para evaluar la situación y resolver los problemas allí mismo.",
     kolmas:
       "Ofrecemos mantenimiento de puertas <b>con o sin contrato de mantenimiento</b>.",
-    vika: "Puede obtener más información sobre los servicios de mantenimiento llamando al .",
+    vika: "Puede obtener más información sobre los servicios de mantenimiento llamando al +34607649646 / +34607646893.",
   },
   tuotteet: {
     title: "Productos",
